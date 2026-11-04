@@ -359,3 +359,221 @@ def f_mappin(t):
     im,d=layer(); flame(d,.5,.34,(231,60,60,255),0,-.05,t); im=im.rotate(180); d=ImageDraw.Draw(im); ell(d,0,-.2,.12,.12,(255,255,255,255)); return xform(im,1,0,0,-.1*abs(math.sin(2*math.pi*t)))
 def f_link(t):
     im,d=layer(); s=.06*sg(t); rr(d,-.55-s,-.17,.1-s,.17,.17,None,(88,101,242,255),.1); rr(d,-.1+s,-.17,.55+s,.17,.17,None,(150,160,250,255),.1); return xform(im,1,-45)
+
+# ===== gelombang 4 =====
+_F={}
+def fnt(sz):
+    if sz not in _F:
+        try: _F[sz]=ImageFont.truetype("DejaVuSans-Bold.ttf",sz)
+        except Exception: _F[sz]=None
+    return _F[sz]
+def txt(d,s,x,y,sz,col):
+    f=fnt(sz)
+    if f: d.text(P(x,y),s,font=f,fill=col,anchor="mm")
+W=(255,255,255,255); BL=(88,101,242,255); BLD=(60,70,200,255)
+def hpts(s=1,rot=0,cx=0,cy=0):
+    c,sn=math.cos(math.radians(rot)),math.sin(math.radians(rot)); out=[]
+    for i in range(80):
+        u=i/80*2*math.pi; x=.034*16*math.sin(u)**3*s; y=(-.034*(13*math.cos(u)-5*math.cos(2*u)-2*math.cos(3*u)-math.cos(4*u))+.05)*s
+        out.append((cx+x*c-y*sn,cy+x*sn+y*c))
+    return out
+def f_label(s,bg,dk,sz,fg=W):
+    def f(t):
+        im,d=layer(); rr(d,-.55,-.55,.55,.55,.14,bg,dk,.05); txt(d,s,0,.03,sz,fg); return xform(im,1+.05*sg(t),3*sg(t))
+    return f
+def f_media(fn,rot=0):
+    def f(t):
+        im,d=layer(); circle(d,.58,BL,BLD); fn(d,.04*sg(t),t); return xform(im,1,rot)
+    return f
+def m_ff(d,dx,t): poly(d,[(-.3+dx,-.24),(-.3+dx,.24),(dx,0)],W,W,.05); poly(d,[(dx,-.24),(dx,.24),(.3+dx,0)],W,W,.05)
+def m_next(d,dx,t): poly(d,[(-.3+dx,-.24),(-.3+dx,.24),(.1+dx,0)],W,W,.05); rr(d,.14+dx,-.24,.28+dx,.24,.03,W)
+def m_pause(d,dx,t):
+    s=1+.15*sg(t); rr(d,-.22,-.25*s,-.06,.25*s,.03,W); rr(d,.06,-.25*s,.22,.25*s,.03,W)
+def _arrowhead(d,deg,r,col,sz=.22):
+    a=math.radians(deg); c=(r*math.cos(a),r*math.sin(a)); tt=(math.sin(a),-math.cos(a)); n=(math.cos(a),math.sin(a))
+    poly(d,[(c[0]+tt[0]*sz,c[1]+tt[1]*sz),(c[0]+n[0]*sz*.85,c[1]+n[1]*sz*.85),(c[0]-n[0]*sz*.85,c[1]-n[1]*sz*.85)],col)
+def f_recycle(t):
+    im,d=layer(); col=(46,204,113,255)
+    for s0 in (0,120,240): d.arc([P(-.42,-.42),P(.42,.42)],s0+25,s0+95,fill=col,width=int(.13*K)); _arrowhead(d,s0+25,.42,col,.24)
+    return xform(im,1,120*t)
+def f_repeat(t):
+    bg,d=layer(); rr(d,-.58,-.58,.58,.58,.16,BL,BLD,.04); fg,e=layer()
+    for s0 in (20,200): e.arc([P(-.3,-.3),P(.3,.3)],s0+30,s0+150,fill=W,width=int(.1*K)); _arrowhead(e,s0+30,.3,W,.17)
+    bg.alpha_composite(xform(fg,1,180*t)); return bg
+def f_hook(t):
+    im,d=layer(); circle(d,.58,BL,BLD); dx=.04*sg(t); thick_line(d,[(.2,.28),(.2,-.08),(-.14+dx,-.08)],.1,W); poly(d,[(-.3+dx,-.08),(-.1+dx,-.24),(-.1+dx,.08)],W); return im
+def f_clockf(hdeg,mdeg=0):
+    def f(t):
+        im,d=layer(); circle(d,.58,(250,250,252,255),BL); ring(d,.58,BL,.06)
+        for i in range(12): a=math.radians(i*30); r=.46; q=.03 if i%3==0 else .02; ell(d,r*math.sin(a),-r*math.cos(a),q,q,(90,95,105,255))
+        for deg,L,w in ((hdeg,.25,.07),(mdeg,.38,.05)): a=math.radians(deg); thick_line(d,[(0,0),(L*math.sin(a),-L*math.cos(a))],w,(45,48,55,255))
+        a=2*math.pi*t; thick_line(d,[(0,0),(.4*math.sin(a),-.4*math.cos(a))],.025,(231,60,60,255)); ell(d,0,0,.05,.05,(231,60,60,255)); return xform(im,1+.03*sg(t))
+    return f
+def f_stopw(t):
+    im,d=layer(); rr(d,-.08,-.68,.08,-.48,.02,GR,GRD); circle(d,.5,(250,250,252,255),GRD)
+    for i in range(12): a=math.radians(i*30); ell(d,.4*math.sin(a),-.4*math.cos(a),.02,.02,(90,95,105,255))
+    d.arc([P(-.44,-.44),P(.44,.44)],-90,-90+360*t,fill=BL,width=int(.06*K)) if t>.01 else None
+    a=2*math.pi*t; thick_line(d,[(0,0),(.34*math.sin(a),-.34*math.cos(a))],.04,(231,60,60,255)); ell(d,0,0,.05,.05,(45,48,55,255)); return im
+def f_fullmoon(t):
+    im,d=layer(); ripple(d,t,(255,236,160,255)); circle(d,.5,(255,236,160,255),(230,200,100,255))
+    for x,y,rx,ry in [(-.2,-.15,.12,.1),(.2,.1,.15,.12),(-.05,.3,.08,.07),(.22,-.25,.07,.06)]: ell(d,x,y,rx,ry,(240,215,125,255))
+    star4(d,.62,-.55,.15*twinkle(t),(255,255,255,255)); star4(d,-.62,.5,.12*twinkle(t,.5),(255,255,255,255)); return xform(im,1+.03*sg(t))
+def f_newmoon(t):
+    im,d=layer(); circle(d,.5,(60,66,90,255),(40,44,65,255)); d.arc([P(-.46,-.46),P(.46,.46)],200,290,fill=(130,140,185,255),width=int(.04*K))
+    for x,y,rx,ry in [(-.2,-.15,.12,.1),(.2,.1,.15,.12),(-.05,.3,.08,.07)]: ell(d,x,y,rx,ry,(50,55,78,255))
+    star4(d,.62,-.55,.15*twinkle(t),W); star4(d,-.62,.5,.12*twinkle(t,.5),W); star4(d,-.55,-.5,.1*twinkle(t,.25),W); return im
+def f_sun(t):
+    rl,rd=layer()
+    for i in range(12): a=math.radians(i*30); thick_line(rd,[(.54*math.cos(a),.54*math.sin(a)),(.7*math.cos(a),.7*math.sin(a))],.09,(255,170,30,255))
+    im=xform(rl,1,30*t); d=ImageDraw.Draw(im); circle(d,.42,(255,200,40,255),(240,150,10,255)); ell(d,-.14,-.16,.12,.07,(255,235,150,255)); return xform(im,1+.04*sg(t))
+def _calbody(d,hd):
+    rr(d,-.55,-.5,.55,.6,.08,(250,250,252,255),(150,155,170,255),.04); rr(d,-.55,-.5,.55,-.2,.08,hd); rr(d,-.55,-.3,.55,-.2,0,hd)
+    for x in (-.3,.3): rr(d,x-.04,-.62,x+.04,-.38,.03,(90,95,105,255))
+def f_cal(t):
+    im,d=layer(); _calbody(d,(231,60,60,255)); act=int(t*8)%8
+    for r in range(2):
+        for c in range(4): x=-.37+c*.25; y=0+r*.3; rr(d,x-.09,y-.09,x+.09,y+.09,.03,BL if r*4+c==act else (215,220,232,255))
+    return xform(im,1,2*sg(t))
+def f_tear(t):
+    im,d=layer(); _calbody(d,(255,140,40,255)); txt(d,"17",0,.18,170,(45,48,55,255)); poly(d,[(.55,.35),(.55,.6),(.3,.6)],(215,220,232,255)); return xform(im,1,3*sg(t),0,-.02*abs(sg(t)))
+def f_radio(t):
+    im,d=layer(); circle(d,.55,(235,238,245,255),(150,155,170,255)); r=.28*(1+.12*sg(t)); ell(d,0,0,r,r,BL); ell(d,-.08,-.08,.07,.05,(150,165,255,255)); return im
+def f_broken(t):
+    im,d=layer(); poly(d,hpts(1),(235,50,75,255),(190,30,55,255)); w=.035+.03*max(0,sg(t)); thick_line(d,[(0,-.4),(-.08,-.15),(.08,.05),(-.06,.25),(0,.58)],w*2,(0,0,0,0)); return xform(im,1,4*sg(2*t))
+def f_sparkheart(t):
+    im,d=layer(); poly(d,hpts(.85,0,0,.05),(247,110,160,255),(210,70,120,255)); ell(d,-.22,-.17,.1,.06,(255,175,205,255))
+    for x,y,r,ph in [(.5,-.5,.22,0),(-.55,-.35,.17,.33),(.55,.3,.14,.66)]: star4(d,x,y,r*twinkle(t,ph)+.02,(255,220,70,255))
+    return xform(im,1+.05*sg(t))
+def f_heartarrow(t):
+    im,d=layer(); a=.05*sg(t); poly(d,hpts(1),(255,75,110,255),(200,40,70,255)); ell(d,-.26,-.22,.12,.07,(255,150,170,255))
+    ox,oy=a,-a; thick_line(d,[(-.55+ox,.55+oy),(.45+ox,-.45+oy)],.05,(120,80,45,255)); poly(d,[(.65+ox,-.65+oy),(.4+ox,-.5+oy),(.5+ox,-.4+oy)],(150,155,165,255))
+    poly(d,[(-.55+ox,.55+oy),(-.45+ox,.4+oy),(-.65+ox,.45+oy)],(255,255,255,255)); poly(d,[(-.55+ox,.55+oy),(-.4+ox,.45+oy),(-.45+ox,.65+oy)],(231,60,60,255)); return xform(im,1+.05*sg(2*t))
+def f_heartribbon(t):
+    im,d=layer(); y=(255,214,0,255); poly(d,hpts(1),(250,100,150,255),(205,60,110,255)); thick_line(d,[(-.48,.02),(.48,.02)],.09,y); thick_line(d,[(0,-.3),(0,.55)],.09,y)
+    poly(d,[(0,-.3),(-.28,-.5),(-.3,-.2)],y); poly(d,[(0,-.3),(.28,-.5),(.3,-.2)],y); ell(d,0,-.3,.07,.07,(230,170,0,255)); return xform(im,1+.05*sg(t),3*sg(t))
+def f_revolve(t):
+    im,d=layer(); a=2*math.pi*t; cols=[((255,105,160,255),(210,70,120,255)),((190,110,240,255),(140,70,190,255))]
+    for k in range(2): b=a+k*math.pi; poly(d,hpts(.5,0,.25*math.cos(b),.25*math.sin(b)),*cols[k],.02)
+    return im
+def f_popper(t):
+    cone,cd=layer(); poly(cd,[(0,.62),(-.3,-.12),(.3,-.12)],(255,193,7,255),(200,140,0,255),.03); ell(cd,0,-.12,.3,.09,(230,150,0,255)); thick_line(cd,[(-.14,.18),(.14,.02)],.04,(231,76,60,255)); thick_line(cd,[(-.08,.4),(.08,.3)],.04,(231,76,60,255))
+    im=xform(cone,1,-45); d=ImageDraw.Draw(im); cols=[(231,76,60),(52,170,246),(46,204,113),(255,193,7),(190,110,240),(255,105,160)]
+    for k in range(14):
+        f=(t+k/14)%1; ang=math.radians(-45+((k*53)%100-50)*.9); r=.15+.85*f; x=.1+r*math.cos(ang); y=-.1+r*math.sin(ang)+.5*f*f; s=.055*(1-.5*f); col=cols[k%6]+(255,)
+        (ell(d,x,y,s,s,col) if k%2 else rr(d,x-s,y-s,x+s,y+s,0,col))
+    return im
+def f_confball(t):
+    im,d=layer(); cc=[(255,193,7),(46,204,113),(52,170,246),(231,76,60),(255,255,255)]; ell(d,0,.1,.38,.38,(155,89,182,255),(115,60,150,255),.03)
+    for k,(x,y) in enumerate([(-.2,0),(.15,-.1),(0,.2),(-.18,.28),(.22,.2),(.05,-.2)]): ell(d,x,.1+y,.04,.04,cc[k%5]+(255,))
+    for k in range(10):
+        f=(t+k/10)%1; x=-.6+1.2*((k*37%10)/10)+.05*math.sin(2*math.pi*(t*2+k)); y=-.7+1.4*f; rr(d,x-.04,y-.025,x+.04,y+.025,.01,cc[k%5]+(255,))
+    return im
+def f_boom(t):
+    im,d=layer(); p1=[];p2=[]
+    for i in range(16): a=math.radians(i*22.5-90); r=.66 if i%2==0 else .34; p1.append((r*math.cos(a),r*math.sin(a))); p2.append((r*.55*math.cos(a),r*.55*math.sin(a)))
+    poly(d,p1,(255,110,30,255),(220,60,10,255),.03); poly(d,p2,(255,226,100,255)); return xform(im,1+.1*sg(2*t),45*t)
+def f_dizzy(t):
+    im,d=layer(); star5(d,0,0,.3,.13,(255,214,0,255),(230,150,0,255))
+    for k in range(3): a=2*math.pi*t+k*2*math.pi/3; star4(d,.5*math.cos(a),.5*math.sin(a),.2,(255,235,100,255))
+    return im
+def f_siren(t):
+    im,d=layer(); on=sg(t)>0; col=(231,60,60,255) if on else (255,140,140,255); rr(d,-.5,.2,.5,.42,.05,(70,75,90,255),(40,42,55,255))
+    d.pieslice([P(-.36,-.16),P(.36,.56)],180,360,fill=col,outline=(170,30,30,255),width=int(.03*K)); s=-1 if on else 1
+    for dy in (-.0,.14,-.14): thick_line(d,[(s*.5,-.1+dy-.1),(s*.7,-.1+dy-.18)],.05,(255,193,7,255))
+    return im
+def f_env(kind):
+    def f(t):
+        im,d=layer(); y={'in':0,'arrow':.2,'at':0}[kind]
+        if kind=='in': y+=-.7*(1-ease_out_back(t/.35)) if t<.35 else (-.7*ease_in((t-.85)/.15) if t>.85 else 0)
+        rr(d,-.55,-.3+y,.55,.3+y,.06,(250,250,252,255),(130,140,190,255),.04); thick_line(d,[(-.55,-.3+y),(0,.08+y),(.55,-.3+y)],.04,(130,140,190,255))
+        if kind=='arrow': b=.04*sg(t); poly(d,[(-.09,-.72+b),(.09,-.72+b),(.09,-.52+b),(.2,-.52+b),(0,-.35+b),(-.2,-.52+b),(-.09,-.52+b)],BL)
+        if kind=='at': ell(d,.34,.2,.2,.2,(231,60,60,255)); txt(d,"@",.34,.2,95,W)
+        return xform(im,1,3*sg(t)) if kind=='at' else im
+    return f
+def f_bbook(t):
+    im,d=layer(); rr(d,-.42,-.58,.42,.58,.05,(52,120,246,255),(30,80,200,255),.03); rr(d,-.42,-.58,-.3,.58,.03,(30,80,200,255)); rr(d,.38,-.5,.46,.5,.02,(250,250,245,255),(200,200,190,255),.02)
+    star4(d,.05,-.05,.2*(.8+.2*sg(t)),W); thick_line(d,[(-.1,.3),(.2,.3)],.04,(130,175,255,255)); return xform(im,1,4*sg(t),0,-.03*abs(sg(t)))
+def f_scroll(t):
+    h=.35+.2*ease_io(1-abs(2*t-1)); im,d=layer(); rr(d,-.4,-h,.4,h,.02,(250,240,215,255),(200,180,130,255),.03)
+    for y in (-h,h): rr(d,-.5,y-.1,.5,y+.1,.1,(235,215,170,255),(190,160,100,255),.03)
+    for k in range(4): y=-h+.2+k*(2*h-.4)/3; thick_line(d,[(-.28,y),(.28,y)],.03,(170,150,110,255))
+    return im
+def f_page(t):
+    im,d=layer(); poly(d,[(-.4,-.58),(.18,-.58),(.4,-.36),(.4,.58),(-.4,.58)],W,(150,155,170,255),.04); poly(d,[(.18,-.58),(.18,-.36),(.4,-.36)],(215,220,232,255),(150,155,170,255),.03)
+    fade=1-ease_in((t-.88)/.12) if t>.88 else 1
+    for k in range(5):
+        y=-.2+.15*k; p=ease_io((t-.05-k*.15)/.2)*fade
+        if p>0: thick_line(d,[(-.26,y),(-.26+.52*p*(1 if k<4 else .6),y)],.04,(130,135,150,255))
+    return im
+def f_tray(down):
+    def f(t):
+        im,d=layer(); y=(-.45+.5*ease_io(t)) if down else (.05-.5*ease_io(t))
+        if down: poly(d,[(-.08,y-.2),(.08,y-.2),(.08,y),(.2,y),(0,y+.2),(-.2,y),(-.08,y)],BL)
+        else: poly(d,[(-.08,y+.2),(.08,y+.2),(.08,y),(.2,y),(0,y-.2),(-.2,y),(-.08,y)],BL)
+        poly(d,[(-.55,.05),(-.55,.5),(.55,.5),(.55,.05),(.35,.05),(.3,.25),(-.3,.25),(-.35,.05)],GR,GRD,.03); return im
+    return f
+def f_folder(t):
+    im,d=layer(); poly(d,[(-.55,-.4),(-.2,-.4),(-.1,-.28),(.5,-.28),(.5,.5),(-.55,.5)],(222,165,40,255),(170,120,20,255),.03)
+    rr(d,-.4,-.35-.08*abs(sg(t)),.35,.15,.02,W,(200,200,210,255),.02); poly(d,[(-.45,-.05),(.6,-.05),(.5,.5),(-.55,.5)],(255,203,70,255),(200,150,30,255),.03); return im
+def _sword():
+    im,d=layer(); poly(d,[(0,-.68),(.07,-.5),(.07,.15),(-.07,.15),(-.07,-.5)],(215,222,232,255),GRD,.02); thick_line(d,[(0,-.5),(0,.1)],.02,(160,170,185,255))
+    rr(d,-.2,.15,.2,.22,.02,(255,193,7,255),(200,140,0,255),.02); rr(d,-.04,.22,.04,.45,.01,(150,95,50,255)); ell(d,0,.5,.06,.06,(255,193,7,255)); return im
+def f_swords(t):
+    a=3*sg(2*t); im=xform(_sword(),1,45+a); im.alpha_composite(xform(_sword(),1,-45-a)); d=ImageDraw.Draw(im); star4(d,0,-.05,.2*twinkle(t),W); return im
+def f_scales(t):
+    im,d=layer(); th=math.radians(12*sg(t)); pv=(0,-.42); rr(d,-.03,-.5,.03,.5,.01,(190,150,40,255)); rr(d,-.28,.45,.28,.53,.03,(190,150,40,255),(150,110,20,255),.02)
+    L=(-.5*math.cos(th),pv[1]-.5*math.sin(th)); R=(.5*math.cos(th),pv[1]+.5*math.sin(th)); thick_line(d,[L,R],.05,(255,193,7,255))
+    for (x,y) in (L,R):
+        thick_line(d,[(x,y),(x-.15,y+.3)],.015,(150,110,20,255)); thick_line(d,[(x,y),(x+.15,y+.3)],.015,(150,110,20,255)); poly(d,[(x-.22,y+.3),(x+.22,y+.3),(x+.14,y+.42),(x-.14,y+.42)],(255,193,7,255),(200,140,0,255),.02)
+    ell(d,0,-.5,.07,.07,(255,193,7,255)); return im
+def f_hourb(t):
+    drain=clamp(t/.78); ang=180*ease_io((t-.78)/.22) if t>.78 else 0; im,d=layer(); glass=(190,225,255,255); line=(120,150,200,255); sand=(255,120,170,255)
+    top=[P(-.3,-.4),P(.3,-.4),P(0,0)]; bot=[P(0,0),P(.3,.4),P(-.3,.4)]; d.polygon(top,fill=glass); d.polygon(bot,fill=glass); f=1-drain; ys=-.4+.4*(1-f)
+    if f>.01: w=-.75*ys; poly(d,[(-w,ys),(w,ys),(0,0)],sand)
+    yb=.4-.4*drain
+    if drain>.01: w=.75*yb; poly(d,[(-w,yb),(w,yb),(.3,.4),(-.3,.4)],sand)
+    d.line(top+[top[0]],fill=line,width=int(.03*K)); d.line(bot+[bot[0]],fill=line,width=int(.03*K))
+    for y in (-.48,.4): rr(d,-.38,y,.38,y+.08,.03,(120,70,170,255))
+    return xform(im,1,ang)
+def f_note(t):
+    im,d=layer(); ell(d,-.15,.35,.2,.15,BL); rr(d,.01,-.5,.09,.35,.02,BL); poly(d,[(.09,-.5),(.4,-.3),(.4,-.1),(.09,-.3)],BL); return xform(im,1,6*sg(t),0,-.05*abs(sg(t)))
+def f_notes(t):
+    im,d=layer(); b1=.06*max(0,sg(t)); b2=.06*max(0,-sg(t))
+    ell(d,-.3,.35-b1,.17,.13,BL); ell(d,.3,.25-b2,.17,.13,BL); rr(d,-.15,-.4-b1,-.07,.35-b1,.02,BL); rr(d,.45,-.5-b2,.53,.25-b2,.02,BL); poly(d,[(-.15,-.4-b1),(.53,-.5-b2),(.53,-.3-b2),(-.15,-.2-b1)],BL); return im
+def f_clover(t):
+    im,d=layer(); g=(46,180,90,255); gd=(30,130,60,255); thick_line(d,[(0,.1),(.08,.4),(.2,.62)],.07,gd)
+    for k in range(4): a=k*90; poly(d,hpts(.45,a,.27*math.sin(math.radians(a)),-.27*math.cos(math.radians(a))),g,gd,.02)
+    star4(d,.5,-.5,.18*twinkle(t),(255,255,255,255)); return xform(im,1,8*sg(t))
+def f_flag(t):
+    im,d=layer(); rr(d,-.56,-.68,-.48,.66,.02,GR,GRD,.02); dy=lambda x:.06*math.sin(2*math.pi*t-5*x)
+    for i in range(4):
+        for j in range(3):
+            x0=-.48+i*.25; x1=x0+.25; y0=-.62+j*.2; y1=y0+.2
+            poly(d,[(x0,y0+dy(x0)),(x1,y0+dy(x1)),(x1,y1+dy(x1)),(x0,y1+dy(x0))],(30,32,38,255) if (i+j)%2==0 else (250,250,252,255))
+    return im
+def f_rainbow(t):
+    im,d=layer(); cols=[(231,60,60),(255,140,40),(255,213,50),(46,204,113),(52,120,246),(155,89,182)]
+    for i,c in enumerate(cols):
+        p=ease_io((t-.05-i*.05)/.3) if t<.7 else 1-ease_io((t-.78-i*.03)/.15); r=.62-i*.085
+        if p>0: d.arc([P(-r,.3-r),P(r,.3+r)],180,180+180*clamp(p),fill=c+(255,),width=int(.1*K))
+    for x in (-.55,.55): ell(d,x,.38,.2,.12,W); ell(d,x*.85,.28,.14,.1,W)
+    return im
+def f_banknote(t):
+    im,d=layer(); gd=(60,140,80,255); rr(d,-.62,-.32,.62,.32,.05,(120,200,130,255),gd,.04); rr(d,-.54,-.24,.54,.24,.03,None,gd,.02); ell(d,0,0,.2,.2,(150,220,160,255),gd,.025); txt(d,"$",0,.01,70,(40,110,60,255))
+    for x in (-.4,.4): ell(d,x,0,.05,.05,gd)
+    return xform(im,1,6*sg(t),0,-.04*sg(2*t))
+def f_castle(t):
+    im,d=layer(); st=(190,195,208,255); so=(120,125,140,255); rd=(210,60,60,255)
+    rr(d,-.6,-.2,-.26,.5,0,st,so,.03); rr(d,.26,-.2,.6,.5,0,st,so,.03); rr(d,-.26,-.05,.26,.5,0,st,so,.03); rr(d,-.2,-.5,.2,.5,0,st,so,.03)
+    poly(d,[(-.66,-.2),(-.43,-.5),(-.2,-.2)],rd,(150,35,35,255),.02); poly(d,[(.2,-.2),(.43,-.5),(.66,-.2)],rd,(150,35,35,255),.02); poly(d,[(-.26,-.5),(0,-.82),(.26,-.5)],rd,(150,35,35,255),.02)
+    ell(d,0,.28,.1,.1,(70,50,35,255)); rr(d,-.1,.28,.1,.5,0,(70,50,35,255)); rr(d,-.05,-.35,.05,-.15,.04,(80,90,120,255))
+    for x in (-.43,.43): rr(d,x-.04,0,x+.04,.18,.04,(80,90,120,255))
+    thick_line(d,[(0,-.82),(0,-.98)],.025,so); w=.05*sg(t); poly(d,[(0,-.98),(.28,-.92+w),(0,-.82)],(231,76,60,255)); return xform(im,.85,3*sg(t))
+def f_bust(n):
+    def f(t):
+        im,d=layer(); col=(120,130,150,255); dk=(80,90,110,255)
+        def person(x,y,s,c): ell(d,x,y-.18*s,.17*s,.17*s,c); d.pieslice([P(x-.3*s,y),P(x+.3*s,y+.7*s)],180,360,fill=c)
+        if n==1: person(0,.1-.04*abs(sg(t)),1.4,col)
+        else: person(.22,-.02-.03*max(0,-sg(t)),1.0,dk); person(-.17,.15-.04*max(0,sg(t)),1.2,col)
+        return im
+    return f
