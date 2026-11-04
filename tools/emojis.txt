@@ -55,7 +55,7 @@
 🏰 european_castle
 ❓ black_question_mark_ornament
 🪙 coin
-👋 waving_hand_sign u
+👋 waving_hand_sign
 ☀ black_sun_with_rays
 🍀 four_leaf_clover
 ⭐ white_medium_star
@@ -106,10 +106,10 @@
 🔁 repeat_button
 ⬅ leftwards_black_arrow
 🔕 bell_with_cancellation_stroke
-👶 baby u
+👶 baby
 ⚰ coffin
 📡 satellite_antenna
-🤫 shushing_face u
+🤫 shushing_face
 🧂 salt_shaker
 1⃣ keycap_1
 2⃣ keycap_2
@@ -123,19 +123,19 @@
 🍽 fork_and_knife_with_plate
 ✨ sparkles
 🔗 link_symbol
-🚶 pedestrian u
-😴 sleeping_face u
+🚶 pedestrian
+😴 sleeping_face
 💔 broken_heart
 💥 collision_symbol
 ⬆ upwards_black_arrow
 ◀ black_left_pointing_triangle
 5⃣ keycap_5
 6⃣ keycap_6
-🐔 chicken u
+🐔 chicken
 💫 dizzy_symbol
 🧹 broom
 🔢 input_numbers
-🙏 folded_hands u
+🙏 folded_hands
 👹 japanese_ogre
 🛒 shopping_trolley
 🩺 stethoscope
@@ -143,10 +143,10 @@
 🔔 bell
 🩸 drop_of_blood
 🎒 school_satchel
-💪 flexed_biceps u
+💪 flexed_biceps
 🛍 shopping_bags
 🌈 rainbow
-🧛 vampire u
+🧛 vampire
 💘 heart_with_arrow
 🏘 house_buildings
 📄 page_facing_up
@@ -159,7 +159,7 @@
 💚 green_heart
 🔊 speaker_three_sound_waves
 🗡 dagger_knife
-🇮🇩 flag_indonesia u
+🇮🇩 flag_indonesia
 🛰 satellite
 ⛔ no_entry
 🎫 ticket
@@ -175,74 +175,74 @@
 🚨 police_car_light
 💝 heart_with_ribbon
 ➖ heavy_minus_sign
-🗣 speaking_head u
-🧑‍🌾 farmer u
+🗣 speaking_head
+🧑‍🌾 farmer
 📌 pushpin
 👢 womans_boots
 🔘 radio_button
 📘 blue_book
 📨 incoming_envelope
 ⛓ chains
-🛌 sleeping_accommodation u
+🛌 sleeping_accommodation
 🕒 clock_face_three_oclock
 🌕 full_moon_symbol
 🖤 black_heart
 🅰 a_button_blood_type
 🅱 b_button_blood_type
-👀 eyes u
+👀 eyes
 🔓 open_lock
 ⏪ rewind
 🔵 large_blue_circle
 🖥 desktop_computer
 🌑 new_moon_symbol
 🏢 office_building
-🍇 grapes u
+🍇 grapes
 📺 television
 🔪 hocho
 🐾 paw_prints
 🪪 identification_card
 🔑 key
-👨‍⚖ man_judge u
-👨‍💼 man_office_worker u
+👨‍⚖ man_judge
+👨‍💼 man_office_worker
 🪑 chair
 🔍 magnifying_glass_left
 ⭕ heavy_large_circle
-🍪 cookie u
-☕ hot_beverage u
+🍪 cookie
+☕ hot_beverage
 🌸 cherry_blossom
-🥂 clinking_glasses u
-🍼 baby_bottle u
-😊 smiling_face_smiling_eyes u
-😔 pensive_face u
-😡 pouting_face u
+🥂 clinking_glasses
+🍼 baby_bottle
+😊 smiling_face_smiling_eyes
+😔 pensive_face
+😡 pouting_face
 🧧 red_gift_envelope
 🌟 glowing_star
 🏠 house_building
-🍳 cooking u
+🍳 cooking
 ➕ heavy_plus_sign
 🏡 house_with_garden
 ♾ infinity
 🔫 pistol
-🐱 cat_face u
+🐱 cat_face
 📣 cheering_megaphone
 🧩 jigsaw_puzzle_piece
 🐛 bug
 💉 syringe
-👳 man_with_turban u
+👳 man_with_turban
 🟦 large_blue_square
 🟪 large_purple_square
 🟨 large_yellow_square
 🗂 card_index_dividers
 📭 open_mailbox_lowered_flag
-🙋 person_raising_hand u
-👨‍👩‍👦 family_man_woman_boy u
-👨‍👩‍👧‍👦 family_man_woman_girl_boy u
+🙋 person_raising_hand
+👨‍👩‍👦 family_man_woman_boy
+👨‍👩‍👧‍👦 family_man_woman_girl_boy
 🎬 clapper_board
 🕳 hole
 💸 money_with_wings
-☝ index_pointing_up u
+☝ index_pointing_up
 📩 envelope_with_arrow
-😰 anxious_face_with_sweat u
+😰 anxious_face_with_sweat
 🟣 large_purple_circle
 💾 floppy_disk
 🗄 file_cabinet
@@ -264,7 +264,7 @@
 💧 droplet
 🔦 flashlight
 📟 pager
-👣 footprints u
+👣 footprints
 🧢 billed_cap
 💌 love_letter
 🧤 gloves
@@ -274,37 +274,37 @@
 📧 e_mail_symbol
 🌂 closed_umbrella
 🎤 microphone
-👩‍💼 woman_office_worker u
-🧍 standing_person u
-🧍‍♂ standing_man u
+👩‍💼 woman_office_worker
+🧍 standing_person
+🧍‍♂ standing_man
 🔽 small_red_triangle_down
 ⌨ keyboard
-🥤 cup_with_straw u
-🍚 cooked_rice u
-🍞 bread u
-🥛 glass_of_milk u
-🍜 steaming_bowl u
-🍲 pot_of_food u
-🍛 curry_and_rice u
-🥩 cut_of_meat u
+🥤 cup_with_straw
+🍚 cooked_rice
+🍞 bread
+🥛 glass_of_milk
+🍜 steaming_bowl
+🍲 pot_of_food
+🍛 curry_and_rice
+🥩 cut_of_meat
 🌹 rose
-🍫 chocolate_bar u
+🍫 chocolate_bar
 🧸 teddy_bear
 🧰 toolbox
-😄 grinning_smiling_eyes u
-😐 neutral_face u
-😳 flushed_face u
-😅 grinning_face_sweat u
-🤔 thinking_face u
-😭 loudly_crying_face u
-😖 confounded_face u
+😄 grinning_smiling_eyes
+😐 neutral_face
+😳 flushed_face
+😅 grinning_face_sweat
+🤔 thinking_face
+😭 loudly_crying_face
+😖 confounded_face
 📉 chart_with_downwards_trend
 💖 sparkling_heart
-🧑 adult u
+🧑 adult
 📤 outbox_tray
 📶 antenna_with_bars
-👌 ok_hand_sign u
-🏃 runner u
+👌 ok_hand_sign
+🏃 runner
 🧺 basket
 🌉 bridge_at_night
 🕌 mosque
@@ -312,16 +312,16 @@
 🗼 tokyo_tower
 🛵 motor_scooter
 🏬 department_store
-🎂 birthday_cake u
-👨‍🍳 man_cooking u
+🎂 birthday_cake
+👨‍🍳 man_cooking
 ✈ airplane
 📰 newspaper
 📻 radio
 🖱 three_button_mouse
 🎶 multiple_musical_notes
 ❔ white_question_mark_ornament
-🕵 sleuth_or_spy u
-🤠 face_with_cowboy_hat u
+🕵 sleuth_or_spy
+🤠 face_with_cowboy_hat
 🕶 dark_sunglasses
 🔯 dotted_six_pointed_star
 🧿 nazar_amulet
@@ -332,12 +332,12 @@
 ✒ black_nib
 💨 dash_symbol
 🦺 safety_vest
-😇 smiling_face_with_halo u
+😇 smiling_face_with_halo
 ✝ latin_cross
 🦠 microbe
-🐴 horse_face u
+🐴 horse_face
 👻 ghost
-🧙 mage u
+🧙 mage
 💣 bomb
 🏴 waving_black_flag
 🟩 large_green_square
@@ -347,42 +347,42 @@
 🕐 clock_face_one_oclock
 🟠 large_orange_circle
 🌱 seedling
-👍 thumbs_up_sign u
+👍 thumbs_up_sign
 🏷 label
 🆕 squared_new
-🍎 red_apple u
-🍌 banana u
-🍉 watermelon u
-🍓 strawberry u
-🍒 cherries u
-🍍 pineapple u
-🥭 mango u
-🍑 peach u
-🍋 lemon u
-🥕 carrot u
-🌽 ear_of_maize u
-🍄 mushroom u
-🍕 slice_of_pizza u
-🍔 hamburger u
-🍩 doughnut u
-🍦 soft_ice_cream u
-🐶 dog_face u
-🐭 mouse_face u
-🐰 rabbit_face u
-🦊 fox_face u
-🐻 bear_face u
-🐼 panda_face u
-🐸 frog_face u
-🐵 monkey_face u
-🐧 penguin u
-🐢 turtle u
-🐙 octopus u
-🐠 tropical_fish u
-🦋 butterfly u
-🐝 honeybee u
-🌻 sunflower u
-🌵 cactus u
-⚽ soccer_ball u
-🎈 balloon u
-🎸 guitar u
-🚗 automobile u
+🍎 red_apple
+🍌 banana
+🍉 watermelon
+🍓 strawberry
+🍒 cherries
+🍍 pineapple
+🥭 mango
+🍑 peach
+🍋 lemon
+🥕 carrot
+🌽 ear_of_maize
+🍄 mushroom
+🍕 slice_of_pizza
+🍔 hamburger
+🍩 doughnut
+🍦 soft_ice_cream
+🐶 dog_face
+🐭 mouse_face
+🐰 rabbit_face
+🦊 fox_face
+🐻 bear_face
+🐼 panda_face
+🐸 frog_face
+🐵 monkey_face
+🐧 penguin
+🐢 turtle
+🐙 octopus
+🐠 tropical_fish
+🦋 butterfly
+🐝 honeybee
+🌻 sunflower
+🌵 cactus
+⚽ soccer_ball
+🎈 balloon
+🎸 guitar
+🚗 automobile
