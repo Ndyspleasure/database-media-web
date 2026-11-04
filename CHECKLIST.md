@@ -2,7 +2,7 @@
 
 File ini dibuat otomatis oleh `tools/update_checklist.py` — jangan edit manual.
 
-**Progres: 313 / 388 GIF selesai** (75 tersisa).
+**Progres: 388 / 388 GIF selesai** (0 tersisa).
 
 Legenda: ✅ GIF sudah dibuat · ⬜ belum.
 
@@ -10,26 +10,6 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 
 ## Berikutnya (20 teratas yang belum dikerjakan)
 
-- #249 🖼 `frame_with_picture`
-- #250 🏭 `factory`
-- #251 💻 `personal_computer`
-- #252 🏨 `hotel`
-- #253 🏥 `hospital`
-- #254 🛳 `passenger_ship`
-- #255 🚂 `steam_locomotive`
-- #256 🏔 `snow_capped_mountain`
-- #257 🎰 `slot_machine`
-- #259 🔬 `microscope`
-- #260 🧬 `dna_double_helix`
-- #261 🎥 `movie_camera`
-- #262 🖊 `ballpoint_pen`
-- #263 🕰 `mantelpiece_clock`
-- #265 🔦 `flashlight`
-- #266 📟 `pager`
-- #268 🧢 `billed_cap`
-- #269 💌 `love_letter`
-- #270 🧤 `gloves`
-- #271 🧾 `receipt`
 
 ## Semua emoji
 
@@ -283,51 +263,51 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 246 | 🟣 | `large_purple_circle` |  |
 | ✅ | 247 | 💾 | `floppy_disk` |  |
 | ✅ | 248 | 🗄 | `file_cabinet` |  |
-| ⬜ | 249 | 🖼 | `frame_with_picture` |  |
-| ⬜ | 250 | 🏭 | `factory` |  |
-| ⬜ | 251 | 💻 | `personal_computer` |  |
-| ⬜ | 252 | 🏨 | `hotel` |  |
-| ⬜ | 253 | 🏥 | `hospital` |  |
-| ⬜ | 254 | 🛳 | `passenger_ship` |  |
-| ⬜ | 255 | 🚂 | `steam_locomotive` |  |
-| ⬜ | 256 | 🏔 | `snow_capped_mountain` |  |
-| ⬜ | 257 | 🎰 | `slot_machine` |  |
+| ✅ | 249 | 🖼 | `frame_with_picture` |  |
+| ✅ | 250 | 🏭 | `factory` |  |
+| ✅ | 251 | 💻 | `personal_computer` |  |
+| ✅ | 252 | 🏨 | `hotel` |  |
+| ✅ | 253 | 🏥 | `hospital` |  |
+| ✅ | 254 | 🛳 | `passenger_ship` |  |
+| ✅ | 255 | 🚂 | `steam_locomotive` |  |
+| ✅ | 256 | 🏔 | `snow_capped_mountain` |  |
+| ✅ | 257 | 🎰 | `slot_machine` |  |
 | ✅ | 258 | 📷 | `camera` |  |
-| ⬜ | 259 | 🔬 | `microscope` |  |
-| ⬜ | 260 | 🧬 | `dna_double_helix` |  |
-| ⬜ | 261 | 🎥 | `movie_camera` |  |
-| ⬜ | 262 | 🖊 | `ballpoint_pen` |  |
-| ⬜ | 263 | 🕰 | `mantelpiece_clock` |  |
+| ✅ | 259 | 🔬 | `microscope` |  |
+| ✅ | 260 | 🧬 | `dna_double_helix` |  |
+| ✅ | 261 | 🎥 | `movie_camera` |  |
+| ✅ | 262 | 🖊 | `ballpoint_pen` |  |
+| ✅ | 263 | 🕰 | `mantelpiece_clock` |  |
 | ✅ | 264 | 💧 | `droplet` |  |
-| ⬜ | 265 | 🔦 | `flashlight` |  |
-| ⬜ | 266 | 📟 | `pager` |  |
+| ✅ | 265 | 🔦 | `flashlight` |  |
+| ✅ | 266 | 📟 | `pager` |  |
 | ✅ | 267 | 👣 | `footprints` |  |
-| ⬜ | 268 | 🧢 | `billed_cap` |  |
-| ⬜ | 269 | 💌 | `love_letter` |  |
-| ⬜ | 270 | 🧤 | `gloves` |  |
-| ⬜ | 271 | 🧾 | `receipt` |  |
-| ⬜ | 272 | 🚬 | `smoking_symbol` |  |
-| ⬜ | 273 | 🪟 | `window` |  |
+| ✅ | 268 | 🧢 | `billed_cap` |  |
+| ✅ | 269 | 💌 | `love_letter` |  |
+| ✅ | 270 | 🧤 | `gloves` |  |
+| ✅ | 271 | 🧾 | `receipt` |  |
+| ✅ | 272 | 🚬 | `smoking_symbol` |  |
+| ✅ | 273 | 🪟 | `window` |  |
 | ✅ | 274 | 📧 | `e_mail_symbol` |  |
-| ⬜ | 275 | 🌂 | `closed_umbrella` |  |
+| ✅ | 275 | 🌂 | `closed_umbrella` |  |
 | ✅ | 276 | 🎤 | `microphone` |  |
 | ✅ | 277 | 👩‍💼 | `woman_office_worker` |  |
 | ✅ | 278 | 🧍 | `standing_person` |  |
 | ✅ | 279 | 🧍‍♂ | `standing_man` |  |
-| ⬜ | 280 | 🔽 | `small_red_triangle_down` |  |
-| ⬜ | 281 | ⌨ | `keyboard` |  |
-| ⬜ | 282 | 🥤 | `cup_with_straw` |  |
-| ⬜ | 283 | 🍚 | `cooked_rice` |  |
-| ⬜ | 284 | 🍞 | `bread` |  |
-| ⬜ | 285 | 🥛 | `glass_of_milk` |  |
-| ⬜ | 286 | 🍜 | `steaming_bowl` |  |
-| ⬜ | 287 | 🍲 | `pot_of_food` |  |
-| ⬜ | 288 | 🍛 | `curry_and_rice` |  |
-| ⬜ | 289 | 🥩 | `cut_of_meat` |  |
+| ✅ | 280 | 🔽 | `small_red_triangle_down` |  |
+| ✅ | 281 | ⌨ | `keyboard` |  |
+| ✅ | 282 | 🥤 | `cup_with_straw` |  |
+| ✅ | 283 | 🍚 | `cooked_rice` |  |
+| ✅ | 284 | 🍞 | `bread` |  |
+| ✅ | 285 | 🥛 | `glass_of_milk` |  |
+| ✅ | 286 | 🍜 | `steaming_bowl` |  |
+| ✅ | 287 | 🍲 | `pot_of_food` |  |
+| ✅ | 288 | 🍛 | `curry_and_rice` |  |
+| ✅ | 289 | 🥩 | `cut_of_meat` |  |
 | ✅ | 290 | 🌹 | `rose` |  |
-| ⬜ | 291 | 🍫 | `chocolate_bar` |  |
-| ⬜ | 292 | 🧸 | `teddy_bear` |  |
-| ⬜ | 293 | 🧰 | `toolbox` |  |
+| ✅ | 291 | 🍫 | `chocolate_bar` |  |
+| ✅ | 292 | 🧸 | `teddy_bear` |  |
+| ✅ | 293 | 🧰 | `toolbox` |  |
 | ✅ | 294 | 😄 | `grinning_smiling_eyes` |  |
 | ✅ | 295 | 😐 | `neutral_face` |  |
 | ✅ | 296 | 😳 | `flushed_face` |  |
@@ -339,65 +319,65 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 302 | 💖 | `sparkling_heart` |  |
 | ✅ | 303 | 🧑 | `adult` |  |
 | ✅ | 304 | 📤 | `outbox_tray` |  |
-| ⬜ | 305 | 📶 | `antenna_with_bars` |  |
+| ✅ | 305 | 📶 | `antenna_with_bars` |  |
 | ✅ | 306 | 👌 | `ok_hand_sign` |  |
 | ✅ | 307 | 🏃 | `runner` |  |
-| ⬜ | 308 | 🧺 | `basket` |  |
-| ⬜ | 309 | 🌉 | `bridge_at_night` |  |
-| ⬜ | 310 | 🕌 | `mosque` |  |
-| ⬜ | 311 | ⛵ | `sailboat` |  |
-| ⬜ | 312 | 🗼 | `tokyo_tower` |  |
-| ⬜ | 313 | 🛵 | `motor_scooter` |  |
-| ⬜ | 314 | 🏬 | `department_store` |  |
+| ✅ | 308 | 🧺 | `basket` |  |
+| ✅ | 309 | 🌉 | `bridge_at_night` |  |
+| ✅ | 310 | 🕌 | `mosque` |  |
+| ✅ | 311 | ⛵ | `sailboat` |  |
+| ✅ | 312 | 🗼 | `tokyo_tower` |  |
+| ✅ | 313 | 🛵 | `motor_scooter` |  |
+| ✅ | 314 | 🏬 | `department_store` |  |
 | ✅ | 315 | 🎂 | `birthday_cake` |  |
 | ✅ | 316 | 👨‍🍳 | `man_cooking` |  |
-| ⬜ | 317 | ✈ | `airplane` |  |
-| ⬜ | 318 | 📰 | `newspaper` |  |
-| ⬜ | 319 | 📻 | `radio` |  |
-| ⬜ | 320 | 🖱 | `three_button_mouse` |  |
+| ✅ | 317 | ✈ | `airplane` |  |
+| ✅ | 318 | 📰 | `newspaper` |  |
+| ✅ | 319 | 📻 | `radio` |  |
+| ✅ | 320 | 🖱 | `three_button_mouse` |  |
 | ✅ | 321 | 🎶 | `multiple_musical_notes` |  |
 | ✅ | 322 | ❔ | `white_question_mark_ornament` |  |
 | ✅ | 323 | 🕵 | `sleuth_or_spy` |  |
 | ✅ | 324 | 🤠 | `face_with_cowboy_hat` |  |
 | ✅ | 325 | 🕶 | `dark_sunglasses` |  |
 | ✅ | 326 | 🔯 | `dotted_six_pointed_star` |  |
-| ⬜ | 327 | 🧿 | `nazar_amulet` |  |
-| ⬜ | 328 | 🧱 | `brick` |  |
-| ⬜ | 329 | ⛪ | `church` |  |
-| ⬜ | 330 | 🪤 | `mouse_trap` |  |
-| ⬜ | 331 | 🌀 | `cyclone` |  |
-| ⬜ | 332 | ✒ | `black_nib` |  |
-| ⬜ | 333 | 💨 | `dash_symbol` |  |
-| ⬜ | 334 | 🦺 | `safety_vest` |  |
+| ✅ | 327 | 🧿 | `nazar_amulet` |  |
+| ✅ | 328 | 🧱 | `brick` |  |
+| ✅ | 329 | ⛪ | `church` |  |
+| ✅ | 330 | 🪤 | `mouse_trap` |  |
+| ✅ | 331 | 🌀 | `cyclone` |  |
+| ✅ | 332 | ✒ | `black_nib` |  |
+| ✅ | 333 | 💨 | `dash_symbol` |  |
+| ✅ | 334 | 🦺 | `safety_vest` |  |
 | ✅ | 335 | 😇 | `smiling_face_with_halo` |  |
-| ⬜ | 336 | ✝ | `latin_cross` |  |
-| ⬜ | 337 | 🦠 | `microbe` |  |
-| ⬜ | 338 | 🐴 | `horse_face` |  |
+| ✅ | 336 | ✝ | `latin_cross` |  |
+| ✅ | 337 | 🦠 | `microbe` |  |
+| ✅ | 338 | 🐴 | `horse_face` |  |
 | ✅ | 339 | 👻 | `ghost` |  |
 | ✅ | 340 | 🧙 | `mage` |  |
 | ✅ | 341 | 💣 | `bomb` |  |
-| ⬜ | 342 | 🏴 | `waving_black_flag` |  |
+| ✅ | 342 | 🏴 | `waving_black_flag` |  |
 | ✅ | 343 | 🟩 | `large_green_square` |  |
-| ⬜ | 344 | 🕊 | `dove_of_peace` |  |
-| ⬜ | 345 | ☣ | `biohazard_sign` |  |
-| ⬜ | 346 | 🕹 | `joystick` |  |
+| ✅ | 344 | 🕊 | `dove_of_peace` |  |
+| ✅ | 345 | ☣ | `biohazard_sign` |  |
+| ✅ | 346 | 🕹 | `joystick` |  |
 | ✅ | 347 | 🕐 | `clock_face_one_oclock` |  |
 | ✅ | 348 | 🟠 | `large_orange_circle` |  |
 | ✅ | 349 | 🌱 | `seedling` |  |
 | ✅ | 350 | 👍 | `thumbs_up_sign` |  |
-| ⬜ | 351 | 🏷 | `label` |  |
+| ✅ | 351 | 🏷 | `label` |  |
 | ✅ | 352 | 🆕 | `squared_new` |  |
 | ✅ | 353 | 🍎 | `red_apple` |  |
 | ✅ | 354 | 🍌 | `banana` |  |
 | ✅ | 355 | 🍉 | `watermelon` |  |
 | ✅ | 356 | 🍓 | `strawberry` |  |
 | ✅ | 357 | 🍒 | `cherries` |  |
-| ⬜ | 358 | 🍍 | `pineapple` |  |
-| ⬜ | 359 | 🥭 | `mango` |  |
-| ⬜ | 360 | 🍑 | `peach` |  |
+| ✅ | 358 | 🍍 | `pineapple` |  |
+| ✅ | 359 | 🥭 | `mango` |  |
+| ✅ | 360 | 🍑 | `peach` |  |
 | ✅ | 361 | 🍋 | `lemon` |  |
 | ✅ | 362 | 🥕 | `carrot` |  |
-| ⬜ | 363 | 🌽 | `ear_of_maize` |  |
+| ✅ | 363 | 🌽 | `ear_of_maize` |  |
 | ✅ | 364 | 🍄 | `mushroom` |  |
 | ✅ | 365 | 🍕 | `slice_of_pizza` |  |
 | ✅ | 366 | 🍔 | `hamburger` |  |
@@ -412,14 +392,14 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 375 | 🐸 | `frog_face` |  |
 | ✅ | 376 | 🐵 | `monkey_face` |  |
 | ✅ | 377 | 🐧 | `penguin` |  |
-| ⬜ | 378 | 🐢 | `turtle` |  |
-| ⬜ | 379 | 🐙 | `octopus` |  |
+| ✅ | 378 | 🐢 | `turtle` |  |
+| ✅ | 379 | 🐙 | `octopus` |  |
 | ✅ | 380 | 🐠 | `tropical_fish` |  |
 | ✅ | 381 | 🦋 | `butterfly` |  |
-| ⬜ | 382 | 🐝 | `honeybee` |  |
-| ⬜ | 383 | 🌻 | `sunflower` |  |
-| ⬜ | 384 | 🌵 | `cactus` |  |
+| ✅ | 382 | 🐝 | `honeybee` |  |
+| ✅ | 383 | 🌻 | `sunflower` |  |
+| ✅ | 384 | 🌵 | `cactus` |  |
 | ✅ | 385 | ⚽ | `soccer_ball` |  |
 | ✅ | 386 | 🎈 | `balloon` |  |
-| ⬜ | 387 | 🎸 | `guitar` |  |
-| ⬜ | 388 | 🚗 | `automobile` |  |
+| ✅ | 387 | 🎸 | `guitar` |  |
+| ✅ | 388 | 🚗 | `automobile` |  |
