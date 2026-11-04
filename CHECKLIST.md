@@ -2,7 +2,7 @@
 
 File ini dibuat otomatis oleh `tools/update_checklist.py` — jangan edit manual.
 
-**Progres: 388 / 388 GIF selesai** (0 tersisa).
+**Progres: 399 / 399 GIF selesai** (0 tersisa).
 
 Legenda: ✅ GIF sudah dibuat · ⬜ belum.
 
@@ -403,3 +403,14 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 386 | 🎈 | `balloon` |  |
 | ✅ | 387 | 🎸 | `guitar` |  |
 | ✅ | 388 | 🚗 | `automobile` |  |
+| ✅ | 389 | 🚩 | `triangular_flag_on_post` |  |
+| ✅ | 390 | 😶 | `face_without_mouth` |  |
+| ✅ | 391 | 📸 | `camera_with_flash` |  |
+| ✅ | 392 | 🎨 | `artist_palette` |  |
+| ✅ | 393 | 🗑 | `wastebasket` |  |
+| ✅ | 394 | 🤬 | `serious_face_symbols_mouth` |  |
+| ✅ | 395 | ✍ | `writing_hand` |  |
+| ✅ | 396 | ▫ | `white_small_square` |  |
+| ✅ | 397 | 👾 | `alien_monster` |  |
+| ✅ | 398 | 🐞 | `lady_beetle` |  |
+| ✅ | 399 | 👇 | `backhand_index_pointing_down` |  |

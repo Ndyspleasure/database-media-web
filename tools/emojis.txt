@@ -386,3 +386,14 @@
 🎈 balloon
 🎸 guitar
 🚗 automobile
+🚩 triangular_flag_on_post
+😶 face_without_mouth
+📸 camera_with_flash
+🎨 artist_palette
+🗑 wastebasket
+🤬 serious_face_symbols_mouth
+✍ writing_hand
+▫ white_small_square
+👾 alien_monster
+🐞 lady_beetle
+👇 backhand_index_pointing_down

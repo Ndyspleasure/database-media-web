@@ -135,3 +135,5 @@ MAP["waving_hand_sign"]=_M(m_wave,{"amp":28},g=False); MAP["broom"]=_M(m_wave,{"
 MAP["cyclone"]=_M(m_spin,{"deg":360,"eased":False},g=False); MAP["recycling_symbol"]=_M(m_spin,{"deg":120}); MAP["anticlockwise_arrows_button"]=_M(m_spin,{"deg":360},g=False); MAP["dotted_six_pointed_star"]=_M(m_spin,{"deg":60}); MAP["ring_buoy"]=_M(m_spin,{"deg":90})
 MAP["telephone_receiver"]=_M(m_alert,{"amp":14,"n":7},g=False); MAP["octagonal_sign"]=_M(m_alert); MAP["no_entry"]=_M(m_stamp); MAP["no_entry_sign"]=_M(m_stamp)
 MAP["small_red_triangle_down"]=_M(m_hop,{"h":-.12},g=False)
+
+MAP["white_small_square"]=_M(m_spiny)

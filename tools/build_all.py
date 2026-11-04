@@ -4,7 +4,7 @@ D=os.path.dirname(os.path.abspath(__file__))
 exec(open(D+"/common.py").read()); exec(open(D+"/icons.py").read()); from PIL import ImageChops; exec(open(D+"/motion.py").read())
 _KEEP={k:globals()[k] for k in ('W','BL','BLD','GR','GRD','SK','SKD','DK','RE')}
 ALL=[]
-for i in range(1,8):
+for i in range(1,9):
     wtxt=open(f"{D}/wave{i}.py").read().split("for n,fn in jobs")[0].replace('exec(open(D+"/common.py").read()); exec(open(D+"/icons.py").read())','')
     exec(wtxt); ALL+=jobs
 globals().update(_KEEP)
