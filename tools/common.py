@@ -1,7 +1,7 @@
 import math, os
 from PIL import Image, ImageDraw
 OUTDIR=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','gifs'); os.makedirs(OUTDIR,exist_ok=True)
-S=512; OUT=128; N=30; K=200
+S=512; OUT=128; N=36; K=200
 def ease_out_back(t):
     c1=1.70158; c3=c1+1; t=max(0,min(1,t)); return 1+c3*(t-1)**3+c1*(t-1)**2
 def ease_io(t):
@@ -76,7 +76,7 @@ def f_hour(t):
     for y in (-.48,.4): d.rounded_rectangle([P(-.38,y),P(.38,y+.08)],radius=int(.03*K),fill=wood)
     return xform(im,1,ang)
 
-def save(name,fn,n=N,dur=45):
+def save(name,fn,n=N,dur=40):
     frames=[]
     for i in range(n):
         im=fn(i/n).resize((OUT,OUT),Image.LANCZOS)

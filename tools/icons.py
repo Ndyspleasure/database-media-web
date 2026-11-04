@@ -1281,8 +1281,10 @@ def f_moviecam(t):
     for x,r in((-.28,.24),(.08,.2)): ell(d,x,-.3,r,r,(80,85,100,255),(35,38,50,255),.03); spokes(d,x,-.3,r*.8,120*t,3,GR,.025); ell(d,x,-.3,.04,.04,GR)
     ell(d,-.3,.2,.06,.06,RE if sg(2*t)>0 else (120,30,30,255)); return im
 def f_pen(t):
-    l,e=layer(); rr(e,-.07,-.55,.07,.3,.04,BL,BLD,.02); poly(e,[(-.07,.3),(.07,.3),(0,.52)],GRD); rr(e,.07,-.5,.1,-.1,.01,GR); im=xform(l,1,35)
-    d=ImageDraw.Draw(im); p=ease_io(clamp(t/.8)); thick_line(d,partial([(-.55,.52),(-.4,.42),(-.28,.55),(-.12,.42),(0,.55),(.15,.45)],p),.03,BLD); return im
+    pts=[(-.55,.52),(-.4,.38),(-.28,.55),(-.12,.38),(0,.55),(.15,.4),(.3,.55),(.45,.4)]; p=ease_io(clamp(t/.8)); q=partial(pts,max(p,.001))
+    l,e=layer(); rr(e,-.07,-.55,.07,.3,.04,BL,BLD,.02); poly(e,[(-.07,.3),(.07,.3),(0,.52)],GRD); rr(e,.07,-.5,.1,-.1,.01,GR)
+    th=math.radians(35); tx,ty=.52*math.sin(th),.52*math.cos(th); pen=xform(l,1,35,q[-1][0]-tx,q[-1][1]-ty)
+    im,d=layer(); thick_line(d,q,.04,BLD); im.alpha_composite(pen); return im
 def f_mantel(t):
     im,d=layer(); rr(d,-.35,-.62,.35,.58,.2,WD,BRD,.03); circle_=None; ell(d,0,-.28,.23,.23,W,BRD,.03)
     for k in range(4): a=math.radians(k*90); ell(d,.17*math.sin(a),-.28-.17*math.cos(a),.02,.02,GRD)
