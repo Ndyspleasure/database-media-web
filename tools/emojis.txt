@@ -1,0 +1,388 @@
+⚠ warning_sign
+✅ check
+❌ cross_mark
+📊 bar_chart
+⏳ hourglass_with_flowing_sand
+🏆 trophy
+🛡 shield
+🤖 robot_face
+🛑 octagonal_sign
+🔒 lock
+▶ black_right_pointing_triangle
+ℹ information_source
+📖 open_book
+🤝 handshake
+⚔ crossed_swords
+🗳 ballot_box_with_ballot
+👥 busts_in_silhouette
+⚖ scales
+🎁 wrapped_present
+🎭 performing_arts
+🔄 anticlockwise_arrows_button
+🔥 fire
+🔤 input_latin_letters
+💬 speech_balloon
+🟢 large_green_circle
+👑 crown
+❤ heavy_black_heart
+🎯 direct_hit
+📢 loudspeaker
+🎉 party_popper
+🌙 crescent_moon
+🎮 video_game
+💡 electric_light_bulb
+🐺 wolf_face
+💀 skull
+📚 books
+🌐 globe_with_meridians
+🚫 no_entry_sign
+🗝 old_key
+🔧 wrench
+⏰ alarm_clock
+💰 money_bag
+⚡ high_voltage_sign
+🔴 large_red_circle
+🧠 brain
+🎓 graduation_cap
+⌛ hourglass
+💗 growing_heart
+🎲 game_die
+🌅 sunrise
+📝 memo
+🥟 dumpling
+📈 chart_with_upwards_trend
+♻ recycling_symbol
+🏰 european_castle
+❓ black_question_mark_ornament
+🪙 coin
+👋 waving_hand_sign u
+☀ black_sun_with_rays
+🍀 four_leaf_clover
+⭐ white_medium_star
+🏁 chequered_flag
+🌇 sunset_over_buildings
+🎵 musical_note
+🥈 second_place_medal
+🥉 third_place_medal
+📍 round_pushpin
+👤 bust_in_silhouette
+📦 package
+⚙ gear
+🥇 first_place_medal
+⚪ medium_white_circle
+🧳 luggage
+🚚 delivery_truck
+🏙 cityscape
+🛠 hammer_and_wrench
+🔷 large_blue_diamond
+🟡 large_yellow_circle
+🧪 test_tube
+🔮 crystal_ball
+🏅 sports_medal
+⏱ stopwatch
+🚪 door
+🔨 hammer
+🎧 headphone
+📱 mobile_phone
+💼 briefcase
+📋 clipboard
+🏹 bow_and_arrow
+📬 open_mailbox_raised_flag
+⏭ next_track_button
+💍 ring
+🎴 flower_playing_cards
+🏛 classical_building
+🕯 candle
+🔎 magnifying_glass_right
+↩ leftwards_arrow_with_hook
+🃏 playing_card_black_joker
+🛟 ring_buoy
+🏦 bank
+📂 open_file_folder
+☠ skull_and_crossbones
+🎙 studio_microphone
+🚀 rocket
+📥 inbox_tray
+🔁 repeat_button
+⬅ leftwards_black_arrow
+🔕 bell_with_cancellation_stroke
+👶 baby u
+⚰ coffin
+📡 satellite_antenna
+🤫 shushing_face u
+🧂 salt_shaker
+1⃣ keycap_1
+2⃣ keycap_2
+3⃣ keycap_3
+4⃣ keycap_4
+🎟 admission_tickets
+➡ black_rightwards_arrow
+⬜ white_large_square
+📞 telephone_receiver
+⏩ fast_forward
+🍽 fork_and_knife_with_plate
+✨ sparkles
+🔗 link_symbol
+🚶 pedestrian u
+😴 sleeping_face u
+💔 broken_heart
+💥 collision_symbol
+⬆ upwards_black_arrow
+◀ black_left_pointing_triangle
+5⃣ keycap_5
+6⃣ keycap_6
+🐔 chicken u
+💫 dizzy_symbol
+🧹 broom
+🔢 input_numbers
+🙏 folded_hands u
+👹 japanese_ogre
+🛒 shopping_trolley
+🩺 stethoscope
+📜 scroll
+🔔 bell
+🩸 drop_of_blood
+🎒 school_satchel
+💪 flexed_biceps u
+🛍 shopping_bags
+🌈 rainbow
+🧛 vampire u
+💘 heart_with_arrow
+🏘 house_buildings
+📄 page_facing_up
+7⃣ keycap_7
+8⃣ keycap_8
+⚫ medium_black_circle
+🧵 spool_of_thread
+💎 gem_stone
+⏸ double_vertical_bar
+💚 green_heart
+🔊 speaker_three_sound_waves
+🗡 dagger_knife
+🇮🇩 flag_indonesia u
+🛰 satellite
+⛔ no_entry
+🎫 ticket
+📅 calendar
+📆 tear_off_calendar
+🏪 convenience_store
+🆔 squared_id
+🎊 confetti_ball
+💞 revolving_hearts
+🎣 fishing_pole_and_fish
+💵 banknote_with_dollar_sign
+🧭 compass
+🚨 police_car_light
+💝 heart_with_ribbon
+➖ heavy_minus_sign
+🗣 speaking_head u
+🧑‍🌾 farmer u
+📌 pushpin
+👢 womans_boots
+🔘 radio_button
+📘 blue_book
+📨 incoming_envelope
+⛓ chains
+🛌 sleeping_accommodation u
+🕒 clock_face_three_oclock
+🌕 full_moon_symbol
+🖤 black_heart
+🅰 a_button_blood_type
+🅱 b_button_blood_type
+👀 eyes u
+🔓 open_lock
+⏪ rewind
+🔵 large_blue_circle
+🖥 desktop_computer
+🌑 new_moon_symbol
+🏢 office_building
+🍇 grapes u
+📺 television
+🔪 hocho
+🐾 paw_prints
+🪪 identification_card
+🔑 key
+👨‍⚖ man_judge u
+👨‍💼 man_office_worker u
+🪑 chair
+🔍 magnifying_glass_left
+⭕ heavy_large_circle
+🍪 cookie u
+☕ hot_beverage u
+🌸 cherry_blossom
+🥂 clinking_glasses u
+🍼 baby_bottle u
+😊 smiling_face_smiling_eyes u
+😔 pensive_face u
+😡 pouting_face u
+🧧 red_gift_envelope
+🌟 glowing_star
+🏠 house_building
+🍳 cooking u
+➕ heavy_plus_sign
+🏡 house_with_garden
+♾ infinity
+🔫 pistol
+🐱 cat_face u
+📣 cheering_megaphone
+🧩 jigsaw_puzzle_piece
+🐛 bug
+💉 syringe
+👳 man_with_turban u
+🟦 large_blue_square
+🟪 large_purple_square
+🟨 large_yellow_square
+🗂 card_index_dividers
+📭 open_mailbox_lowered_flag
+🙋 person_raising_hand u
+👨‍👩‍👦 family_man_woman_boy u
+👨‍👩‍👧‍👦 family_man_woman_girl_boy u
+🎬 clapper_board
+🕳 hole
+💸 money_with_wings
+☝ index_pointing_up u
+📩 envelope_with_arrow
+😰 anxious_face_with_sweat u
+🟣 large_purple_circle
+💾 floppy_disk
+🗄 file_cabinet
+🖼 frame_with_picture
+🏭 factory
+💻 personal_computer
+🏨 hotel
+🏥 hospital
+🛳 passenger_ship
+🚂 steam_locomotive
+🏔 snow_capped_mountain
+🎰 slot_machine
+📷 camera
+🔬 microscope
+🧬 dna_double_helix
+🎥 movie_camera
+🖊 ballpoint_pen
+🕰 mantelpiece_clock
+💧 droplet
+🔦 flashlight
+📟 pager
+👣 footprints u
+🧢 billed_cap
+💌 love_letter
+🧤 gloves
+🧾 receipt
+🚬 smoking_symbol
+🪟 window
+📧 e_mail_symbol
+🌂 closed_umbrella
+🎤 microphone
+👩‍💼 woman_office_worker u
+🧍 standing_person u
+🧍‍♂ standing_man u
+🔽 small_red_triangle_down
+⌨ keyboard
+🥤 cup_with_straw u
+🍚 cooked_rice u
+🍞 bread u
+🥛 glass_of_milk u
+🍜 steaming_bowl u
+🍲 pot_of_food u
+🍛 curry_and_rice u
+🥩 cut_of_meat u
+🌹 rose
+🍫 chocolate_bar u
+🧸 teddy_bear
+🧰 toolbox
+😄 grinning_smiling_eyes u
+😐 neutral_face u
+😳 flushed_face u
+😅 grinning_face_sweat u
+🤔 thinking_face u
+😭 loudly_crying_face u
+😖 confounded_face u
+📉 chart_with_downwards_trend
+💖 sparkling_heart
+🧑 adult u
+📤 outbox_tray
+📶 antenna_with_bars
+👌 ok_hand_sign u
+🏃 runner u
+🧺 basket
+🌉 bridge_at_night
+🕌 mosque
+⛵ sailboat
+🗼 tokyo_tower
+🛵 motor_scooter
+🏬 department_store
+🎂 birthday_cake u
+👨‍🍳 man_cooking u
+✈ airplane
+📰 newspaper
+📻 radio
+🖱 three_button_mouse
+🎶 multiple_musical_notes
+❔ white_question_mark_ornament
+🕵 sleuth_or_spy u
+🤠 face_with_cowboy_hat u
+🕶 dark_sunglasses
+🔯 dotted_six_pointed_star
+🧿 nazar_amulet
+🧱 brick
+⛪ church
+🪤 mouse_trap
+🌀 cyclone
+✒ black_nib
+💨 dash_symbol
+🦺 safety_vest
+😇 smiling_face_with_halo u
+✝ latin_cross
+🦠 microbe
+🐴 horse_face u
+👻 ghost
+🧙 mage u
+💣 bomb
+🏴 waving_black_flag
+🟩 large_green_square
+🕊 dove_of_peace
+☣ biohazard_sign
+🕹 joystick
+🕐 clock_face_one_oclock
+🟠 large_orange_circle
+🌱 seedling
+👍 thumbs_up_sign u
+🏷 label
+🆕 squared_new
+🍎 red_apple u
+🍌 banana u
+🍉 watermelon u
+🍓 strawberry u
+🍒 cherries u
+🍍 pineapple u
+🥭 mango u
+🍑 peach u
+🍋 lemon u
+🥕 carrot u
+🌽 ear_of_maize u
+🍄 mushroom u
+🍕 slice_of_pizza u
+🍔 hamburger u
+🍩 doughnut u
+🍦 soft_ice_cream u
+🐶 dog_face u
+🐭 mouse_face u
+🐰 rabbit_face u
+🦊 fox_face u
+🐻 bear_face u
+🐼 panda_face u
+🐸 frog_face u
+🐵 monkey_face u
+🐧 penguin u
+🐢 turtle u
+🐙 octopus u
+🐠 tropical_fish u
+🦋 butterfly u
+🐝 honeybee u
+🌻 sunflower u
+🌵 cactus u
+⚽ soccer_ball u
+🎈 balloon u
+🎸 guitar u
+🚗 automobile u
