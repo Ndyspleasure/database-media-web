@@ -2,7 +2,7 @@
 
 File ini dibuat otomatis oleh `tools/update_checklist.py` — jangan edit manual.
 
-**Progres: 56 / 289 GIF selesai** (dari 388 emoji; 99 ditandai 🔤 *unicode saja* karena wajah/orang/hewan/makanan kurang cocok digambar dengan gaya ini).
+**Progres: 98 / 289 GIF selesai** (dari 388 emoji; 99 ditandai 🔤 *unicode saja* karena wajah/orang/hewan/makanan kurang cocok digambar dengan gaya ini).
 
 Legenda: ✅ GIF sudah dibuat · ⬜ belum · 🔤 disarankan tetap unicode bawaan Discord.
 
@@ -17,19 +17,19 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 - #18 ⚖ `scales`
 - #20 🎭 `performing_arts`
 - #23 🔤 `input_latin_letters`
-- #29 📢 `loudspeaker`
 - #30 🎉 `party_popper`
-- #32 🎮 `video_game`
 - #34 🐺 `wolf_face`
-- #35 💀 `skull`
-- #36 📚 `books`
-- #37 🌐 `globe_with_meridians`
-- #39 🗝 `old_key`
-- #40 🔧 `wrench`
-- #42 💰 `money_bag`
 - #45 🧠 `brain`
-- #46 🎓 `graduation_cap`
 - #47 ⌛ `hourglass`
+- #50 🌅 `sunrise`
+- #52 🥟 `dumpling`
+- #54 ♻ `recycling_symbol`
+- #55 🏰 `european_castle`
+- #59 ☀ `black_sun_with_rays`
+- #60 🍀 `four_leaf_clover`
+- #62 🏁 `chequered_flag`
+- #63 🌇 `sunset_over_buildings`
+- #64 🎵 `musical_note`
 
 ## Semua emoji
 
@@ -63,31 +63,31 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 26 | 👑 | `crown` |  |
 | ✅ | 27 | ❤ | `heavy_black_heart` |  |
 | ✅ | 28 | 🎯 | `direct_hit` |  |
-| ⬜ | 29 | 📢 | `loudspeaker` |  |
+| ✅ | 29 | 📢 | `loudspeaker` |  |
 | ⬜ | 30 | 🎉 | `party_popper` |  |
 | ✅ | 31 | 🌙 | `crescent_moon` |  |
-| ⬜ | 32 | 🎮 | `video_game` |  |
+| ✅ | 32 | 🎮 | `video_game` |  |
 | ✅ | 33 | 💡 | `electric_light_bulb` |  |
 | ⬜ | 34 | 🐺 | `wolf_face` |  |
-| ⬜ | 35 | 💀 | `skull` |  |
-| ⬜ | 36 | 📚 | `books` |  |
-| ⬜ | 37 | 🌐 | `globe_with_meridians` |  |
+| ✅ | 35 | 💀 | `skull` |  |
+| ✅ | 36 | 📚 | `books` |  |
+| ✅ | 37 | 🌐 | `globe_with_meridians` |  |
 | ✅ | 38 | 🚫 | `no_entry_sign` |  |
-| ⬜ | 39 | 🗝 | `old_key` |  |
-| ⬜ | 40 | 🔧 | `wrench` |  |
+| ✅ | 39 | 🗝 | `old_key` |  |
+| ✅ | 40 | 🔧 | `wrench` |  |
 | ✅ | 41 | ⏰ | `alarm_clock` |  |
-| ⬜ | 42 | 💰 | `money_bag` |  |
+| ✅ | 42 | 💰 | `money_bag` |  |
 | ✅ | 43 | ⚡ | `high_voltage_sign` |  |
 | ✅ | 44 | 🔴 | `large_red_circle` |  |
 | ⬜ | 45 | 🧠 | `brain` |  |
-| ⬜ | 46 | 🎓 | `graduation_cap` |  |
+| ✅ | 46 | 🎓 | `graduation_cap` |  |
 | ⬜ | 47 | ⌛ | `hourglass` |  |
 | ✅ | 48 | 💗 | `growing_heart` |  |
-| ⬜ | 49 | 🎲 | `game_die` |  |
+| ✅ | 49 | 🎲 | `game_die` |  |
 | ⬜ | 50 | 🌅 | `sunrise` |  |
-| ⬜ | 51 | 📝 | `memo` |  |
+| ✅ | 51 | 📝 | `memo` |  |
 | ⬜ | 52 | 🥟 | `dumpling` |  |
-| ⬜ | 53 | 📈 | `chart_with_upwards_trend` |  |
+| ✅ | 53 | 📈 | `chart_with_upwards_trend` |  |
 | ⬜ | 54 | ♻ | `recycling_symbol` |  |
 | ⬜ | 55 | 🏰 | `european_castle` |  |
 | ✅ | 56 | ❓ | `black_question_mark_ornament` |  |
@@ -101,28 +101,28 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 64 | 🎵 | `musical_note` |  |
 | ✅ | 65 | 🥈 | `second_place_medal` |  |
 | ✅ | 66 | 🥉 | `third_place_medal` |  |
-| ⬜ | 67 | 📍 | `round_pushpin` |  |
+| ✅ | 67 | 📍 | `round_pushpin` |  |
 | ⬜ | 68 | 👤 | `bust_in_silhouette` |  |
-| ⬜ | 69 | 📦 | `package` |  |
-| ⬜ | 70 | ⚙ | `gear` |  |
+| ✅ | 69 | 📦 | `package` |  |
+| ✅ | 70 | ⚙ | `gear` |  |
 | ✅ | 71 | 🥇 | `first_place_medal` |  |
 | ✅ | 72 | ⚪ | `medium_white_circle` |  |
 | ⬜ | 73 | 🧳 | `luggage` |  |
 | ⬜ | 74 | 🚚 | `delivery_truck` |  |
 | ⬜ | 75 | 🏙 | `cityscape` |  |
 | ⬜ | 76 | 🛠 | `hammer_and_wrench` |  |
-| ⬜ | 77 | 🔷 | `large_blue_diamond` |  |
+| ✅ | 77 | 🔷 | `large_blue_diamond` |  |
 | ✅ | 78 | 🟡 | `large_yellow_circle` |  |
 | ⬜ | 79 | 🧪 | `test_tube` |  |
 | ⬜ | 80 | 🔮 | `crystal_ball` |  |
 | ✅ | 81 | 🏅 | `sports_medal` |  |
 | ⬜ | 82 | ⏱ | `stopwatch` |  |
-| ⬜ | 83 | 🚪 | `door` |  |
-| ⬜ | 84 | 🔨 | `hammer` |  |
-| ⬜ | 85 | 🎧 | `headphone` |  |
-| ⬜ | 86 | 📱 | `mobile_phone` |  |
-| ⬜ | 87 | 💼 | `briefcase` |  |
-| ⬜ | 88 | 📋 | `clipboard` |  |
+| ✅ | 83 | 🚪 | `door` |  |
+| ✅ | 84 | 🔨 | `hammer` |  |
+| ✅ | 85 | 🎧 | `headphone` |  |
+| ✅ | 86 | 📱 | `mobile_phone` |  |
+| ✅ | 87 | 💼 | `briefcase` |  |
+| ✅ | 88 | 📋 | `clipboard` |  |
 | ⬜ | 89 | 🏹 | `bow_and_arrow` |  |
 | ⬜ | 90 | 📬 | `open_mailbox_raised_flag` |  |
 | ⬜ | 91 | ⏭ | `next_track_button` |  |
@@ -130,7 +130,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 93 | 🎴 | `flower_playing_cards` |  |
 | ⬜ | 94 | 🏛 | `classical_building` |  |
 | ⬜ | 95 | 🕯 | `candle` |  |
-| ⬜ | 96 | 🔎 | `magnifying_glass_right` |  |
+| ✅ | 96 | 🔎 | `magnifying_glass_right` |  |
 | ⬜ | 97 | ↩ | `leftwards_arrow_with_hook` |  |
 | ⬜ | 98 | 🃏 | `playing_card_black_joker` |  |
 | ⬜ | 99 | 🛟 | `ring_buoy` |  |
@@ -138,11 +138,11 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 101 | 📂 | `open_file_folder` |  |
 | ⬜ | 102 | ☠ | `skull_and_crossbones` |  |
 | ⬜ | 103 | 🎙 | `studio_microphone` |  |
-| ⬜ | 104 | 🚀 | `rocket` |  |
+| ✅ | 104 | 🚀 | `rocket` |  |
 | ⬜ | 105 | 📥 | `inbox_tray` |  |
 | ⬜ | 106 | 🔁 | `repeat_button` |  |
 | ✅ | 107 | ⬅ | `leftwards_black_arrow` |  |
-| ⬜ | 108 | 🔕 | `bell_with_cancellation_stroke` |  |
+| ✅ | 108 | 🔕 | `bell_with_cancellation_stroke` |  |
 | 🔤 | 109 | 👶 | `baby` |  |
 | ⬜ | 110 | ⚰ | `coffin` |  |
 | ⬜ | 111 | 📡 | `satellite_antenna` |  |
@@ -159,7 +159,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 122 | ⏩ | `fast_forward` |  |
 | ⬜ | 123 | 🍽 | `fork_and_knife_with_plate` |  |
 | ✅ | 124 | ✨ | `sparkles` |  |
-| ⬜ | 125 | 🔗 | `link_symbol` |  |
+| ✅ | 125 | 🔗 | `link_symbol` |  |
 | 🔤 | 126 | 🚶 | `pedestrian` |  |
 | 🔤 | 127 | 😴 | `sleeping_face` |  |
 | ⬜ | 128 | 💔 | `broken_heart` |  |
@@ -177,7 +177,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 140 | 🛒 | `shopping_trolley` |  |
 | ⬜ | 141 | 🩺 | `stethoscope` |  |
 | ⬜ | 142 | 📜 | `scroll` |  |
-| ⬜ | 143 | 🔔 | `bell` |  |
+| ✅ | 143 | 🔔 | `bell` |  |
 | ⬜ | 144 | 🩸 | `drop_of_blood` |  |
 | ⬜ | 145 | 🎒 | `school_satchel` |  |
 | 🔤 | 146 | 💪 | `flexed_biceps` |  |
@@ -191,7 +191,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 154 | 8⃣ | `keycap_8` |  |
 | ✅ | 155 | ⚫ | `medium_black_circle` |  |
 | ⬜ | 156 | 🧵 | `spool_of_thread` |  |
-| ⬜ | 157 | 💎 | `gem_stone` |  |
+| ✅ | 157 | 💎 | `gem_stone` |  |
 | ⬜ | 158 | ⏸ | `double_vertical_bar` |  |
 | ✅ | 159 | 💚 | `green_heart` |  |
 | ⬜ | 160 | 🔊 | `speaker_three_sound_waves` |  |
@@ -199,7 +199,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | 🔤 | 162 | 🇮🇩 | `flag_indonesia` |  |
 | ⬜ | 163 | 🛰 | `satellite` |  |
 | ✅ | 164 | ⛔ | `no_entry` |  |
-| ⬜ | 165 | 🎫 | `ticket` |  |
+| ✅ | 165 | 🎫 | `ticket` |  |
 | ⬜ | 166 | 📅 | `calendar` |  |
 | ⬜ | 167 | 📆 | `tear_off_calendar` |  |
 | ⬜ | 168 | 🏪 | `convenience_store` |  |
@@ -208,13 +208,13 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 171 | 💞 | `revolving_hearts` |  |
 | ⬜ | 172 | 🎣 | `fishing_pole_and_fish` |  |
 | ⬜ | 173 | 💵 | `banknote_with_dollar_sign` |  |
-| ⬜ | 174 | 🧭 | `compass` |  |
+| ✅ | 174 | 🧭 | `compass` |  |
 | ⬜ | 175 | 🚨 | `police_car_light` |  |
 | ⬜ | 176 | 💝 | `heart_with_ribbon` |  |
-| ⬜ | 177 | ➖ | `heavy_minus_sign` |  |
+| ✅ | 177 | ➖ | `heavy_minus_sign` |  |
 | 🔤 | 178 | 🗣 | `speaking_head` |  |
 | 🔤 | 179 | 🧑‍🌾 | `farmer` |  |
-| ⬜ | 180 | 📌 | `pushpin` |  |
+| ✅ | 180 | 📌 | `pushpin` |  |
 | ⬜ | 181 | 👢 | `womans_boots` |  |
 | ⬜ | 182 | 🔘 | `radio_button` |  |
 | ⬜ | 183 | 📘 | `blue_book` |  |
@@ -227,7 +227,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 190 | 🅰 | `a_button_blood_type` |  |
 | ⬜ | 191 | 🅱 | `b_button_blood_type` |  |
 | 🔤 | 192 | 👀 | `eyes` |  |
-| ⬜ | 193 | 🔓 | `open_lock` |  |
+| ✅ | 193 | 🔓 | `open_lock` |  |
 | ⬜ | 194 | ⏪ | `rewind` |  |
 | ✅ | 195 | 🔵 | `large_blue_circle` |  |
 | ⬜ | 196 | 🖥 | `desktop_computer` |  |
@@ -238,12 +238,12 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 201 | 🔪 | `hocho` |  |
 | ⬜ | 202 | 🐾 | `paw_prints` |  |
 | ⬜ | 203 | 🪪 | `identification_card` |  |
-| ⬜ | 204 | 🔑 | `key` |  |
+| ✅ | 204 | 🔑 | `key` |  |
 | 🔤 | 205 | 👨‍⚖ | `man_judge` |  |
 | 🔤 | 206 | 👨‍💼 | `man_office_worker` |  |
 | ⬜ | 207 | 🪑 | `chair` |  |
-| ⬜ | 208 | 🔍 | `magnifying_glass_left` |  |
-| ⬜ | 209 | ⭕ | `heavy_large_circle` |  |
+| ✅ | 208 | 🔍 | `magnifying_glass_left` |  |
+| ✅ | 209 | ⭕ | `heavy_large_circle` |  |
 | 🔤 | 210 | 🍪 | `cookie` |  |
 | 🔤 | 211 | ☕ | `hot_beverage` |  |
 | ⬜ | 212 | 🌸 | `cherry_blossom` |  |
@@ -256,12 +256,12 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 219 | 🌟 | `glowing_star` |  |
 | ⬜ | 220 | 🏠 | `house_building` |  |
 | 🔤 | 221 | 🍳 | `cooking` |  |
-| ⬜ | 222 | ➕ | `heavy_plus_sign` |  |
+| ✅ | 222 | ➕ | `heavy_plus_sign` |  |
 | ⬜ | 223 | 🏡 | `house_with_garden` |  |
 | ⬜ | 224 | ♾ | `infinity` |  |
 | ⬜ | 225 | 🔫 | `pistol` |  |
 | 🔤 | 226 | 🐱 | `cat_face` |  |
-| ⬜ | 227 | 📣 | `cheering_megaphone` |  |
+| ✅ | 227 | 📣 | `cheering_megaphone` |  |
 | ⬜ | 228 | 🧩 | `jigsaw_puzzle_piece` |  |
 | ⬜ | 229 | 🐛 | `bug` |  |
 | ⬜ | 230 | 💉 | `syringe` |  |
@@ -281,7 +281,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 244 | 📩 | `envelope_with_arrow` |  |
 | 🔤 | 245 | 😰 | `anxious_face_with_sweat` |  |
 | ✅ | 246 | 🟣 | `large_purple_circle` |  |
-| ⬜ | 247 | 💾 | `floppy_disk` |  |
+| ✅ | 247 | 💾 | `floppy_disk` |  |
 | ⬜ | 248 | 🗄 | `file_cabinet` |  |
 | ⬜ | 249 | 🖼 | `frame_with_picture` |  |
 | ⬜ | 250 | 🏭 | `factory` |  |
@@ -298,7 +298,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ⬜ | 261 | 🎥 | `movie_camera` |  |
 | ⬜ | 262 | 🖊 | `ballpoint_pen` |  |
 | ⬜ | 263 | 🕰 | `mantelpiece_clock` |  |
-| ⬜ | 264 | 💧 | `droplet` |  |
+| ✅ | 264 | 💧 | `droplet` |  |
 | ⬜ | 265 | 🔦 | `flashlight` |  |
 | ⬜ | 266 | 📟 | `pager` |  |
 | 🔤 | 267 | 👣 | `footprints` |  |
@@ -335,7 +335,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | 🔤 | 298 | 🤔 | `thinking_face` |  |
 | 🔤 | 299 | 😭 | `loudly_crying_face` |  |
 | 🔤 | 300 | 😖 | `confounded_face` |  |
-| ⬜ | 301 | 📉 | `chart_with_downwards_trend` |  |
+| ✅ | 301 | 📉 | `chart_with_downwards_trend` |  |
 | ⬜ | 302 | 💖 | `sparkling_heart` |  |
 | 🔤 | 303 | 🧑 | `adult` |  |
 | ⬜ | 304 | 📤 | `outbox_tray` |  |
@@ -375,7 +375,7 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | 🔤 | 338 | 🐴 | `horse_face` |  |
 | ⬜ | 339 | 👻 | `ghost` |  |
 | 🔤 | 340 | 🧙 | `mage` |  |
-| ⬜ | 341 | 💣 | `bomb` |  |
+| ✅ | 341 | 💣 | `bomb` |  |
 | ⬜ | 342 | 🏴 | `waving_black_flag` |  |
 | ✅ | 343 | 🟩 | `large_green_square` |  |
 | ⬜ | 344 | 🕊 | `dove_of_peace` |  |
