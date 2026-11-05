@@ -2,6 +2,7 @@
 
 Emoji animasi (GIF 128×128, transparan, < 256 KB) untuk Discord Application Emojis.
 
+- `PROMPT.md` — panduan & prompt pembuatan GIF (spesifikasi, gaya, prinsip animasi, cara menambah emoji).
 - `CHECKLIST.md` — status tiap emoji (✅ selesai / ⬜ belum). Dibuat otomatis.
 - `gifs/` — hasil GIF, nama file = nama emoji.
 - `tools/emojis.txt` — daftar 399 emoji (urutan = nomor di tabel asli).
