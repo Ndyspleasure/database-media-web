@@ -397,3 +397,9 @@
 👾 alien_monster
 🐞 lady_beetle
 👇 backhand_index_pointing_down
+🔥 streak_amber
+🔥 streak_crimson
+🔥 streak_emerald
+🔥 streak_azure
+🔥 streak_phantom
+🔥 streak_eternal

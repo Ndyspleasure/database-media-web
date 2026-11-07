@@ -102,3 +102,18 @@ Prompt untuk memperbaiki animasi tertentu:
 
 > Animasi `<nama>` hanya bergerak-gerak. Buat aksi khas yang sesuai maknanya (bukan sekadar goyang), pakai
 > sistem di `tools/motion.py`, bangun ulang hanya GIF itu, dan tunjukkan potongan framenya.
+
+## 10. Emoji streak per tier (`streak_amber` … `streak_eternal`)
+
+Enam api untuk tier Streak Harian Vanillate.ID (hari 1-6 Amber, 7-29 Crimson, 30-89 Emerald, 90-179 Azure,
+180-364 Phantom, 365+ Eternal). Fungsinya `f_streak_*` di akhir `tools/icons.py`, didaftarkan di `tools/wave9.py`.
+
+- **60 frame × 40 ms** (2,4 detik), bukan 36 frame, supaya orbit dan kilatan terasa natural. Diatur lewat
+  `STREAK_SAVE` di `build_all.py` (`save(nama, fn, 60, 40, True)`). Tanpa intro pop (loop sudah lengkap).
+- **Alpha dither** (`save(..., dither=True)`): GIF hanya punya transparansi 1 bit, jadi glow lembut dibuat dengan
+  ordered dither supaya tidak jadi cakram solid. Berat file jauh lebih kecil dibanding glow penuh, tapi tetap
+  diukur: semua < 256 KB (166-222 KB). Bila menambah efek, cek ukuran lagi.
+- Loop mulus: semua gerak memakai frekuensi bilangan bulat terhadap `t`; "acak" (partikel, kilat) deterministik
+  lewat `_hs()`, tidak memakai `random`.
+- Setiap tier punya identitas: Amber bara+percikan, Crimson asap+kilatan merah, Emerald aura+kristal,
+  Azure listrik+cincin energi, Phantom dua orbit+kristal+bintang, Eternal mahkota cahaya+orbit emas+ledakan bintang.

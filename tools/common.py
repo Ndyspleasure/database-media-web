@@ -76,12 +76,20 @@ def f_hour(t):
     for y in (-.48,.4): d.rounded_rectangle([P(-.38,y),P(.38,y+.08)],radius=int(.03*K),fill=wood)
     return xform(im,1,ang)
 
-def save(name,fn,n=N,dur=40):
+_B4=[[0,8,2,10],[12,4,14,6],[3,11,1,9],[15,7,13,5]]
+def _dith_alpha(a):
+    """Alpha parsial -> alpha biner dengan ordered dither (glow lembut tanpa kotak solid)."""
+    px=a.load(); w,h=a.size; m=Image.new("L",a.size,0); mp=m.load()
+    for y in range(h):
+        for x in range(w): mp[x,y]=255 if px[x,y]>(30+_B4[y%4][x%4]*13) else 0
+    return m
+def save(name,fn,n=N,dur=40,dither=False):
     frames=[]
     for i in range(n):
         im=fn(i/n).resize((OUT,OUT),Image.LANCZOS)
         a=im.getchannel("A"); p=im.convert("RGB").quantize(colors=255,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE)
-        p.paste(255,a.point(lambda v:255 if v<128 else 0)); p.info["transparency"]=255; frames.append(p)
+        m=_dith_alpha(a) if dither else a.point(lambda v:255 if v>=128 else 0)
+        p.paste(255,m.point(lambda v:255 if v==0 else 0)); p.info["transparency"]=255; frames.append(p)
     path=os.path.join(OUTDIR,f"{name}.gif")
     frames[0].save(path,save_all=True,append_images=frames[1:],duration=dur,loop=0,disposal=2,transparency=255,optimize=False)
     print(name, os.path.getsize(path)//1024,"KB"); return frames

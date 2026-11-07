@@ -2,7 +2,7 @@
 
 File ini dibuat otomatis oleh `tools/update_checklist.py` — jangan edit manual.
 
-**Progres: 399 / 399 GIF selesai** (0 tersisa).
+**Progres: 405 / 405 GIF selesai** (0 tersisa).
 
 Legenda: ✅ GIF sudah dibuat · ⬜ belum.
 
@@ -414,3 +414,9 @@ Spesifikasi: GIF 128×128 px, transparan, < 256 KB, nama 2–32 karakter (a-z, 0
 | ✅ | 397 | 👾 | `alien_monster` |  |
 | ✅ | 398 | 🐞 | `lady_beetle` |  |
 | ✅ | 399 | 👇 | `backhand_index_pointing_down` |  |
+| ✅ | 400 | 🔥 | `streak_amber` |  |
+| ✅ | 401 | 🔥 | `streak_crimson` |  |
+| ✅ | 402 | 🔥 | `streak_emerald` |  |
+| ✅ | 403 | 🔥 | `streak_azure` |  |
+| ✅ | 404 | 🔥 | `streak_phantom` |  |
+| ✅ | 405 | 🔥 | `streak_eternal` |  |
