@@ -112,12 +112,25 @@ Enam api untuk tier Streak Harian Vanillate.ID (hari 1-6 Amber, 7-29 Crimson, 30
   `STREAK_SAVE` di `build_all.py` (`save(nama, fn, 60, 40, True)`). Tanpa intro pop (loop sudah lengkap).
 - **Alpha dither** (`save(..., dither=True)`): GIF hanya punya transparansi 1 bit, jadi glow lembut dibuat dengan
   ordered dither supaya tidak jadi cakram solid. Berat file jauh lebih kecil dibanding glow penuh, tapi tetap
-  diukur: semua < 256.000 byte (169-223 KB). Bila menambah efek, cek ukuran lagi.
+  diukur: semua < 256.000 byte (170-250 KB). Bila menambah efek, cek ukuran lagi.
 - Loop mulus: semua gerak memakai frekuensi bilangan bulat terhadap `t`; "acak" (partikel, kilat) deterministik
   lewat `_hs()`, tidak memakai `random`.
 - **Api hidup, bukan gambar diam:** `_fire()`/`_tongue()` menggambar api dari beberapa lidah dengan tepi halus (tanpa gerigi,
   supaya terbaca api, bukan kristal): dasar bulat lebar, mengecil cekung ke ujung yang melengkung, ujung berkedip,
   bergoyang, meliuk, dan berdenyut dengan fase berbeda. Tier dibedakan oleh warna, tinggi, jumlah lidah, kecepatan kedip,
   dan efek sekeliling (bukan bentuk geometris aneh).
-- Setiap tier punya identitas: Amber bara+percikan, Crimson asap+kilatan merah, Emerald aura+kristal,
-  Azure listrik+cincin energi, Phantom dua orbit+kristal+bintang, Eternal mahkota cahaya+orbit emas+ledakan bintang.
+- **Efek per tier ("Vanillate Flame Evolution")**, makin ke atas makin banyak lapisan. Helper di `icons.py`: `_embers`, `_sparks`,
+  `_dust` (debu/serpihan/bintang kecil berkedip), `_burst` (ledakan berkala), `_halo` (Radiant Halo), `_orbit`, `_crystals`,
+  `_bolts`, `_smoke`, `_twink`.
+
+| Tier | Efek | Isi |
+|---|---|---|
+| Amber | Floating Embers | bara naik, percikan, debu bercahaya, glow berdenyut |
+| Crimson | Infernal Sparks | serpihan merah, bara panas, percikan tajam, asap merah, ledakan kecil + kilatan |
+| Emerald | Enchanted Particles | kristal hijau, debu mint, bintang kilau, percikan |
+| Azure | Electric Fragments | petir mini, kristal es, partikel cyan, bintang es |
+| Phantom | Cosmic Stardust | dua orbit energi, partikel berputar, kristal violet, debu bintang, kabut |
+| Eternal | Celestial Stardust | Radiant Halo, mahkota cahaya, Golden Orbit, Star Burst berkala, debu emas, kilatan putih |
+
+Amber, Emerald, Azure sengaja tanpa lingkaran (hanya partikel). Orbit dan halo hanya untuk Phantom dan Eternal.
+Phantom dan Eternal hampir menyentuh batas 256.000 byte (247 dan 250 KB): setiap menambah efek, cek ukuran lagi.

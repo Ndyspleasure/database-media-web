@@ -1708,17 +1708,47 @@ def _fire(t,cols,tongs,sway=.1,spd=1,**kw):
         if h>.8: _tongue(d,t,cx,by-.02,h*.42,w*.36,_c(cols[2]),ph+.24,lean*.5,sw,spd=sp,**k)
     return im
 
+def _dust(d,t,n,col,rad=.85,seed=0,size=.03,shape='dot',drift=.05,cy=.0):
+    """Debu/serpihan kecil bertebaran yang berkedip halus dan melayang pelan (periodik di t)."""
+    for i in range(n):
+        a=2*math.pi*_hs(i,seed); r=rad*(.3+.7*_hs(i,seed+1)**.6); ph=_hs(i,seed+2)
+        x=r*math.cos(a)+drift*math.sin(2*math.pi*(t+ph)); y=cy+r*math.sin(a)*.95+drift*math.cos(2*math.pi*(t+ph))
+        k=max(0,math.sin(math.pi*((2*t+ph)%1)))**1.5
+        if k<.05: continue
+        sz=size*(.6+.8*_hs(i,seed+3))*(.6+.4*k)
+        if shape=='star': star4(d,x,y,sz*2.6,_c(col,255*k))
+        elif shape=='shard':
+            ang=2*math.pi*_hs(i,seed+4)+2*math.pi*t; ca,sa=math.cos(ang),math.sin(ang)
+            poly(d,[(x+sz*2*ca,y+sz*2*sa),(x-sz*ca*.7-sz*sa*.8,y-sz*sa*.7+sz*ca*.8),(x-sz*ca*.7+sz*sa*.8,y-sz*sa*.7-sz*ca*.8)],_c(col,255*k))
+        else: ell(d,x,y,sz,sz,_c(col,255*k))
+def _burst(d,t,n,col,t0=0,dur=.4,r0=.3,r1=.95,size=.13,dots=True):
+    """Ledakan partikel/bintang berkala dari pusat api."""
+    b=(t-t0)%1
+    if b>=dur: return
+    p=b/dur; e=1-(1-p)**2
+    for k in range(n):
+        a=2*math.pi*(k/n+.03*(k%3)); rr=r0+(r1-r0)*e*(.8+.2*(k%2))
+        x,y=rr*math.cos(a),rr*math.sin(a)*.9
+        if dots and k%2: ell(d,x,y,.03*(1-p),.03*(1-p),_c(col,255*(1-p)))
+        else: star4(d,x,y,size*(1-p),_c(col))
+def _halo(im,t,col,r=.75,a=140):
+    """Radiant Halo: cincin cahaya lembut di belakang api, berdenyut pelan."""
+    g=Image.new("RGBA",(S,S),(col[0],col[1],col[2],0)); d=ImageDraw.Draw(g); x,y=P(0,0); rr=r*K*(1+.03*sg(t))
+    d.ellipse([x-rr,y-rr,x+rr,y+rr],outline=_c(col,a*(.85+.15*sg(t))),width=int(.07*K))
+    im.alpha_composite(g.filter(ImageFilter.GaussianBlur(.035*K)))
+    g2,d2=layer(); ring(d2,r,_c((255,250,220),150),.012); im.alpha_composite(g2)
+
 def f_streak_amber(t):
     im,_=layer(); _bloom(im,0,.05,.5,(255,150,30),120+40*sg(t))
     im.alpha_composite(_fire(t,[(255,95,15),(255,160,30),(255,236,120)],[(-.2,.52,.62,.22,-.1,.3),(.2,.52,.5,.2,.1,.7),(0,.54,1.15,.42,0,0)],sway=.1))
-    g,d=layer(); _embers(d,t,18,(255,190,60),spread=.6,seed=1,size=.055); _sparks(d,t,12,(255,230,130),r0=.4,seed=2); im.alpha_composite(g); return im
+    g,d=layer(); _embers(d,t,18,(255,190,60),spread=.6,seed=1,size=.055); _sparks(d,t,12,(255,230,130),r0=.4,seed=2); _dust(d,t,16,(255,215,120),.8,21,.028); im.alpha_composite(g); return im
 def f_streak_crimson(t):
     im,_=layer(); _smoke(im,t,5,(60,10,20),140,12)
     fl=_gbell(t,.3,.04); _bloom(im,0,.05,.55,(255,40,60),110+30*sg(t)+90*fl)
     _orbit(im,t,.78,.3,.3,5,(255,90,90),1,.055,side=-1,ring_a=0)
     im.alpha_composite(_fire(t,[(190,12,35),(250,60,50),(255,190,180)],[(-.3,.52,.8,.22,-.16,.2),(.3,.52,.85,.22,.16,.6),(0,.54,1.22,.4,0,0)],sway=.14,spd=2,flick=.14))
     _orbit(im,t,.78,.3,.3,5,(255,110,110),1,.055,side=1,ring_a=0)
-    g,d=layer(); _embers(d,t,8,(255,80,80),seed=3,sway=.14); _sparks(d,t,6,(255,130,175),seed=4,r0=.45)
+    g,d=layer(); _embers(d,t,14,(255,80,80),spread=.6,seed=3,sway=.14,size=.055); _sparks(d,t,12,(255,130,175),seed=4,r0=.4); _dust(d,t,14,(255,70,80),.8,23,.03,'shard'); _burst(d,t,8,(255,200,200),.3,.3,.35,.9,.09)
     if fl>.05:
         for k in range(4):
             a=2*math.pi*(k/4+.1); thick_line(d,[(.5*math.cos(a),.5*math.sin(a)),(.95*math.cos(a),.95*math.sin(a))],.05,_c((255,235,235),255*fl))
@@ -1728,12 +1758,12 @@ def f_streak_emerald(t):
     im.alpha_composite(_fire(t,[(20,170,95),(70,225,140),(215,255,230)],[(-.2,.52,.66,.22,-.1,.35),(.2,.52,.6,.2,.1,.75),(0,.54,1.15,.38,0,0)],sway=.07,curl=.1))
     g,d=layer(); _crystals(d,t,4,(40,200,120),(190,255,215),.78,.11,seed=2)
     _embers(d,t,18,(150,255,200),spread=.6,seed=5,size=.05); _sparks(d,t,12,(190,255,215),r0=.4,seed=6)
-    _twink(d,t,[(-.5,-.55),(.55,-.4),(.0,.75)],(220,255,235),.13); im.alpha_composite(g); return im
+    _twink(d,t,[(-.5,-.55),(.55,-.4),(.0,.75),(-.65,.3),(.68,.25)],(220,255,235),.13); _dust(d,t,18,(170,255,210),.8,25,.026); _dust(d,t,6,(230,255,240),.8,27,.03,'star'); im.alpha_composite(g); return im
 def f_streak_azure(t):
     im,_=layer(); _bloom(im,0,.05,.55,(40,170,255),120+40*sg(t))
     im.alpha_composite(_fire(t,[(35,110,245),(70,200,255),(225,250,255)],[(-.15,.52,.7,.2,-.08,.4),(.15,.52,.65,.18,.08,.7),(0,.54,1.3,.3,0,0)],sway=.1,spd=2))
-    _bolts(im,t,4,(80,200,255))
-    g,d=layer(); _crystals(d,t,5,(150,225,255),(235,250,255),.8,.085,seed=7,dirn=-1); _embers(d,t,18,(170,235,255),spread=.6,seed=8,size=.05); _sparks(d,t,12,(210,245,255),r0=.4,seed=9)
+    _bolts(im,t,6,(80,200,255),dur=.24)
+    g,d=layer(); _crystals(d,t,5,(150,225,255),(235,250,255),.8,.085,seed=7,dirn=-1); _embers(d,t,18,(170,235,255),spread=.6,seed=8,size=.05); _sparks(d,t,12,(210,245,255),r0=.4,seed=9); _dust(d,t,16,(160,230,255),.8,29,.026); _dust(d,t,5,(235,250,255),.8,31,.03,'star')
     im.alpha_composite(g); return im
 def f_streak_phantom(t):
     im,_=layer()
@@ -1749,10 +1779,12 @@ def f_streak_phantom(t):
     im.alpha_composite(g)
     _orbit(im,t,.9,.34,.55,3,(225,185,255),1,.06,side=1,star=True); _orbit(im,t,.9,.34,-.55,3,(170,205,255),-1,.06,side=1,star=True,ph0=.17)
     g,d=layer(); _crystals(d,t,3,(160,90,245),(225,190,255),.7,.08,seed=9,dirn=-1)
-    _twink(d,t,[(-.65,-.6),(.62,-.62),(-.7,.45),(.68,.5),(0,-.85)],(255,255,255),.14); _embers(d,t,5,(215,170,255),seed=11,size=.04)
-    im.alpha_composite(g); return im
+    _twink(d,t,[(-.65,-.6),(.62,-.62),(-.7,.45),(.68,.5),(0,-.85)],(255,255,255),.14); _embers(d,t,10,(215,170,255),spread=.6,seed=11,size=.045); _dust(d,t,20,(200,160,255),.9,33,.026); _dust(d,t,8,(255,255,255),.9,35,.03,'star')
+    im.alpha_composite(g)
+    _orbit(im,t,.62,.62,0,7,(190,140,255),1,.04,side=1,ring_a=0); _orbit(im,t,.62,.62,0,7,(190,140,255),1,.04,side=-1,ring_a=0)
+    return im
 def f_streak_eternal(t):
-    im,_=layer(); _bloom(im,0,.0,.46,(255,205,70),90+25*sg(t))
+    im,_=layer(); _bloom(im,0,.0,.4,(255,205,70),80+20*sg(t)); _halo(im,t,(255,215,100))
     _orbit(im,t,.92,.3,.4,4,(255,225,120),1,.055,side=-1,star=True,ring_a=90); _orbit(im,t,.92,.3,-.4,4,(255,245,200),-1,.055,side=-1,star=True,ring_a=90,ph0=.12)
     g,d=layer(); pu=.8+.2*sg(t)
     for k in range(7):
@@ -1762,9 +1794,10 @@ def f_streak_eternal(t):
     im.alpha_composite(g)
     im.alpha_composite(_fire(t,[(255,185,40),(255,235,150),(255,255,255)],[(-.24,.52,.85,.24,-.1,.4),(.24,.52,.9,.24,.1,.8),(0,.54,1.15,.42,0,0)],sway=.08))
     _orbit(im,t,.92,.3,.4,4,(255,235,140),1,.055,side=1,star=True,ring_a=110); _orbit(im,t,.92,.3,-.4,4,(255,250,215),-1,.055,side=1,star=True,ring_a=110,ph0=.12)
-    g,d=layer(); b=t%1
-    if b<.4:
-        p=b/.4
-        for k in range(8): a=2*math.pi*(k/8+.03); star4(d,(.3+.62*p)*math.cos(a),(.3+.62*p)*math.sin(a)*.9,.13*(1-p),_c((255,240,170)))
-    _twink(d,t,[(-.7,-.35),(.72,-.2),(.55,.66)],(255,255,255),.14); _embers(d,t,4,(255,225,120),seed=13,size=.04)
+    g,d=layer(); _burst(d,t,14,(255,240,170),0,.42,.3,.98,.15)
+    _twink(d,t,[(-.7,-.35),(.72,-.2),(.55,.66),(-.55,.6)],(255,255,255),.15); _embers(d,t,9,(255,225,120),spread=.6,seed=13,size=.05); _sparks(d,t,6,(255,240,170),r0=.4,seed=14)
+    _dust(d,t,14,(255,225,120),.9,37,.026); _dust(d,t,8,(255,255,255),.9,39,.03,'star')
+    fl=_gbell(t,.62,.03)
+    if fl>.05:
+        for k in range(4): a=2*math.pi*(k/4+.13); thick_line(d,[(.45*math.cos(a),.45*math.sin(a)),(.98*math.cos(a),.98*math.sin(a))],.04,_c((255,255,255),255*fl))
     im.alpha_composite(g); return im
