@@ -1710,9 +1710,8 @@ def _fire(t,cols,tongs,sway=.1,spd=1,**kw):
 
 def f_streak_amber(t):
     im,_=layer(); _bloom(im,0,.05,.5,(255,150,30),120+40*sg(t))
-    g,d=layer(); _pulse(d,t,(255,190,70),2,.55,.92,.03); im.alpha_composite(g)
     im.alpha_composite(_fire(t,[(255,95,15),(255,160,30),(255,236,120)],[(-.2,.52,.62,.22,-.1,.3),(.2,.52,.5,.2,.1,.7),(0,.54,1.15,.42,0,0)],sway=.1))
-    g,d=layer(); _embers(d,t,9,(255,190,60),seed=1); _sparks(d,t,5,(255,230,130),seed=2); im.alpha_composite(g); return im
+    g,d=layer(); _embers(d,t,18,(255,190,60),spread=.6,seed=1,size=.055); _sparks(d,t,12,(255,230,130),r0=.4,seed=2); im.alpha_composite(g); return im
 def f_streak_crimson(t):
     im,_=layer(); _smoke(im,t,5,(60,10,20),140,12)
     fl=_gbell(t,.3,.04); _bloom(im,0,.05,.55,(255,40,60),110+30*sg(t)+90*fl)
@@ -1726,17 +1725,15 @@ def f_streak_crimson(t):
     im.alpha_composite(g); return im
 def f_streak_emerald(t):
     im,_=layer(); _bloom(im,0,.05,.55,(40,220,130),120+40*sg(t))
-    g,d=layer(); _arcs(d,t,3,.84,(120,255,185),60,.045); im.alpha_composite(g)
     im.alpha_composite(_fire(t,[(20,170,95),(70,225,140),(215,255,230)],[(-.2,.52,.66,.22,-.1,.35),(.2,.52,.6,.2,.1,.75),(0,.54,1.15,.38,0,0)],sway=.07,curl=.1))
     g,d=layer(); _crystals(d,t,4,(40,200,120),(190,255,215),.78,.11,seed=2)
-    _embers(d,t,6,(150,255,200),seed=5,size=.045); _twink(d,t,[(-.5,-.55),(.55,-.4),(.0,.75)],(220,255,235),.13)
-    _pulse(d,t,(110,245,175),1,.6,.95,.03); im.alpha_composite(g); return im
+    _embers(d,t,18,(150,255,200),spread=.6,seed=5,size=.05); _sparks(d,t,12,(190,255,215),r0=.4,seed=6)
+    _twink(d,t,[(-.5,-.55),(.55,-.4),(.0,.75)],(220,255,235),.13); im.alpha_composite(g); return im
 def f_streak_azure(t):
     im,_=layer(); _bloom(im,0,.05,.55,(40,170,255),120+40*sg(t))
-    g,d=layer(); _pulse(d,t,(120,220,255),2,.55,.96,.04); _arcs(d,t,8,.88,(190,240,255),22,.035,-1); im.alpha_composite(g)
     im.alpha_composite(_fire(t,[(35,110,245),(70,200,255),(225,250,255)],[(-.15,.52,.7,.2,-.08,.4),(.15,.52,.65,.18,.08,.7),(0,.54,1.3,.3,0,0)],sway=.1,spd=2))
     _bolts(im,t,4,(80,200,255))
-    g,d=layer(); _crystals(d,t,5,(150,225,255),(235,250,255),.8,.085,seed=7,dirn=-1); _embers(d,t,6,(170,235,255),seed=8,size=.04)
+    g,d=layer(); _crystals(d,t,5,(150,225,255),(235,250,255),.8,.085,seed=7,dirn=-1); _embers(d,t,18,(170,235,255),spread=.6,seed=8,size=.05); _sparks(d,t,12,(210,245,255),r0=.4,seed=9)
     im.alpha_composite(g); return im
 def f_streak_phantom(t):
     im,_=layer()
