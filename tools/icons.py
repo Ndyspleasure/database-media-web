@@ -1689,16 +1689,35 @@ def _arcs(d,t,n,r,col,span=40,w=.04,dirn=1,off=0):
 def _twink(d,t,pts,col,r=.12):
     for i,(x,y) in enumerate(pts): star4(d,x,y,r*twinkle(t,i*.27),_c(col))
 
+def _tongue(d,t,cx,by,h,w,col,ph=0,lean=0,sway=.1,curl=0,jag=0,wob=.1,spd=1,pls=.09,n=30):
+    """Satu lidah api: bergoyang (sway), berombak naik (wob), meliuk (curl), berdenyut tinggi (pls). Semua periodik di t."""
+    hh=h*(1+pls*sg(spd*t+ph)); R=[]; Lf=[]
+    for i in range(n+1):
+        u=i/n; wp=w*max(0,math.sin(math.pi*u**.6))*(1+wob*math.sin(2*math.pi*(2*u-2*t+ph)))
+        if jag: wp*=1+jag*(abs(((u*5+ph)%1)-.5)*4-1)
+        xo=cx+lean*u*u+sway*sg(spd*t+ph)*u**1.4+curl*math.sin(2*math.pi*(u-t+ph))*u
+        y=by-hh*u; R.append((xo+wp,y)); Lf.append((xo-wp,y))
+    poly(d,R+Lf[::-1],col)
+def _fire(t,cols,tongs,sway=.1,spd=1,**kw):
+    """Api bersilhuet khas tier: tongs = [(cx,by,h,w,lean,ph,{opsi}), ...] digambar dari belakang ke depan, 3 lapis warna."""
+    im,d=layer()
+    for cx,by,h,w,lean,ph,*o in tongs:
+        k=dict(kw); k.update(o[0] if o else {}); sw=k.pop('sway',sway); sp=k.pop('spd',spd)
+        _tongue(d,t,cx,by,h,w,_c(cols[0]),ph,lean,sw,spd=sp,**k)
+        _tongue(d,t,cx,by-.01,h*.72,w*.66,_c(cols[1]),ph+.12,lean*.8,sw,spd=sp,**k)
+        if h>.8: _tongue(d,t,cx,by-.02,h*.42,w*.36,_c(cols[2]),ph+.24,lean*.5,sw,spd=sp,**k)
+    return im
+
 def f_streak_amber(t):
     im,_=layer(); _bloom(im,0,.05,.5,(255,150,30),120+40*sg(t))
     g,d=layer(); _pulse(d,t,(255,190,70),2,.55,.92,.03); im.alpha_composite(g)
-    im.alpha_composite(_sk_flame(t,[(255,95,15),(255,160,30),(255,236,120)]))
+    im.alpha_composite(_fire(t,[(255,95,15),(255,160,30),(255,236,120)],[(-.3,.5,.62,.2,-.14,.3),(.3,.5,.58,.2,.14,.7),(0,.52,1.1,.4,0,0)],sway=.1))
     g,d=layer(); _embers(d,t,9,(255,190,60),seed=1); _sparks(d,t,5,(255,230,130),seed=2); im.alpha_composite(g); return im
 def f_streak_crimson(t):
     im,_=layer(); _smoke(im,t,5,(60,10,20),140,12)
     fl=_gbell(t,.3,.04); _bloom(im,0,.05,.55,(255,40,60),110+30*sg(t)+90*fl)
     _orbit(im,t,.78,.3,.3,5,(255,90,90),1,.055,side=-1,ring_a=0)
-    im.alpha_composite(_sk_flame(t,[(190,12,35),(250,60,50),(255,190,180)],amp=1.2))
+    im.alpha_composite(_fire(t,[(190,12,35),(250,60,50),(255,190,180)],[(-.38,.5,.8,.17,-.24,.2),(.38,.5,.85,.17,.24,.6),(-.19,.52,.95,.24,-.08,.4),(.19,.52,1.0,.24,.08,.8),(0,.54,1.2,.36,0,0)],sway=.14,spd=2,jag=.3,wob=.14))
     _orbit(im,t,.78,.3,.3,5,(255,110,110),1,.055,side=1,ring_a=0)
     g,d=layer(); _embers(d,t,8,(255,80,80),seed=3,sway=.14); _sparks(d,t,6,(255,130,175),seed=4,r0=.45)
     if fl>.05:
@@ -1708,14 +1727,14 @@ def f_streak_crimson(t):
 def f_streak_emerald(t):
     im,_=layer(); _bloom(im,0,.05,.55,(40,220,130),120+40*sg(t))
     g,d=layer(); _arcs(d,t,3,.84,(120,255,185),60,.045); im.alpha_composite(g)
-    im.alpha_composite(_sk_flame(t,[(20,170,95),(70,225,140),(215,255,230)]))
+    im.alpha_composite(_fire(t,[(20,170,95),(70,225,140),(215,255,230)],[(-.27,.5,.66,.2,-.12,.35),(.27,.5,.7,.2,.12,.75),(0,.52,1.12,.36,0,0)],sway=.07,curl=.13,wob=.12))
     g,d=layer(); _crystals(d,t,4,(40,200,120),(190,255,215),.78,.11,seed=2)
     _embers(d,t,6,(150,255,200),seed=5,size=.045); _twink(d,t,[(-.5,-.55),(.55,-.4),(.0,.75)],(220,255,235),.13)
     _pulse(d,t,(110,245,175),1,.6,.95,.03); im.alpha_composite(g); return im
 def f_streak_azure(t):
     im,_=layer(); _bloom(im,0,.05,.55,(40,170,255),120+40*sg(t))
     g,d=layer(); _pulse(d,t,(120,220,255),2,.55,.96,.04); _arcs(d,t,8,.88,(190,240,255),22,.035,-1); im.alpha_composite(g)
-    im.alpha_composite(_sk_flame(t,[(35,110,245),(70,200,255),(225,250,255)]))
+    im.alpha_composite(_fire(t,[(35,110,245),(70,200,255),(225,250,255)],[(-.22,.52,.8,.16,-.1,.4),(.22,.52,.85,.16,.1,.7),(0,.54,1.28,.3,0,0)],sway=.08,spd=2,jag=.22,wob=.14))
     _bolts(im,t,4,(80,200,255))
     g,d=layer(); _crystals(d,t,5,(150,225,255),(235,250,255),.8,.085,seed=7,dirn=-1); _embers(d,t,6,(170,235,255),seed=8,size=.04)
     im.alpha_composite(g); return im
@@ -1726,26 +1745,29 @@ def f_streak_phantom(t):
         a=2*math.pi*(t+i/4); _bloom(g,.45*math.cos(a),.34*math.sin(a)+.05,.26,(150,60,230),90)
     im.alpha_composite(g); _bloom(im,0,.05,.5,(170,90,255),110+30*sg(t))
     _orbit(im,t,.9,.34,.55,3,(215,170,255),1,.06,side=-1,star=True); _orbit(im,t,.9,.34,-.55,3,(150,190,255),-1,.06,side=-1,star=True,ph0=.17)
-    im.alpha_composite(_sk_flame(t,[(120,50,215),(185,110,255),(245,230,255)],sc=.92))
+    im.alpha_composite(_fire(t,[(120,50,215),(185,110,255),(245,230,255)],[(0,.54,.85,.34,0,0),(-.13,.52,1.1,.27,-.2,.1,{'curl':.1}),(.13,.52,1.15,.27,.2,.5,{'curl':.1})],sway=.09,wob=.13))
+    g,d=layer()
+    for i in range(3):
+        f=(t+i/3)%1; _tongue(d,t,(-.5,.5,-.5)[i]+.06*sg(t+i/3),.45-.95*f,.34,.1,_c((200,150,255),230*math.sin(math.pi*f)),i/3,0,.05,pls=.12)
+    im.alpha_composite(g)
     _orbit(im,t,.9,.34,.55,3,(225,185,255),1,.06,side=1,star=True); _orbit(im,t,.9,.34,-.55,3,(170,205,255),-1,.06,side=1,star=True,ph0=.17)
     g,d=layer(); _crystals(d,t,4,(160,90,245),(225,190,255),.62,.095,seed=9,dirn=-1)
     _twink(d,t,[(-.65,-.6),(.62,-.62),(-.7,.45),(.68,.5),(0,-.85)],(255,255,255),.14); _embers(d,t,5,(215,170,255),seed=11,size=.04)
     im.alpha_composite(g); return im
 def f_streak_eternal(t):
-    im,_=layer(); _bloom(im,0,.0,.62,(255,205,70),115+35*sg(t))
-    g,d=layer(); _pulse(d,t,(255,225,120),1,.62,1.0,.04); im.alpha_composite(g)
+    im,_=layer(); _bloom(im,0,.0,.46,(255,205,70),90+25*sg(t))
     _orbit(im,t,.92,.3,.4,4,(255,225,120),1,.055,side=-1,star=True,ring_a=90); _orbit(im,t,.92,.3,-.4,4,(255,245,200),-1,.055,side=-1,star=True,ring_a=90,ph0=.12)
     g,d=layer(); pu=.8+.2*sg(t)
     for k in range(7):
-        c=k-3; a=math.radians(-90+c*15); L=(.34+.2*(1-abs(c)/3))*pu; x0,y0=.0+c*.06,-.7
+        c=k-3; a=math.radians(-90+c*15); L=(.34+.2*(1-abs(c)/3))*pu; x0,y0=.0+c*.06,-.74
         x1,y1=x0+L*math.cos(a),y0+L*math.sin(a); nx,ny=-math.sin(a)*.035,math.cos(a)*.035
         poly(d,[(x0+nx,y0+ny),(x1,y1),(x0-nx,y0-ny)],_c((255,230,130),230)); ell(d,x1,y1,.03,.03,(255,255,255,255))
     im.alpha_composite(g)
-    im.alpha_composite(_sk_flame(t,[(255,185,40),(255,235,150),(255,255,255)],sc=.86,dy=.1))
+    im.alpha_composite(_fire(t,[(255,185,40),(255,235,150),(255,255,255)],[(-.47,.5,.6,.17,-.3,.2),(.47,.5,.6,.17,.3,.6),(-.27,.5,.88,.2,-.2,.4),(.27,.5,.88,.2,.2,.8),(0,.54,1.1,.36,0,0)],sway=.08,wob=.12))
     _orbit(im,t,.92,.3,.4,4,(255,235,140),1,.055,side=1,star=True,ring_a=110); _orbit(im,t,.92,.3,-.4,4,(255,250,215),-1,.055,side=1,star=True,ring_a=110,ph0=.12)
     g,d=layer(); b=t%1
     if b<.4:
         p=b/.4
-        for k in range(10): a=2*math.pi*(k/10+.03); star4(d,(.3+.62*p)*math.cos(a),(.3+.62*p)*math.sin(a)*.9,.13*(1-p),_c((255,240,170)))
-    _twink(d,t,[(-.7,-.35),(.72,-.2),(-.5,.62),(.55,.66)],(255,255,255),.14); _embers(d,t,6,(255,225,120),seed=13,size=.04)
+        for k in range(8): a=2*math.pi*(k/8+.03); star4(d,(.3+.62*p)*math.cos(a),(.3+.62*p)*math.sin(a)*.9,.13*(1-p),_c((255,240,170)))
+    _twink(d,t,[(-.7,-.35),(.72,-.2),(.55,.66)],(255,255,255),.14); _embers(d,t,4,(255,225,120),seed=13,size=.04)
     im.alpha_composite(g); return im

@@ -112,8 +112,12 @@ Enam api untuk tier Streak Harian Vanillate.ID (hari 1-6 Amber, 7-29 Crimson, 30
   `STREAK_SAVE` di `build_all.py` (`save(nama, fn, 60, 40, True)`). Tanpa intro pop (loop sudah lengkap).
 - **Alpha dither** (`save(..., dither=True)`): GIF hanya punya transparansi 1 bit, jadi glow lembut dibuat dengan
   ordered dither supaya tidak jadi cakram solid. Berat file jauh lebih kecil dibanding glow penuh, tapi tetap
-  diukur: semua < 256 KB (166-222 KB). Bila menambah efek, cek ukuran lagi.
+  diukur: semua < 256.000 byte (180-245 KB). Bila menambah efek, cek ukuran lagi.
 - Loop mulus: semua gerak memakai frekuensi bilangan bulat terhadap `t`; "acak" (partikel, kilat) deterministik
   lewat `_hs()`, tidak memakai `random`.
+- **Api hidup, bukan gambar diam:** `_fire()`/`_tongue()` menggambar api dari beberapa lidah yang masing-masing
+  bergoyang, berombak naik, meliuk, dan berdenyut dengan fase berbeda. Silhouette beda per tier (Amber lidah samping,
+  Crimson bergerigi tajam, Emerald meliuk seperti daun, Azure tinggi ramping bergerigi listrik, Phantom ujung terbelah +
+  wisp melayang, Eternal lima lidah seperti mahkota).
 - Setiap tier punya identitas: Amber bara+percikan, Crimson asap+kilatan merah, Emerald aura+kristal,
   Azure listrik+cincin energi, Phantom dua orbit+kristal+bintang, Eternal mahkota cahaya+orbit emas+ledakan bintang.
