@@ -112,7 +112,7 @@ Enam api untuk tier Streak Harian Vanillate.ID (hari 1-6 Amber, 7-29 Crimson, 30
   `STREAK_SAVE` di `build_all.py` (`save(nama, fn, 60, 40, True)`). Tanpa intro pop (loop sudah lengkap).
 - **Alpha dither** (`save(..., dither=True)`): GIF hanya punya transparansi 1 bit, jadi glow lembut dibuat dengan
   ordered dither supaya tidak jadi cakram solid. Berat file jauh lebih kecil dibanding glow penuh, tapi tetap
-  diukur: semua < 256.000 byte (170-250 KB). Bila menambah efek, cek ukuran lagi.
+  diukur: semua < 256.000 byte (170-235 KB). Bila menambah efek, cek ukuran lagi.
 - Loop mulus: semua gerak memakai frekuensi bilangan bulat terhadap `t`; "acak" (partikel, kilat) deterministik
   lewat `_hs()`, tidak memakai `random`.
 - **Api hidup, bukan gambar diam:** `_fire()`/`_tongue()` menggambar api dari beberapa lidah dengan tepi halus (tanpa gerigi,
@@ -128,9 +128,9 @@ Enam api untuk tier Streak Harian Vanillate.ID (hari 1-6 Amber, 7-29 Crimson, 30
 | Amber | Floating Embers | bara naik, percikan, debu bercahaya, glow berdenyut |
 | Crimson | Infernal Sparks | serpihan merah, bara panas, percikan tajam, asap merah, ledakan kecil + kilatan |
 | Emerald | Enchanted Particles | kristal hijau, debu mint, bintang kilau, percikan |
-| Azure | Electric Fragments | petir mini, kristal es, partikel cyan, bintang es |
-| Phantom | Cosmic Stardust | dua orbit energi, partikel berputar, kristal violet, debu bintang, kabut |
-| Eternal | Celestial Stardust | Radiant Halo, mahkota cahaya, Golden Orbit, Star Burst berkala, debu emas, kilatan putih |
+| Azure | Electric Fragments | sambaran petir bercabang (`_storm`), garis energi elektrik bergerigi yang meluncur (`_elines`), komet Energy Orbit berekor (`_comets`), kristal es melayang berputar (`_fcrystals`), partikel listrik mini (`_zaps`) |
+| Phantom | Cosmic Stardust | dua orbit komet dengan presesi, kristal violet melayang pelan, debu bintang berbagai ukuran, bintang berkedip bergantian, distorsi kosmik (`_rowwave`) pada nebula dan cincin lensa |
+| Eternal | Celestial Ascension | sinar cahaya berputar (`_rays`), Radiant Halo dengan sorotan menyapu (`_halo2`), Golden Orbit komet, dua Star Burst berkala dengan kilatan cahaya, debu dan bintang emas. Mahkota (`_crown`): melayang naik turun +-2,5 px, denyut cahaya merambat, bintang berkilau di sekitarnya, celestial aura berdenyut, dan miring halus +-3,5 derajat |
 
 Amber, Emerald, Azure sengaja tanpa lingkaran (hanya partikel). Orbit dan halo hanya untuk Phantom dan Eternal.
-Phantom dan Eternal hampir menyentuh batas 256.000 byte (247 dan 250 KB): setiap menambah efek, cek ukuran lagi.
+Azure, Phantom, Eternal memakai palet 128 warna (`NCOL` di `build_all.py`, `save(..., ncol=128)`): efeknya sangat banyak partikel dan dither, dan palet 255 warna membuat Phantom/Eternal melewati 256.000 byte (280 KB). Setiap menambah efek, cek ukuran lagi.

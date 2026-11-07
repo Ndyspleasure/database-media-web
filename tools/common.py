@@ -83,11 +83,11 @@ def _dith_alpha(a):
     for y in range(h):
         for x in range(w): mp[x,y]=255 if px[x,y]>(30+_B4[y%4][x%4]*13) else 0
     return m
-def save(name,fn,n=N,dur=40,dither=False):
+def save(name,fn,n=N,dur=40,dither=False,ncol=255):
     frames=[]
     for i in range(n):
         im=fn(i/n).resize((OUT,OUT),Image.LANCZOS)
-        a=im.getchannel("A"); p=im.convert("RGB").quantize(colors=255,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE)
+        a=im.getchannel("A"); p=im.convert("RGB").quantize(colors=ncol,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE)
         m=_dith_alpha(a) if dither else a.point(lambda v:255 if v>=128 else 0)
         p.paste(255,m.point(lambda v:255 if v==0 else 0)); p.info["transparency"]=255; frames.append(p)
     path=os.path.join(OUTDIR,f"{name}.gif")

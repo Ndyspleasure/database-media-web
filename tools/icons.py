@@ -1738,6 +1738,100 @@ def _halo(im,t,col,r=.75,a=140):
     im.alpha_composite(g.filter(ImageFilter.GaussianBlur(.035*K)))
     g2,d2=layer(); ring(d2,r,_c((255,250,220),150),.012); im.alpha_composite(g2)
 
+# ----- helper v3: listrik, kristal melayang, komet orbit, distorsi kosmik, sinar -----
+def _jag(x0,y0,x1,y1,seed,n=7,jit=.08):
+    pts=[(x0,y0)]; dx,dy=x1-x0,y1-y0; L=math.hypot(dx,dy) or 1; nx,ny=-dy/L,dx/L
+    for k in range(1,n):
+        u=k/n; o=(_hs(k,seed)-.5)*2*jit*math.sin(math.pi*u)*1.3; pts.append((x0+dx*u+nx*o,y0+dy*u+ny*o))
+    pts.append((x1,y1)); return pts
+def _bolt(d,x0,y0,x1,y1,seed,col,core,a,w=.05,fork=True,n=7,jit=.09):
+    pts=_jag(x0,y0,x1,y1,seed,n,jit)
+    thick_line(d,pts,w*2.0,_c(col,a*.30)); thick_line(d,pts,w,_c(col,a)); thick_line(d,pts,w*.4,_c(core,a))
+    if fork:
+        bx,by=pts[3]; ang=math.atan2(y1-y0,x1-x0)+(.75 if _hs(seed,3)>.5 else -.75); L=math.hypot(x1-x0,y1-y0)*.42
+        p2=_jag(bx,by,bx+L*math.cos(ang),by+L*math.sin(ang),seed+5,4,jit*.7)
+        thick_line(d,p2,w*.6,_c(col,a*.85)); thick_line(d,p2,w*.25,_c(core,a))
+def _storm(im,t,n,col,core,dur=.26,r0=.34,r1=.98,w=.055):
+    g,d=layer()
+    for s in range(n):
+        u=(t-_hs(s,5)+1)%1
+        if u>=dur: continue
+        f=1-u/dur; step=int(u*16); ang=2*math.pi*_hs(s,6); rr=r1*(.8+.2*_hs(s,8))
+        _bolt(d,r0*math.cos(ang),r0*math.sin(ang)*.95,rr*math.cos(ang),rr*math.sin(ang)*.95,s*7+step,col,core,255*min(1,f*1.6),w,fork=_hs(s,9)>.35)
+    im.alpha_composite(g)
+def _zaps(d,t,n,col,core,life=.14,rmin=.45,rmax=.95,ln=.16,seed=0):
+    """Partikel listrik mini: kilatan zigzag pendek yang muncul lalu hilang."""
+    for i in range(n):
+        u=(t-_hs(i,seed))%1
+        if u>=life: continue
+        f=1-u/life; a=2*math.pi*_hs(i,seed+1); r=rmin+(rmax-rmin)*_hs(i,seed+2); x,y=r*math.cos(a),r*math.sin(a)*.9; b=a+(_hs(i,seed+3)-.5)*2.2
+        pts=_jag(x,y,x+ln*math.cos(b),y+ln*math.sin(b),i*5+int(u*14),4,.05)
+        thick_line(d,pts,.03,_c(col,255*f)); thick_line(d,pts,.012,_c(core,255*f))
+def _elines(im,t,col,core,side,n=3,rx=.85,ry=.34,tilt=.4,dirn=1,span=1.1,seed=0,w=.034):
+    """Garis energi elektrik bergerigi yang meluncur mengelilingi api (ekor memudar)."""
+    g,d=layer(); ct,st=math.cos(tilt),math.sin(tilt); step=int(t*24); m=16
+    for k in range(n):
+        head=2*math.pi*(dirn*t+k/n); pts=[]
+        for i in range(m+1):
+            a=head-dirn*span*i/m; r=1+(_hs(i+k*31,seed+step)-.5)*.2*(i>0); x=rx*r*math.cos(a); y=ry*r*math.sin(a)
+            pts.append((x*ct-y*st,x*st+y*ct,math.sin(a)))
+        for i in range(m):
+            (x0,y0,s0),(x1,y1,s1)=pts[i],pts[i+1]
+            if side*(s0+s1)<0: continue
+            f=1-i/m; al=255*f**1.1
+            d.line([P(x0,y0),P(x1,y1)],fill=_c(col,al*.85),width=max(1,int(w*K*(.4+.6*f))))
+            if f>.45: d.line([P(x0,y0),P(x1,y1)],fill=_c(core,al),width=max(1,int(w*K*.34)))
+    im.alpha_composite(g)
+def _comets(im,t,rx,ry,tilt0,tamp,n,col,hi,dirn=1,size=.06,side=1,trail=12,span=.16,ph0=0,wob=.03,star=True):
+    """Energy Orbit: bintang berekor yang mengorbit, bidang orbit bergoyang (presesi), dibagi sisi belakang/depan api."""
+    g,d=layer(); tl=tilt0+tamp*sg(t+ph0*2); ct,st=math.cos(tl),math.sin(tl)
+    for j in range(n):
+        for m in range(trail,-1,-1):
+            f=m/trail; a=2*math.pi*(dirn*t+j/n+ph0-dirn*span*f+wob*sg(t+j*.3+ph0)); sn=math.sin(a)
+            if side*sn<0: continue
+            x,y=rx*math.cos(a),ry*sn; X,Y=x*ct-y*st,x*st+y*ct; sz=size*(1-.75*f)*(.85+.3*sn*side)
+            if m==0 and star: star4(d,X,Y,size*2.0,_c(hi))
+            else: ell(d,X,Y,sz,sz,_c(col if m>0 else hi,255*(1-f)**1.4))
+    im.alpha_composite(g)
+def _fcrystals(d,t,n,col,hi,dk,seed=0,size=.1,r0=.62,r1=.9,cy=-.03):
+    """Kristal melayang: bergerak naik turun pelan, berputar (lebar facet berubah), miring sedikit, dan berkilau."""
+    for i in range(n):
+        ph=_hs(i,seed); a=2*math.pi*(i/n+.07*_hs(i,seed+1)); r=r0+(r1-r0)*_hs(i,seed+2)
+        x=r*math.cos(a)+.05*sg(t+ph)+.025*sg(2*t+ph*3); y=cy+r*math.sin(a)*.85+.08*sg(t+ph+.25)
+        sz=size*(.75+.5*_hs(i,seed+3)); w=.3+.7*abs(math.cos(math.pi*(t+ph))); ang=.45*sg(t+ph*2); ca,sa=math.cos(ang),math.sin(ang)
+        def T(px,py): px*=sz; py*=sz; return (x+px*ca-py*sa,y+px*sa+py*ca)
+        poly(d,[T(0,-1.3),T(.62*w,-.2),T(0,1.2),T(-.62*w,-.2)],_c(col))
+        poly(d,[T(0,-1.3),T(.62*w,-.2),T(0,-.2)],_c(hi)); poly(d,[T(0,-.2),T(-.62*w,-.2),T(0,1.2)],_c(dk))
+        k=twinkle(t,ph)
+        if k>0: star4(d,*T(.15,-1.0),sz*1.4*k,_c((255,255,255)))
+def _rowwave(im,t,amp=.03,per=.5,fall=1.0):
+    """Distorsi kosmik: tiap strip horizontal bergeser gelombang sinus (periodik terhadap t)."""
+    out=Image.new("RGBA",(S,S),(0,0,0,0)); st=6
+    for y in range(0,S,st):
+        yy=(y+st/2-S/2)/K; dx=int(amp*K*math.sin(2*math.pi*(yy/per-t))*max(0,1-abs(yy)/fall))
+        out.paste(im.crop((0,y,S,y+st)),(dx,y))
+    return out
+def _aura(im,cx,cy,rx,ry,col,a,blur=.12):
+    g=Image.new("RGBA",(S,S),(col[0],col[1],col[2],0)); d=ImageDraw.Draw(g); x,y=P(cx,cy)
+    d.ellipse([x-rx*K,y-ry*K,x+rx*K,y+ry*K],fill=_c(col,a)); im.alpha_composite(g.filter(ImageFilter.GaussianBlur(blur*K)))
+def _rays(im,t,col=(255,225,130),n=8,a=80,r=1.0,wd=.1,turns=1,dirn=1):
+    """Sinar cahaya lembut berputar pelan di belakang api (3 lapis alpha menurun ke ujung)."""
+    g,d=layer(); rot=dirn*2*math.pi*t*turns/n; pul=.8+.2*sg(t)
+    for k in range(n):
+        ang=2*math.pi*k/n+rot
+        for sc,al in ((1.0,.45),(.72,.75),(.45,1.0)):
+            L=r*sc*pul; poly(d,[(0,0),(L*math.cos(ang-wd),L*math.sin(ang-wd)),(L*math.cos(ang+wd),L*math.sin(ang+wd))],_c(col,a*al))
+    im.alpha_composite(g.filter(ImageFilter.GaussianBlur(.025*K)))
+def _halo2(im,t,col=(255,215,100),r=.75,a=120):
+    """Radiant Halo: cincin cahaya bernapas dengan sorotan terang yang menyapu mengelilingi cincin."""
+    g=Image.new("RGBA",(S,S),(col[0],col[1],col[2],0)); d=ImageDraw.Draw(g); x,y=P(0,0); rr=r*K*(1+.025*sg(t)); br=.85+.15*sg(t+.25)
+    d.ellipse([x-rr,y-rr,x+rr,y+rr],outline=_c(col,a*br),width=int(.07*K)); im.alpha_composite(g.filter(ImageFilter.GaussianBlur(.03*K)))
+    g2,d2=layer(); head=360*t-90
+    for k,(sp,al,wd) in enumerate(((70,90,.03),(40,170,.04),(16,255,.05))):
+        d2.arc([x-rr,y-rr,x+rr,y+rr],head-sp,head,fill=_c((255,250,225),al),width=int(wd*K))
+    hx,hy=r*math.cos(math.radians(head)),r*math.sin(math.radians(head)); star4(d2,hx,hy,.13,_c((255,255,255)))
+    im.alpha_composite(g2)
+
 def f_streak_amber(t):
     im,_=layer(); _bloom(im,0,.05,.5,(255,150,30),120+40*sg(t))
     im.alpha_composite(_fire(t,[(255,95,15),(255,160,30),(255,236,120)],[(-.2,.52,.62,.22,-.1,.3),(.2,.52,.5,.2,.1,.7),(0,.54,1.15,.42,0,0)],sway=.1))
@@ -1760,44 +1854,65 @@ def f_streak_emerald(t):
     _embers(d,t,18,(150,255,200),spread=.6,seed=5,size=.05); _sparks(d,t,12,(190,255,215),r0=.4,seed=6)
     _twink(d,t,[(-.5,-.55),(.55,-.4),(.0,.75),(-.65,.3),(.68,.25)],(220,255,235),.13); _dust(d,t,18,(170,255,210),.8,25,.026); _dust(d,t,6,(230,255,240),.8,27,.03,'star'); im.alpha_composite(g); return im
 def f_streak_azure(t):
-    im,_=layer(); _bloom(im,0,.05,.55,(40,170,255),120+40*sg(t))
+    im,_=layer(); fl=_gbell(t,.2,.04)
+    _bloom(im,0,.05,.55,(40,170,255),105+35*sg(t)+60*fl)
+    _comets(im,t,.9,.33,.4,.22,3,(70,190,255),(225,250,255),1,.06,-1,14,.2,.03,0)
+    _elines(im,t,(60,170,255),(235,252,255),-1,2,.88,.34,.4,-1,.9,1)
     im.alpha_composite(_fire(t,[(35,110,245),(70,200,255),(225,250,255)],[(-.15,.52,.7,.2,-.08,.4),(.15,.52,.65,.18,.08,.7),(0,.54,1.3,.3,0,0)],sway=.1,spd=2))
-    _bolts(im,t,6,(80,200,255),dur=.24)
-    g,d=layer(); _crystals(d,t,5,(150,225,255),(235,250,255),.8,.085,seed=7,dirn=-1); _embers(d,t,18,(170,235,255),spread=.6,seed=8,size=.05); _sparks(d,t,12,(210,245,255),r0=.4,seed=9); _dust(d,t,16,(160,230,255),.8,29,.026); _dust(d,t,5,(235,250,255),.8,31,.03,'star')
+    _storm(im,t,8,(60,180,255),(240,252,255))
+    _comets(im,t,.9,.33,.4,.22,3,(70,190,255),(225,250,255),1,.06,1,14,.2,.03,0)
+    _elines(im,t,(60,170,255),(235,252,255),1,2,.88,.34,.4,-1,.9,1)
+    g,d=layer(); _fcrystals(d,t,6,(130,215,255),(240,252,255),(60,140,225),7,.095)
+    _embers(d,t,12,(170,235,255),spread=.6,seed=8,size=.05); _sparks(d,t,10,(210,245,255),r0=.4,seed=9)
+    _dust(d,t,14,(160,230,255),.85,29,.026); _dust(d,t,6,(235,250,255),.85,31,.03,'star'); _zaps(d,t,10,(80,200,255),(255,255,255),.14,.45,.95,.16,41)
     im.alpha_composite(g); return im
 def f_streak_phantom(t):
-    im,_=layer()
-    g=Image.new("RGBA",(S,S),(0,0,0,0))
+    im,_=layer(); neb=Image.new("RGBA",(S,S),(0,0,0,0)); cl=[(150,60,230),(100,70,240),(190,80,220),(80,110,245)]
     for i in range(4):
-        a=2*math.pi*(t+i/4); _bloom(g,.45*math.cos(a),.34*math.sin(a)+.05,.26,(150,60,230),90)
-    im.alpha_composite(g); _bloom(im,0,.05,.5,(170,90,255),110+30*sg(t))
-    _orbit(im,t,.9,.34,.55,3,(215,170,255),1,.06,side=-1,star=True); _orbit(im,t,.9,.34,-.55,3,(150,190,255),-1,.06,side=-1,star=True,ph0=.17)
-    im.alpha_composite(_fire(t,[(120,50,215),(185,110,255),(245,230,255)],[(-.15,.54,1.0,.28,-.12,.1,{'curl':.08}),(.15,.54,1.1,.28,.12,.5,{'curl':.08}),(0,.56,.7,.3,0,0)],sway=.09))
+        a=2*math.pi*((1 if i%2==0 else -1)*t+i/4); _bloom(neb,.5*math.cos(a),.36*math.sin(a)+.05,.3+.05*(i%2),cl[i],95)
+    rg,d=layer(); ring(d,.8,_c((190,150,255),80),.03); neb.alpha_composite(rg)
+    im.alpha_composite(_rowwave(neb,t,.05,.55)); _bloom(im,0,.05,.5,(170,90,255),105+30*sg(t))
+    _comets(im,t,.92,.34,.55,.3,3,(190,140,255),(240,225,255),1,.06,-1,12,.17,.04,0); _comets(im,t,.92,.34,-.55,.3,3,(130,170,255),(225,240,255),-1,.06,-1,12,.17,.04,.17)
+    fr=_fire(t,[(120,50,215),(185,110,255),(245,230,255)],[(-.15,.54,1.0,.28,-.12,.1,{'curl':.08}),(.15,.54,1.1,.28,.12,.5,{'curl':.08}),(0,.56,.7,.3,0,0)],sway=.09)
+    im.alpha_composite(_rowwave(fr,t,.005,.4,1.2))
     g,d=layer()
     for i in range(3):
         f=(t+i/3)%1; _tongue(d,t,(-.55,.5,-.5)[i]+.06*sg(t+i/3),.5-1.0*f,.42,.065,_c((200,150,255),230*math.sin(math.pi*f)),i/3,0,.05,pls=.12)
     im.alpha_composite(g)
-    _orbit(im,t,.9,.34,.55,3,(225,185,255),1,.06,side=1,star=True); _orbit(im,t,.9,.34,-.55,3,(170,205,255),-1,.06,side=1,star=True,ph0=.17)
-    g,d=layer(); _crystals(d,t,3,(160,90,245),(225,190,255),.7,.08,seed=9,dirn=-1)
-    _twink(d,t,[(-.65,-.6),(.62,-.62),(-.7,.45),(.68,.5),(0,-.85)],(255,255,255),.14); _embers(d,t,10,(215,170,255),spread=.6,seed=11,size=.045); _dust(d,t,20,(200,160,255),.9,33,.026); _dust(d,t,8,(255,255,255),.9,35,.03,'star')
-    im.alpha_composite(g)
-    _orbit(im,t,.62,.62,0,7,(190,140,255),1,.04,side=1,ring_a=0); _orbit(im,t,.62,.62,0,7,(190,140,255),1,.04,side=-1,ring_a=0)
+    _comets(im,t,.92,.34,.55,.3,3,(215,170,255),(245,235,255),1,.06,1,12,.17,.04,0); _comets(im,t,.92,.34,-.55,.3,3,(160,195,255),(235,245,255),-1,.06,1,12,.17,.04,.17)
+    g,d=layer(); _fcrystals(d,t,5,(165,100,245),(225,190,255),(105,55,200),9,.1)
+    for sz,n,sd in ((.018,12,33),(.026,10,35),(.038,5,37)): _dust(d,t,n,(205,165,255),.95,sd,sz)
+    _dust(d,t,6,(255,255,255),.95,39,.03,'star'); _embers(d,t,8,(215,170,255),spread=.6,seed=11,size=.045)
+    SP=[(-.7,-.55,.15),(.66,-.6,.13),(-.75,.4,.12),(.72,.45,.15),(0,-.9,.13),(-.4,.8,.11),(.45,.82,.12),(.0,.95,.1)]
+    for i,(x,y,r) in enumerate(SP):
+        k=twinkle(t,i/len(SP))
+        if k>0: star4(d,x,y,r*k,_c((255,255,255))); ell(d,x,y,.025*k,.025*k,_c((220,200,255)))
+    im.alpha_composite(g); return im
+def _crown(t):
+    im,d=layer()
+    for k in range(7):
+        c=k-3; a=math.radians(-90+c*15); pk=.8+.2*sg(t-k*.07); L=(.34+.2*(1-abs(c)/3))*pk; x0,y0=c*.06,-.74
+        x1,y1=x0+L*math.cos(a),y0+L*math.sin(a); nx,ny=-math.sin(a)*.05,math.cos(a)*.05
+        poly(d,[(x0+nx,y0+ny),(x1,y1),(x0-nx,y0-ny)],_c((255,238,150),255)); r=.03*(.8+.5*pk); ell(d,x1,y1,r,r,(255,255,255,255))
+    rr(d,-.2,-.76,.2,-.7,.03,_c((255,215,90),255))
     return im
 def f_streak_eternal(t):
-    im,_=layer(); _bloom(im,0,.0,.4,(255,205,70),80+20*sg(t)); _halo(im,t,(255,215,100))
-    _orbit(im,t,.92,.3,.4,4,(255,225,120),1,.055,side=-1,star=True,ring_a=90); _orbit(im,t,.92,.3,-.4,4,(255,245,200),-1,.055,side=-1,star=True,ring_a=90,ph0=.12)
-    g,d=layer(); pu=.8+.2*sg(t)
-    for k in range(7):
-        c=k-3; a=math.radians(-90+c*15); L=(.34+.2*(1-abs(c)/3))*pu; x0,y0=.0+c*.06,-.74
-        x1,y1=x0+L*math.cos(a),y0+L*math.sin(a); nx,ny=-math.sin(a)*.035,math.cos(a)*.035
-        poly(d,[(x0+nx,y0+ny),(x1,y1),(x0-nx,y0-ny)],_c((255,230,130),230)); ell(d,x1,y1,.03,.03,(255,255,255,255))
-    im.alpha_composite(g)
+    im,_=layer(); fl=_gbell(t,.04,.05)+.6*_gbell(t,.54,.05)
+    _bloom(im,0,.0,.5,(255,200,60),85+25*sg(t)+60*fl); _bloom(im,0,.05,.28,(255,250,225),80+25*sg(t+.3)+80*fl)
+    _rays(im,t,(255,225,130),8,70,1.0,.1,1,1); _rays(im,t,(255,245,200),6,50,.75,.08,1,-1); _halo2(im,t)
+    _comets(im,t,.95,.31,.4,.18,3,(255,215,110),(255,250,215),1,.055,-1,14,.18,.03,0); _comets(im,t,.95,.31,-.4,.18,3,(255,235,160),(255,255,235),-1,.055,-1,14,.18,.03,.17)
+    bob=.05*sg(t); tilt=3.5*sg(t+.15)
+    _aura(im,.05*sg(t),-.88+.04*sg(2*t)+bob,.55,.22,(255,215,100),38+22*sg(t+.5)); _bloom(im,0,-.9+bob,.3,(255,235,150),48+45*sg(t+.25))
     im.alpha_composite(_fire(t,[(255,185,40),(255,235,150),(255,255,255)],[(-.24,.52,.85,.24,-.1,.4),(.24,.52,.9,.24,.1,.8),(0,.54,1.15,.42,0,0)],sway=.08))
-    _orbit(im,t,.92,.3,.4,4,(255,235,140),1,.055,side=1,star=True,ring_a=110); _orbit(im,t,.92,.3,-.4,4,(255,250,215),-1,.055,side=1,star=True,ring_a=110,ph0=.12)
-    g,d=layer(); _burst(d,t,14,(255,240,170),0,.42,.3,.98,.15)
-    _twink(d,t,[(-.7,-.35),(.72,-.2),(.55,.66),(-.55,.6)],(255,255,255),.15); _embers(d,t,9,(255,225,120),spread=.6,seed=13,size=.05); _sparks(d,t,6,(255,240,170),r0=.4,seed=14)
-    _dust(d,t,14,(255,225,120),.9,37,.026); _dust(d,t,8,(255,255,255),.9,39,.03,'star')
-    fl=_gbell(t,.62,.03)
-    if fl>.05:
-        for k in range(4): a=2*math.pi*(k/4+.13); thick_line(d,[(.45*math.cos(a),.45*math.sin(a)),(.98*math.cos(a),.98*math.sin(a))],.04,_c((255,255,255),255*fl))
+    _comets(im,t,.95,.31,.4,.18,3,(255,215,110),(255,250,215),1,.055,1,14,.18,.03,0); _comets(im,t,.95,.31,-.4,.18,3,(255,235,160),(255,255,235),-1,.055,1,14,.18,.03,.17)
+    cr=_crown(t).rotate(tilt,resample=Image.BICUBIC,center=(S/2,S/2-.62*K)); co=Image.new("RGBA",(S,S),(0,0,0,0)); co.paste(cr,(0,int(bob*K)),cr); im.alpha_composite(co)
+    g,d=layer(); _burst(d,t,14,(255,240,170),0,.42,.3,.98,.15); _burst(d,t,8,(255,245,200),.54,.32,.3,.7,.1)
+    for i,(x,y,r) in enumerate([(-.42,-1.0,.1),(.45,-1.02,.1),(-.2,-1.12,.08),(.22,-1.14,.09),(0,-1.2,.1),(.6,-.85,.07)]):
+        k=twinkle(t,i/6); y+=bob
+        if k>0: star4(d,x,y,r*k,_c((255,255,255)))
+    for i,(x,y,r) in enumerate([(-.7,-.35,.15),(.72,-.2,.15),(.55,.66,.14),(-.55,.6,.14),(0,.9,.1),(-.8,.1,.1)]):
+        k=twinkle(t,.1+i/6)
+        if k>0: star4(d,x,y,r*k,_c((255,255,255)))
+    _embers(d,t,9,(255,225,120),spread=.6,seed=13,size=.05); _sparks(d,t,6,(255,240,170),r0=.4,seed=14)
+    _dust(d,t,12,(255,225,120),.9,37,.026); _dust(d,t,8,(255,255,255),.9,39,.03,'star'); _dust(d,t,4,(255,235,150),.4,43,.025,'dot',.04,-.9)
     im.alpha_composite(g); return im
