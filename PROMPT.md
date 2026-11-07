@@ -102,3 +102,35 @@ Prompt untuk memperbaiki animasi tertentu:
 
 > Animasi `<nama>` hanya bergerak-gerak. Buat aksi khas yang sesuai maknanya (bukan sekadar goyang), pakai
 > sistem di `tools/motion.py`, bangun ulang hanya GIF itu, dan tunjukkan potongan framenya.
+
+## 10. Emoji streak per tier (`streak_amber` … `streak_eternal`)
+
+Enam api untuk tier Streak Harian Vanillate.ID (hari 1-6 Amber, 7-29 Crimson, 30-89 Emerald, 90-179 Azure,
+180-364 Phantom, 365+ Eternal). Fungsinya `f_streak_*` di akhir `tools/icons.py`, didaftarkan di `tools/wave9.py`.
+
+- **60 frame × 40 ms** (2,4 detik), bukan 36 frame, supaya orbit dan kilatan terasa natural. Diatur lewat
+  `STREAK_SAVE` di `build_all.py` (`save(nama, fn, 60, 40, True)`). Tanpa intro pop (loop sudah lengkap).
+- **Alpha dither** (`save(..., dither=True)`): GIF hanya punya transparansi 1 bit, jadi glow lembut dibuat dengan
+  ordered dither supaya tidak jadi cakram solid. Berat file jauh lebih kecil dibanding glow penuh, tapi tetap
+  diukur: semua < 256.000 byte (170-235 KB). Bila menambah efek, cek ukuran lagi.
+- Loop mulus: semua gerak memakai frekuensi bilangan bulat terhadap `t`; "acak" (partikel, kilat) deterministik
+  lewat `_hs()`, tidak memakai `random`.
+- **Api hidup, bukan gambar diam:** `_fire()`/`_tongue()` menggambar api dari beberapa lidah dengan tepi halus (tanpa gerigi,
+  supaya terbaca api, bukan kristal): dasar bulat lebar, mengecil cekung ke ujung yang melengkung, ujung berkedip,
+  bergoyang, meliuk, dan berdenyut dengan fase berbeda. Tier dibedakan oleh warna, tinggi, jumlah lidah, kecepatan kedip,
+  dan efek sekeliling (bukan bentuk geometris aneh).
+- **Efek per tier ("Vanillate Flame Evolution")**, makin ke atas makin banyak lapisan. Helper di `icons.py`: `_embers`, `_sparks`,
+  `_dust` (debu/serpihan/bintang kecil berkedip), `_burst` (ledakan berkala), `_halo` (Radiant Halo), `_orbit`, `_crystals`,
+  `_bolts`, `_smoke`, `_twink`.
+
+| Tier | Efek | Isi |
+|---|---|---|
+| Amber | Floating Embers | bara naik, percikan, debu bercahaya, glow berdenyut |
+| Crimson | Infernal Sparks | serpihan merah, bara panas, percikan tajam, asap merah, ledakan kecil + kilatan |
+| Emerald | Enchanted Particles | kristal hijau, debu mint, bintang kilau, percikan |
+| Azure | Electric Fragments | sambaran petir bercabang (`_storm`), garis energi elektrik bergerigi yang meluncur (`_elines`), komet Energy Orbit berekor (`_comets`), kristal es melayang berputar (`_fcrystals`), partikel listrik mini (`_zaps`) |
+| Phantom | Cosmic Stardust | dua orbit komet dengan presesi, kristal violet melayang pelan, debu bintang berbagai ukuran, bintang berkedip bergantian, distorsi kosmik (`_rowwave`) pada nebula dan cincin lensa |
+| Eternal | Celestial Ascension | sinar cahaya berputar (`_rays`), Radiant Halo dengan sorotan menyapu (`_halo2`), Golden Orbit komet, dua Star Burst berkala dengan kilatan cahaya, debu dan bintang emas. Mahkota (`_crown`): melayang naik turun +-2,5 px, denyut cahaya merambat, bintang berkilau di sekitarnya, celestial aura berdenyut, dan miring halus +-3,5 derajat |
+
+Amber, Emerald, Azure sengaja tanpa lingkaran (hanya partikel). Orbit dan halo hanya untuk Phantom dan Eternal.
+Azure, Phantom, Eternal memakai palet 128 warna (`NCOL` di `build_all.py`, `save(..., ncol=128)`): efeknya sangat banyak partikel dan dither, dan palet 255 warna membuat Phantom/Eternal melewati 256.000 byte (280 KB). Setiap menambah efek, cek ukuran lagi.
