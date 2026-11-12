@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-036
+JUDUL       : Pagi yang Terang
+NAMA BERKAS : scene_b7_06a.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Sari, Ibu, Bapak, Pak Arman, Djoko Seno, Bang Jul, Pak Surya
+KONTEKS     : Pagi menyusup lewat celah atap, dan seberkas cahaya jatuh tepat di dinding tempat garis ketujuh menunggu. Uang di atas dipan sudah tidak ada...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: bright clear morning after the last payment, sunlight on the seventh chalk line, Sari, Ibu and Bapak visiting, Pak Arman, Elder Sen and Pak Surya smiling, a receipt with a handwritten note, joyful. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Sari: Indonesian girl, 12, school uniform, side braids, bright eyes; Ibu: Indonesian village mother in her 50s, headscarf, simple batik blouse, loving worried face; Bapak: thin Indonesian father in his 60s, pale tired face, plain shirt and sarong, gentle smile; Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough; Djoko Seno: dignified elderly Indonesian man in his 70s, silver hair, dark batik shirt, walking cane, sharp calm eyes. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

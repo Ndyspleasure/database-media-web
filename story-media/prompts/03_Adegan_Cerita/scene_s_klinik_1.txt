@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-048
+JUDUL       : Surat Berstempel Merah
+NAMA BERKAS : scene_s_klinik_1.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Klinik (loc_klinik.webp)
+TOKOH       : Imas Nurullatifa, Dr. Dimas Taufik, Siska, Dokter Raka, Indah Putri Savitri
+KONTEKS     : Klinik pagi itu berbau antiseptik dan melati dari vas di meja pendaftaran. Di ruang tunggu, seorang ibu menimang bayi yang pilek, dan Nurse ...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Klinik. Scene: clinic morning with jasmine on the desk, Nurse Imas humming, Dr. Dimas speaking sternly in a doorway with a red-stamped letter, Siska, Dr. Raka and Indah listening, the player nearby. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Imas Nurullatifa: Indonesian nurse woman in her 30s, white uniform and nurse cap, cheerful humming expression, round friendly face; Dr. Dimas Taufik: Indonesian man doctor in his 40s, glasses, white coat, serious flat expression; Siska: young Indonesian woman nurse, 25, shoulder-length black hair with a pinned fringe, white nurse uniform with a small badge, determined expression, holding a clipboard; Dokter Raka: Indonesian man doctor in his 40s, neat short hair, white coat, stethoscope, calm expression; Indah Putri Savitri: young Indonesian woman nurse, 25, indigo-purple wavy hair in a loose bun, white nurse uniform with an ID clip, calm gentle smile, holding a clipboard. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

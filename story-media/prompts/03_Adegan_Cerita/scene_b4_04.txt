@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-019
+JUDUL       : Cahaya Layar Warnet
+NAMA BERKAS : scene_b4_04.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Warnet (loc_warnet.webp)
+TOKOH       : Arpat Firman
+KONTEKS     : Warnet Arpat bergetar oleh kipas CPU dan lagu country yang diputar pelan lewat speaker kresek. Cahaya layar memantul di wajah anak-anak SMP ...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Warnet. Scene: blue glowing screens in an internet cafe, Arpat chewing chips, the player placing an old cloth-wrapped object on the counter, curious tense mood. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Arpat Firman: laid-back Indonesian man in his 30s, internet cafe owner, messy hair, oversized t-shirt, snack bag in hand, sleepy eyes. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

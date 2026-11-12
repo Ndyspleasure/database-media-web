@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-017
+JUDUL       : Buku Hijau
+NAMA BERKAS : scene_b4_02.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Pak Arman
+KONTEKS     : Malam berikutnya, semua lampu menyala, termasuk bohlam lima belas watt yang ditarik Pak Arman dari kontrakannya. Sehelai sarung disumbatkan ...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: all lamps on in the warehouse, a bed pushed aside revealing an old wooden panel with a hidden keyhole, Pak Arman holding a small bulb lamp, a green book on the floor. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

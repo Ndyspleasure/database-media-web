@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-041
+JUDUL       : Surat dari Kampung
+NAMA BERKAS : scene_e_03.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Tio Nurcahyo, Ibu, Bapak, Sari
+KONTEKS     : Tio tiba pagi-pagi di depan gudang dengan motor yang diparkir miring dan senyum yang tak bisa disembunyikan. Di tangannya, amplop cokelat te...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: bright morning, Tio on a crooked-parked motorbike handing a thick brown envelope, the player later sitting cross-legged reading letters from Ibu, Bapak and Sari, warm sentimental light. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tio Nurcahyo: Indonesian young man in his 20s, delivery courier, green jacket and green delivery bag, helmet hanging on arm, quick smile; Ibu: Indonesian village mother in her 50s, headscarf, simple batik blouse, loving worried face; Bapak: thin Indonesian father in his 60s, pale tired face, plain shirt and sarong, gentle smile; Sari: Indonesian girl, 12, school uniform, side braids, bright eyes. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

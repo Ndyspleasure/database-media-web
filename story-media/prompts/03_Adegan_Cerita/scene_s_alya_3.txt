@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-047
+JUDUL       : Beringin di Senja
+NAMA BERKAS : scene_s_alya_3.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Lapangan (loc_lapangan.webp)
+TOKOH       : Pak Hasan, Alya, Pak Surya
+KONTEKS     : Malam sebelum pembongkaran, dua minggu setelah kabar itu, lapangan bersinar oleh lampu sorot pinjaman dari Pak Hasan. Alya naik turun tangga...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: night before demolition, borrowed floodlights from Pak Hasan, Alya painting the final stroke on a mural of the village with a straight river and a big banyan tree, the player holding the ladder, Pak Surya watching. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Hasan: stocky Indonesian man in his 50s, short graying hair, work cap, oil-stained workshop overalls, firm honest face; Alya: young Indonesian woman artist, 24, messy brown hair in a loose ponytail, paint-splattered overalls over a light shirt, dreamy eyes, paintbrush tucked behind her ear; Pak Surya: Indonesian village head man in his 50s, black peci cap slightly crooked, batik shirt, worried but dignified. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

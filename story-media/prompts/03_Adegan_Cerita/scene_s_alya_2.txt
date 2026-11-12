@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-046
+JUDUL       : Peta di Balik Kuas
+NAMA BERKAS : scene_s_alya_2.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Lapangan (loc_lapangan.webp)
+TOKOH       : Alya
+KONTEKS     : Pagi di lapangan. Embun masih menggantung di rumput dan Alya duduk bersila di depan tembok, sebuah tabung seng tua di pangkuannya, seperti m...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: morning on the field with dew, Alya sitting cross-legged in front of her mural holding an old tin tube, a yellowed map scroll unrolled, the player (from behind) beside her. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Alya: young Indonesian woman artist, 24, messy brown hair in a loose ponytail, paint-splattered overalls over a light shirt, dreamy eyes, paintbrush tucked behind her ear. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

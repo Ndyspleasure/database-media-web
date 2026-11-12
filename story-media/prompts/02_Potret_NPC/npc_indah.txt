@@ -1,0 +1,9 @@
+KODE        : ST-NPC-018
+JUDUL       : Indah Putri Savitri (Perawat klinik)
+NAMA BERKAS : npc_indah.webp   (simpan ke Drive: Vanillate Story/02_Potret_NPC/)
+UKURAN      : 768x1024 px, rasio 3:4, WebP < 300 KB
+CATATAN     : jenis kelamin & usia diasumsikan dari gelar/peran, ubah deskripsi bila perlu.
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Character portrait, half-body, slightly angled to camera, neutral friendly expression, vertical 3:4. Character: Indah Putri Savitri, Perawat klinik. young Indonesian woman nurse, 25, indigo-purple wavy hair in a loose bun, white nurse uniform with an ID clip, calm gentle smile, holding a clipboard. Plain soft sky-blue background with blurred pixel-art town. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

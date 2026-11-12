@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-060
+JUDUL       : Catatan di Balik Struk
+NAMA BERKAS : scene_s_penulis_1.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Restoran (loc_restoran.webp)
+TOKOH       : Tasya Wulandari
+KONTEKS     : Restoran itu ramai di jam makan siang, penuh denting sendok dan aroma tumis bawang. Di balik meja kasir, Tasya menunduk memasukkan koin ke l...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Restoran. Scene: lunch rush in a restaurant, Tasya at the cashier tearing a receipt, a small paper note falling from her uniform pocket, the player picking it up. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tasya Wulandari: shy young Indonesian woman, 23, restaurant cashier uniform vest, long hair with bangs, a small notebook hugged to her chest, soft blushing smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

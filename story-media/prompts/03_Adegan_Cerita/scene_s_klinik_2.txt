@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-049
+JUDUL       : Dua Pilihan Siska
+NAMA BERKAS : scene_s_klinik_2.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Klinik (loc_klinik.webp)
+TOKOH       : Siska, Indah Putri Savitri
+KONTEKS     : Malam di klinik terasa lain. Lampu ruang tunggu dimatikan separuh, kursi-kursi plastik berbaris kosong, dan jam dinding berdetik seperti men...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Klinik. Scene: night on the clinic back steps, half-lit empty waiting room, Siska peeling an orange alone, Indah and the player sitting near, soft melancholy. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Siska: young Indonesian woman nurse, 25, shoulder-length black hair with a pinned fringe, white nurse uniform with a small badge, determined expression, holding a clipboard; Indah Putri Savitri: young Indonesian woman nurse, 25, indigo-purple wavy hair in a loose bun, white nurse uniform with an ID clip, calm gentle smile, holding a clipboard. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

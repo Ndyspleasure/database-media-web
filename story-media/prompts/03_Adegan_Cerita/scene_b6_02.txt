@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-027
+JUDUL       : Api di Gudang
+NAMA BERKAS : scene_b6_02.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Pak Arman
+KONTEKS     : {name} bergegas kembali ke gudang menembus hujan, sepatu berkecipak di genangan, tepat ketika bau hangus itu menebal, merambat dari sudut be...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: a fire starting in the back corner of the warehouse during rain, orange glow, smoke, the player running in, Pak Arman shouting, dramatic. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

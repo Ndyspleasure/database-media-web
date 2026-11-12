@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-013
+JUDUL       : Tawaran Elder Sen
+NAMA BERKAS : scene_b3_03.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Bank (loc_bank.webp)
+TOKOH       : Djoko Seno
+KONTEKS     : Sore di bank terasa seperti ruang tunggu raksasa. Cahaya jingga memantul dari lantai marmer ke langit-langit, para teller sudah merapikan la...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Bank. Scene: golden afternoon light bouncing off marble in an empty bank hall, Elder Sen seated with his cane offering a folder to the player (from behind), serious calm mood. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Djoko Seno: dignified elderly Indonesian man in his 70s, silver hair, dark batik shirt, walking cane, sharp calm eyes. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

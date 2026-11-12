@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-052
+JUDUL       : Garis Finis Lima Kilometer
+NAMA BERKAS : scene_s_windy_2.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Lapangan (loc_lapangan.webp)
+TOKOH       : Tigor S., Windy Lestari
+KONTEKS     : Hari kejuaraan. Lapangan dipenuhi bendera plastik warna-warni, speaker serak menyiarkan lagu semangat, dan penjual es berdiri di setiap sudu...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: race day on the field with plastic flags, loudspeakers and ice sellers, Windy at the start line patting her chest three times, looking to the stands where the player waves, Bro Tigor coaching. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tigor S.: muscular Indonesian man in his 30s, gym coach, tank top, towel on shoulders, friendly loud grin; Windy Lestari: athletic young Indonesian woman, 24, short sporty ponytail, red shop uniform or running outfit, determined look. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====
