@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-007
+JUDUL       : Penjual Bunga
+NAMA BERKAS : scene_b2_02.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Lapangan (loc_lapangan.webp)
+TOKOH       : Anggun Safitri
+KONTEKS     : Pagi di lapangan lain lagi. Embun masih menggantung di rumput, bau tanah basah bercampur wangi yang manis dan segar. Wangi yang aneh untuk t...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: fresh morning dew on the field, a crooked yellow umbrella over buckets of roses and jasmine, Anggun arranging a bouquet and looking up at the player (from behind). The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Anggun Safitri: young Indonesian woman flower seller, 22, wavy auburn hair, yellow-and-white blouse, small flowers pinned in her hair, soft gentle smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

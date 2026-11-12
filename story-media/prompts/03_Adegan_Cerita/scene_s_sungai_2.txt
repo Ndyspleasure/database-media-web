@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-058
+JUDUL       : Banjir yang Menenggelamkan
+NAMA BERKAS : scene_s_sungai_2.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Sungai (loc_river.webp)
+TOKOH       : Pak Rudi
+KONTEKS     : Hujan semalam meninggalkan sungai berwarna cokelat tua dan tinggi sejengkal dari biasa. Bau lumpur dan daun busuk naik dari tepian, bercampu...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Sungai. Scene: dark brown flooded river after the rain, mud and leaves on the bank, Pak Rudi looking at the current like reading a script, the player (from behind) with a thermos of black coffee. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Rudi: old Indonesian fisherman in his 60s, tanned wrinkled face, conical straw hat, sarong folded on the shoulder, calm patient look. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

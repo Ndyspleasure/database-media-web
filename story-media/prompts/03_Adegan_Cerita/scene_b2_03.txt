@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-008
+JUDUL       : Kabar dari Kampung
+NAMA BERKAS : scene_b2_03.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah Penduduk (loc_rumah_penduduk.webp)
+TOKOH       : Bu Yanti, Ibu, Sari, Bapak
+KONTEKS     : Hujan turun lagi malam itu, tipis lalu deras, memukul seng seperti ribuan jari yang tak sabar. {name} sedang melipat pakaian ketika terdenga...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah Penduduk. Scene: rainy night outside a house, Bu Yanti soaked holding a cordless phone with both hands, the player listening, hint of Ibu, Bapak and Sari's voices as faint thought bubbles of a village home. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Bu Yanti: Indonesian woman in her 50s, neighbor landlady, headscarf, house dress, motherly concerned face; Ibu: Indonesian village mother in her 50s, headscarf, simple batik blouse, loving worried face; Sari: Indonesian girl, 12, school uniform, side braids, bright eyes; Bapak: thin Indonesian father in his 60s, pale tired face, plain shirt and sarong, gentle smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

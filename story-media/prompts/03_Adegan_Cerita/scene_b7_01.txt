@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-031
+JUDUL       : Pagi Tagihan Terakhir
+NAMA BERKAS : scene_b7_01.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Sari, Pak Arman, Tio Nurcahyo
+KONTEKS     : Pagi pertama minggu ketujuh tidak dibangunkan ayam atau azan, melainkan bau. Bau kayu hangus yang belum mau pulang dari dinding gudang, berc...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: morning with seven chalk lines on the wall, six crossed and the seventh blank, burnt wall smell, Sari in school uniform in a photo on the wall, Pak Arman at the door, Tio outside. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Sari: Indonesian girl, 12, school uniform, side braids, bright eyes; Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough; Tio Nurcahyo: Indonesian young man in his 20s, delivery courier, green jacket and green delivery bag, helmet hanging on arm, quick smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

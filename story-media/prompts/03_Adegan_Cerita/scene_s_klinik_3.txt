@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-050
+JUDUL       : Tanda Tangan untuk Klinik
+NAMA BERKAS : scene_s_klinik_3.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Klinik (loc_klinik.webp)
+TOKOH       : Imas Nurullatifa, Siska, Bu Siti, Dr. Dimas Taufik, Dokter Raka
+KONTEKS     : Hari terakhir sebelum batas konfirmasi beasiswa. Klinik penuh sejak pagi, tetapi bukan oleh pasien. Warga berdiri di halaman dengan kertas d...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Klinik. Scene: clinic yard full of villagers with papers and pens lining up to sign a petition, Siska standing on a bench with a plastic megaphone, Nurse Imas, Bu Siti, Dr. Dimas and Dr. Raka supporting. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Imas Nurullatifa: Indonesian nurse woman in her 30s, white uniform and nurse cap, cheerful humming expression, round friendly face; Siska: young Indonesian woman nurse, 25, shoulder-length black hair with a pinned fringe, white nurse uniform with a small badge, determined expression, holding a clipboard; Bu Siti: warm Indonesian woman in her 50s, plump, hair tied in a bun, apron over a floral blouse, gentle smile; Dr. Dimas Taufik: Indonesian man doctor in his 40s, glasses, white coat, serious flat expression; Dokter Raka: Indonesian man doctor in his 40s, neat short hair, white coat, stethoscope, calm expression. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

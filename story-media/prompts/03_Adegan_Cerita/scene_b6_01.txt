@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-026
+JUDUL       : Malam Badai
+NAMA BERKAS : scene_b6_01.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Pak Arman
+KONTEKS     : Hujan turun bukan seperti hujan, melainkan seperti tangan raksasa yang menampar atap seng gudang berkali-kali. Bunyinya memenuhi seluruh rua...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: violent rainstorm at night, rain hitting the zinc roof, water leaking through holes into pots and buckets, the player and Pak Arman bracing, dramatic dark blue light. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

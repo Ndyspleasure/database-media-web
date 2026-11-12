@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-035
+JUDUL       : Malam Cicilan Terakhir
+NAMA BERKAS : scene_b7_05.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Ibu, Bapak, Rio, Anggun Safitri, Pak Arman, Bang Jul
+KONTEKS     : Malam turun di gudang dengan pelan, dan untuk pertama kalinya selama tujuh minggu, malam itu terasa seperti tamu, bukan penagih. Lampu minya...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: last night in the warehouse, the player (from behind) counting the final money on a bed, Ibu and Bapak as soft memory, Rio and Anggun standing in the doorway, Pak Arman holding a lamp. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Ibu: Indonesian village mother in her 50s, headscarf, simple batik blouse, loving worried face; Bapak: thin Indonesian father in his 60s, pale tired face, plain shirt and sarong, gentle smile; Rio: Indonesian young man in his early 20s, messy black hair, worn t-shirt and jeans, easygoing grin, slightly guilty eyes; Anggun Safitri: young Indonesian woman flower seller, 22, wavy auburn hair, yellow-and-white blouse, small flowers pinned in her hair, soft gentle smile; Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

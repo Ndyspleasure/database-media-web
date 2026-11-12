@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-032
+JUDUL       : Rapat Akbar
+NAMA BERKAS : scene_b7_02.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Lapangan (loc_lapangan.webp)
+TOKOH       : Pak Surya, Djoko Seno, Windy Lestari, Rara Anindra, Arpat Firman, Alya, Pak Arman
+KONTEKS     : Lapangan malam itu tak lagi terlihat seperti lapangan. Tiang bambu menahan spanduk, kabel lampu ditarik dari warung Bu Siti, dan kursi plast...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: night grand meeting on the football field with bamboo poles, banners, plastic chairs, more than sixty villagers in sandals and sarongs, Pak Surya, Elder Sen, Windy, Rara, Arpat, Alya, Pak Arman on stage. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Surya: Indonesian village head man in his 50s, black peci cap slightly crooked, batik shirt, worried but dignified; Djoko Seno: dignified elderly Indonesian man in his 70s, silver hair, dark batik shirt, walking cane, sharp calm eyes; Windy Lestari: athletic young Indonesian woman, 24, short sporty ponytail, red shop uniform or running outfit, determined look; Rara Anindra: Indonesian elementary school girl, 10, white and red school uniform, hair in a high ponytail, lively smile; Arpat Firman: laid-back Indonesian man in his 30s, internet cafe owner, messy hair, oversized t-shirt, snack bag in hand, sleepy eyes. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

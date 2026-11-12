@@ -1,0 +1,8 @@
+KODE        : ST-MAP-002
+JUDUL       : Banner Story di Game Hub
+NAMA BERKAS : banner_story_hub.webp   (simpan ke Drive: Vanillate Story/05_Peta_Banner/)
+UKURAN      : 1920x720 px, rasio 8:3, WebP < 300 KB
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide banner 16:9: three adult characters (a nurse, a shop assistant, a painter) standing side by side facing camera, smiling, pixel-art town behind, blue sky with clouds. Leave empty space at the top for a title (no text drawn).
+===== SELESAI =====

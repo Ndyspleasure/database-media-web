@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-009
+JUDUL       : Peti Kaleng
+NAMA BERKAS : scene_b2_04.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Pak Arman
+KONTEKS     : Hujan sudah reda ketika Pak Arman datang. Tidak ada kopi kali ini, tidak ada kacang rebus. Hanya sebatang lilin kecil dan batuk yang lebih b...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: candlelit warehouse at night after the rain, Pak Arman sitting with a single candle, big shadows on cardboard walls, the rusty tin chest between him and the player. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

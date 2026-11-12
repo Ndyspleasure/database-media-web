@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-061
+JUDUL       : Nasihat dari Bro Seno
+NAMA BERKAS : scene_s_penulis_2.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Masjid (loc_masjid.webp)
+TOKOH       : Seno Suryo
+KONTEKS     : Halaman masjid sore itu teduh. Di bawah pohon mangga, Seno duduk bersila di tikar pandan dengan tumpukan buku tulis lusuh dan secangkir kopi...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Masjid. Scene: shady mosque yard under a mango tree, Seno on a pandan mat with worn notebooks and cold coffee, laughing warmly, the player (from behind) listening. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Seno Suryo: Indonesian man in his 40s, elementary teacher and writer, round glasses, plain shirt, worn notebooks in hand, warm humble smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

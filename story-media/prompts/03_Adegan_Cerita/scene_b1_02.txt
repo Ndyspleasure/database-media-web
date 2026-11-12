@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-002
+JUDUL       : Warung Bu Siti
+NAMA BERKAS : scene_b1_02.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Warung (loc_warung.webp)
+TOKOH       : Bu Siti
+KONTEKS     : Warung Bu Siti hanya sepetak, atapnya terpal, mejanya panjang dan lengket oleh puluhan tahun kuah dan siku. Tapi dari dalamnya mengepul bau ...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Warung. Scene: late afternoon at a tiny warung with a tarp roof, steaming food on a long wooden table, smoke from Tatang's satay across the alley, Bu Siti serving, the player seated (from behind). The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Bu Siti: warm Indonesian woman in her 50s, plump, hair tied in a bun, apron over a floral blouse, gentle smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

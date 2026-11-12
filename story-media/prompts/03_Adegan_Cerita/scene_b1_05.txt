@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-005
+JUDUL       : Bang Jul Datang
+NAMA BERKAS : scene_b1_05.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Rumah (Gudang Tua) (loc_home.webp)
+TOKOH       : Bang Jul, Pak Arman
+KONTEKS     : Semalam, sebelum terlelap, {name} meletakkan amplop berisi empat ratus lima puluh ribu di ambang pintu, seperti yang dipesankan anak buah Ju...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Rumah (Gudang Tua). Scene: foggy gray dawn outside the warehouse door, heavy boots on gravel, Bang Jul standing stiff in a dusty coat with an unlit cigarette, Pak Arman limping nervously behind. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Bang Jul: tall Indonesian man in his 40s, worn dusty coat, heavy boots, unlit clove cigarette in lips, impassive cold face; Pak Arman: elderly Indonesian man in his late 60s, slight limp, thin build, short gray hair, kind tired eyes, old checkered shirt and a sarong over the shoulder, a dry cough. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

@@ -1,0 +1,8 @@
+KODE        : ST-PAGE-005
+JUDUL       : Bab 0, Sesama Perantau
+NAMA BERKAS : page_00_sesama_perantau.webp   (simpan ke Drive: Vanillate Story/04_Halaman_Pembuka/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 illustrated page cover. a few migrant workers sharing tea and snacks on a mat outside a small warung at night, friendly and tired, warm light. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====

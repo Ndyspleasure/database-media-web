@@ -1,0 +1,11 @@
+KODE        : ST-SCENE-054
+JUDUL       : Surat dari Kantor Sipil
+NAMA BERKAS : scene_s_sekolah_1.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
+UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+LOKASI      : Lapangan (Area 3) (loc_lapangan_3.webp)
+TOKOH       : Annissa Lavika, Shelli Nurahman, Lina Lesmana, Rara Anindra
+KONTEKS     : Gedung sekolah itu berdiri di ujung lapangan Area 3, bercat kuning yang sudah memudar jadi warna bubur kacang. Dari jauh terdengar suara ana...
+
+===== TEMPEL KE GEMINI =====
+Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan (Area 3). Scene: faded yellow elementary school at the end of the field, kids reciting, a red-stamped notice taped to the gate pole fluttering, Nissa, Shelli, Lina and Rara at the gate with the player (from behind). The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Annissa Lavika: young Indonesian woman elementary teacher, 26, long hair, headscarf optional, light blouse and long skirt, kind patient smile; Shelli Nurahman: Indonesian elementary school girl, 10, white and red school uniform, pigtails, curious bright eyes; Lina Lesmana: Indonesian elementary school girl, 10, white and red school uniform, short bob hair, shy smile; Rara Anindra: Indonesian elementary school girl, 10, white and red school uniform, hair in a high ponytail, lively smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== SELESAI =====
