@@ -1,11 +1,12 @@
 KODE        : ST-SCENE-028
 JUDUL       : Rio Kembali
 NAMA BERKAS : scene_b6_03.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
-UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+UKURAN AKHIR: 1280x720 px, rasio 16:9, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong tengah ke 16:9
 LOKASI      : Lapangan (loc_lapangan.webp)
 TOKOH       : Rio
 KONTEKS     : Hujan sudah reda menjadi gerimis tipis. Bau arang dan tanah basah masih mengambang di gang. Satu per satu warga pulang, menyeret kaki dan em...
 
-===== TEMPEL KE GEMINI =====
-Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: drizzle after the storm under a shop awning with an emergency lamp, Rio sitting alone with a torn shirt, blistered red palms, a watchman's bamboo drum, the player approaching. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Rio: Indonesian young man in his early 20s, messy black hair, worn t-shirt and jeans, easygoing grin, slightly guilty eyes. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== TEMPEL KE CHATGPT =====
+Create an image. Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. Do not include logos, real brand names, readable text, or watermarks. Consistent style across the whole series. Wide landscape 3:2 cinematic key scene with all key subjects inside the central 16:9 band, characters in the foreground, pixel-art background of Lapangan. Scene: drizzle after the storm under a shop awning with an emergency lamp, Rio sitting alone with a torn shirt, blistered red palms, a watchman's bamboo drum, the player approaching. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Rio: Indonesian young man in his early 20s, messy black hair, worn t-shirt and jeans, easygoing grin, slightly guilty eyes. Do not include any sexualized poses or clothing, likeness of real people, brand logos, watermarks, readable text, or distorted hands.
 ===== SELESAI =====

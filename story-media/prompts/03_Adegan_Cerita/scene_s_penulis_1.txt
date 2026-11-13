@@ -1,11 +1,12 @@
 KODE        : ST-SCENE-060
 JUDUL       : Catatan di Balik Struk
 NAMA BERKAS : scene_s_penulis_1.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
-UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+UKURAN AKHIR: 1280x720 px, rasio 16:9, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong tengah ke 16:9
 LOKASI      : Restoran (loc_restoran.webp)
 TOKOH       : Tasya Wulandari
 KONTEKS     : Restoran itu ramai di jam makan siang, penuh denting sendok dan aroma tumis bawang. Di balik meja kasir, Tasya menunduk memasukkan koin ke l...
 
-===== TEMPEL KE GEMINI =====
-Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Restoran. Scene: lunch rush in a restaurant, Tasya at the cashier tearing a receipt, a small paper note falling from her uniform pocket, the player picking it up. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tasya Wulandari: shy young Indonesian woman, 23, restaurant cashier uniform vest, long hair with bangs, a small notebook hugged to her chest, soft blushing smile. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== TEMPEL KE CHATGPT =====
+Create an image. Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. Do not include logos, real brand names, readable text, or watermarks. Consistent style across the whole series. Wide landscape 3:2 cinematic key scene with all key subjects inside the central 16:9 band, characters in the foreground, pixel-art background of Restoran. Scene: lunch rush in a restaurant, Tasya at the cashier tearing a receipt, a small paper note falling from her uniform pocket, the player picking it up. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tasya Wulandari: shy young Indonesian woman, 23, restaurant cashier uniform vest, long hair with bangs, a small notebook hugged to her chest, soft blushing smile. Do not include any sexualized poses or clothing, likeness of real people, brand logos, watermarks, readable text, or distorted hands.
 ===== SELESAI =====
