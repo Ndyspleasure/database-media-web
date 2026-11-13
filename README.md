@@ -11,4 +11,4 @@ Emoji animasi (GIF 128×128, transparan, < 256 KB) untuk Discord Application Emo
 - `tools/update_checklist.py` — perbarui `CHECKLIST.md` setelah menambah GIF.
 - `tools/preview.py` — buat `preview.png` (contact sheet semua GIF).
 
-- `story-media/` — prompt gambar (Gemini) untuk game Vanillate Story: 153 prompt, manifest, dan aturan penamaan untuk Google Drive. Lihat `story-media/README.md`.
+- `story-media/` — prompt gambar (ChatGPT) untuk game Vanillate Story: 153 prompt, manifest, dan aturan penamaan untuk Google Drive. Lihat `story-media/README.md`.

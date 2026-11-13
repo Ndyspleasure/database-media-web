@@ -1,8 +1,9 @@
 KODE        : ST-LOC-022
 JUDUL       : Masjid
 NAMA BERKAS : loc_masjid.webp   (simpan ke Drive: Vanillate Story/01_Lokasi/)
-UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+UKURAN AKHIR: 1280x720 px, rasio 16:9, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong tengah ke 16:9
 
-===== TEMPEL KE GEMINI =====
-Pixel art top-down RPG Maker style 16-bit scene of a small Indonesian town, bright saturated colors, clean dark outlines, tiled buildings and props, tropical warm light. Generic buildings only, no logos, no real brand names, no readable text, no watermark. Consistent palette. Scene: Masjid. a small neighborhood mosque with a green dome, a shady mango tree in the yard, mats under the tree. Wide 16:9 composition, no people in focus, a few tiny pixel villagers allowed.
+===== TEMPEL KE CHATGPT =====
+Create an image. Pixel art top-down RPG Maker style 16-bit scene of a small Indonesian town, bright saturated colors, clean dark outlines, tiled buildings and props, tropical warm light. Generic buildings only, no logos, no real brand names, no readable text, no watermark. Consistent palette. Scene: Masjid. a small neighborhood mosque with a green dome, a shady mango tree in the yard, mats under the tree. Wide landscape 3:2 composition with all key subjects inside the central 16:9 band, no people in focus, a few tiny pixel villagers allowed.
 ===== SELESAI =====

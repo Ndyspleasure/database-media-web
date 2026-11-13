@@ -1,6 +1,6 @@
 # story-media: prompt gambar Vanillate Story
 
-Kumpulan prompt siap tempel ke Google Gemini untuk membuat media game **Vanillate Story** (hub `/game` bot Vanillate).
+Kumpulan prompt siap tempel ke ChatGPT (GPT image) untuk membuat media game **Vanillate Story** (hub `/game` bot Vanillate).
 Berisi 153 prompt, satu berkas per gambar.
 
 | Isi | Jumlah |
@@ -12,7 +12,7 @@ Berisi 153 prompt, satu berkas per gambar.
 | Peta kota dan banner | 2 |
 
 - `manifest.csv`: daftar semua gambar (kode, nama berkas, folder Drive, ukuran, prompt). Impor ke Google Sheets untuk pelacak kerja.
-- `prompts/<folder>/<nama>.txt`: satu prompt per gambar. Bagian di antara `TEMPEL KE GEMINI` dan `SELESAI` disalin utuh.
+- `prompts/<folder>/<nama>.txt`: satu prompt per gambar. Bagian di antara `TEMPEL KE CHATGPT` dan `SELESAI` disalin utuh.
 - `PENAMAAN.md`: aturan nama berkas, struktur folder Drive, ukuran, alur kerja.
 - `00_STYLE_PROMPT.md`: prompt induk gaya (pixel untuk peta, novel untuk karakter).
 

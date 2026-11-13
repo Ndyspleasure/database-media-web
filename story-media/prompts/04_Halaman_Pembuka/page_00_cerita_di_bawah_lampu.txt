@@ -1,8 +1,9 @@
 KODE        : ST-PAGE-004
 JUDUL       : Bab 0, Cerita di Bawah Lampu
 NAMA BERKAS : page_00_cerita_di_bawah_lampu.webp   (simpan ke Drive: Vanillate Story/04_Halaman_Pembuka/)
-UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+UKURAN AKHIR: 1280x720 px, rasio 16:9, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong tengah ke 16:9
 
-===== TEMPEL KE GEMINI =====
-Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 illustrated page cover. two people sitting under a warm kerosene lamp on a porch, one elderly, one young (from behind), moths around the lamp, night. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== TEMPEL KE CHATGPT =====
+Create an image. Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. Do not include logos, real brand names, readable text, or watermarks. Consistent style across the whole series. Wide landscape 3:2 illustrated page cover with key content inside the central 16:9 band. two people sitting under a warm kerosene lamp on a porch, one elderly, one young (from behind), moths around the lamp, night. Do not include any sexualized poses or clothing, likeness of real people, brand logos, watermarks, readable text, or distorted hands.
 ===== SELESAI =====

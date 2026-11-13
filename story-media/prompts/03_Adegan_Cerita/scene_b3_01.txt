@@ -1,11 +1,12 @@
 KODE        : ST-SCENE-011
 JUDUL       : Rio Tidak Lagi Menganggur
 NAMA BERKAS : scene_b3_01.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
-UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+UKURAN AKHIR: 1280x720 px, rasio 16:9, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong tengah ke 16:9
 LOKASI      : Lapangan (loc_lapangan.webp)
 TOKOH       : Rio, Bang Jul
 KONTEKS     : Minggu ketiga dimulai dengan embun yang menggantung di jaring gawang lapangan. Dari gerobak Tatang naik bau minyak goreng dan bawang, tukang...
 
-===== TEMPEL KE GEMINI =====
-Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Lapangan. Scene: misty morning, Rio's stone bench now empty, Bang Jul standing far across the field, Tatang's cart steaming, a parking attendant blowing a whistle. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Rio: Indonesian young man in his early 20s, messy black hair, worn t-shirt and jeans, easygoing grin, slightly guilty eyes; Bang Jul: tall Indonesian man in his 40s, worn dusty coat, heavy boots, unlit clove cigarette in lips, impassive cold face. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== TEMPEL KE CHATGPT =====
+Create an image. Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. Do not include logos, real brand names, readable text, or watermarks. Consistent style across the whole series. Wide landscape 3:2 cinematic key scene with all key subjects inside the central 16:9 band, characters in the foreground, pixel-art background of Lapangan. Scene: misty morning, Rio's stone bench now empty, Bang Jul standing far across the field, Tatang's cart steaming, a parking attendant blowing a whistle. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Rio: Indonesian young man in his early 20s, messy black hair, worn t-shirt and jeans, easygoing grin, slightly guilty eyes; Bang Jul: tall Indonesian man in his 40s, worn dusty coat, heavy boots, unlit clove cigarette in lips, impassive cold face. Do not include any sexualized poses or clothing, likeness of real people, brand logos, watermarks, readable text, or distorted hands.
 ===== SELESAI =====

@@ -27,27 +27,31 @@ Vanillate Story/
   03_Adegan_Cerita/     (65 berkas, scene_*.webp)
   04_Halaman_Pembuka/   (7 berkas, page_*.webp)
   05_Peta_Banner/       (2 berkas, map_*.webp dan banner_*.webp)
-  _asli_png/            (hasil mentah dari Gemini sebelum dikonversi, opsional)
+  _asli_png/            (hasil mentah dari ChatGPT sebelum dikonversi, opsional)
 ```
 
 Awalan angka pada nama folder hanya untuk mengurutkan di Drive. Nama berkas tidak memakai angka.
 
 ## 3. Ukuran dan format
 
-| Jenis | Ukuran | Berat |
-|---|---|---|
-| Lokasi, adegan, halaman pembuka | 1280x720 (16:9) | di bawah 300 KB |
-| Potret NPC | 768x1024 (3:4) | di bawah 250 KB |
-| Peta | 1920x720 | di bawah 500 KB |
+ChatGPT hanya menghasilkan rasio 1:1, 3:2 (1536x1024), dan 2:3 (1024x1536). Prompt sudah meminta semua subjek penting
+berada di bagian tengah, jadi hasilnya tinggal **dipotong** ke ukuran akhir.
 
-Gemini biasanya menghasilkan PNG. Ubah ke WebP (kualitas 80) lalu cek ukurannya, mis. dengan `cwebp -q 80 in.png -o out.webp`
+| Jenis | Minta di ChatGPT | Potong ke (akhir) | Berat |
+|---|---|---|---|
+| Lokasi, adegan, halaman pembuka | 3:2 (1536x1024) | 16:9, lalu perkecil ke 1280x720 | di bawah 300 KB |
+| Potret NPC | 2:3 (1024x1536) | 3:4, lalu perkecil ke 768x1024 | di bawah 250 KB |
+| Peta dan banner | 3:2 (1536x1024) | peta: pita tengah 8:3 (1920x720 setelah diperbesar), banner: 16:9 | di bawah 500 KB |
+
+ChatGPT menghasilkan PNG. Ubah ke WebP (kualitas 80) lalu cek ukurannya, mis. dengan `cwebp -q 80 in.png -o out.webp`
 atau situs konversi. Simpan PNG asli di `_asli_png/` dengan nama yang sama.
 
 ## 4. Alur kerja per gambar
 
 1. Buka `manifest.csv` (bisa diimpor ke Google Sheets) atau berkas `.txt` di folder `prompts/`.
-2. Salin teks di antara `===== TEMPEL KE GEMINI =====` dan `===== SELESAI =====`.
-3. Tempel ke Gemini. Untuk konsistensi gaya, lampirkan 3 gambar acuan gaya (peta pixel, potret, adegan) yang sudah kamu setujui.
+2. Salin teks di antara `===== TEMPEL KE CHATGPT =====` dan `===== SELESAI =====`.
+3. Tempel ke ChatGPT, lalu atur ukuran sesuai baris `BUAT DI GPT` (atau tulis "buat dalam rasio 3:2"). Untuk konsistensi gaya,
+   lampirkan 3 gambar acuan gaya (peta pixel, potret, adegan) yang sudah kamu setujui dan tulis "ikuti gaya gambar terlampir persis".
 4. Pilih hasil terbaik, ubah ke WebP, **beri nama persis seperti `NAMA BERKAS`** di berkas prompt.
 5. Unggah ke folder Drive yang tertulis di baris `NAMA BERKAS`.
 6. Centang di Sheets (kolom `status`) supaya tidak dobel.
@@ -55,6 +59,10 @@ atau situs konversi. Simpan PNG asli di `_asli_png/` dengan nama yang sama.
 ## 5. Catatan konsistensi
 
 - Kerjakan per kategori: semua lokasi dahulu, lalu potret, lalu adegan.
+- Pakai **satu percakapan ChatGPT per kategori** supaya gayanya tetap sama. Percakapan yang terlalu panjang bisa melenceng,
+  jadi buka percakapan baru tiap sekitar 15 gambar dan lampirkan lagi gambar acuan gayanya.
+- Kalau wajah tokoh berubah, minta "ubah gambar ini, pertahankan wajah dan pakaian tokoh seperti gambar terlampir".
+- ChatGPT bisa memolakan tulisan di gambar. Prompt sudah melarang teks, tapi kalau muncul, minta "hapus semua tulisan".
 - Potret NPC dibuat **sebelum** adegan. Lampirkan potretnya saat membuat adegan yang memuat tokoh itu agar wajah konsisten.
 - Tokoh pemain tidak pernah digambar dari depan (jenis kelamin bebas). Prompt sudah menetapkannya.
 - Jenis kelamin dan usia NPC adalah **asumsi** dari gelar dan peran di naskah. Ubah bagian deskripsi di `.txt` bila berbeda dari maksudmu.

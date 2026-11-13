@@ -1,8 +1,9 @@
 KODE        : ST-MAP-001
 JUDUL       : Peta kota Vanillate
 NAMA BERKAS : map_vanillate_city.webp   (simpan ke Drive: Vanillate Story/05_Peta_Banner/)
-UKURAN      : 1920x720 px, rasio 8:3, WebP < 300 KB
+UKURAN AKHIR: 1920x720 px, rasio 8:3, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong pita tengah ke 8:3
 
-===== TEMPEL KE GEMINI =====
-Pixel art top-down RPG Maker style 16-bit scene of a small Indonesian town, bright saturated colors, clean dark outlines, tiled buildings and props, tropical warm light. Generic buildings only, no logos, no real brand names, no readable text, no watermark. Consistent palette. A full overview map of a small Indonesian town city, 8:3 panoramic, bright river crossing the middle, bridges, a mosque, school, clinic, bank, warung street, football field, warehouse area in a corner, terminal, restaurant street, cinema, gym, internet cafe, dense houses, trees. Generic buildings, no readable signs.
+===== TEMPEL KE CHATGPT =====
+Create an image. Pixel art top-down RPG Maker style 16-bit scene of a small Indonesian town, bright saturated colors, clean dark outlines, tiled buildings and props, tropical warm light. Generic buildings only, no logos, no real brand names, no readable text, no watermark. Consistent palette. A full overview map of a small Indonesian town city, wide landscape 3:2 with all key content inside the central horizontal band (it will be cropped to 8:3), bright river crossing the middle, bridges, a mosque, school, clinic, bank, warung street, football field, warehouse area in a corner, terminal, restaurant street, cinema, gym, internet cafe, dense houses, trees. Generic buildings, no readable signs.
 ===== SELESAI =====

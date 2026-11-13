@@ -1,11 +1,12 @@
 KODE        : ST-SCENE-051
 JUDUL       : Kejuaraan Kecil
 NAMA BERKAS : scene_s_windy_1.webp   (simpan ke Drive: Vanillate Story/03_Adegan_Cerita/)
-UKURAN      : 1280x720 px, rasio 16:9, WebP < 300 KB
+UKURAN AKHIR: 1280x720 px, rasio 16:9, WebP < 300 KB (potong dari hasil ChatGPT)
+BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong tengah ke 16:9
 LOKASI      : Gym (loc_gym.webp)
 TOKOH       : Tigor S., Windy Lestari
 KONTEKS     : Gym sore itu berbau besi dan keringat dan sedikit karet baru. Di sudut, treadmill berdengung seperti mesin jahit raksasa, dan Bro Tigor sibu...
 
-===== TEMPEL KE GEMINI =====
-Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. No logos, no real brand names, no readable text, no watermark. Consistent style across the whole series. Wide 16:9 cinematic key scene, characters in the foreground, pixel-art background of Gym. Scene: evening at a sweaty gym, Bro Tigor sticking a bright yellow race poster on the wall, Windy and the player (from behind) reading it, treadmill and weights. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tigor S.: muscular Indonesian man in his 30s, gym coach, tank top, towel on shoulders, friendly loud grin; Windy Lestari: athletic young Indonesian woman, 24, short sporty ponytail, red shop uniform or running outfit, determined look. Avoid: sexualized poses or clothing, real people likeness, brand logos, watermarks, extra fingers, text.
+===== TEMPEL KE CHATGPT =====
+Create an image. Anime visual novel illustration, soft cel-shading, glossy detailed eyes, clean lineart, warm natural lighting. Wholesome, adult characters in modest everyday Indonesian clothing (unless stated as a child), natural friendly proportions. Background is a pixel-art Indonesian small town scene, slightly blurred. Do not include logos, real brand names, readable text, or watermarks. Consistent style across the whole series. Wide landscape 3:2 cinematic key scene with all key subjects inside the central 16:9 band, characters in the foreground, pixel-art background of Gym. Scene: evening at a sweaty gym, Bro Tigor sticking a bright yellow race poster on the wall, Windy and the player (from behind) reading it, treadmill and weights. The main player character is never shown from the front (back view or silhouette only). Characters (keep looks identical across images): Tigor S.: muscular Indonesian man in his 30s, gym coach, tank top, towel on shoulders, friendly loud grin; Windy Lestari: athletic young Indonesian woman, 24, short sporty ponytail, red shop uniform or running outfit, determined look. Do not include any sexualized poses or clothing, likeness of real people, brand logos, watermarks, readable text, or distorted hands.
 ===== SELESAI =====
