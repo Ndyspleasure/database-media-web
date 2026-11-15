@@ -1,9 +1,78 @@
 KODE        : ST-MAP-001
-JUDUL       : Peta kota Vanillate
-NAMA BERKAS : map_vanillate_city.webp   (simpan ke Drive: Vanillate Story/05_Peta_Banner/)
-UKURAN AKHIR: 1920x720 px, rasio 8:3, WebP < 300 KB (potong dari hasil ChatGPT)
-BUAT DI GPT : minta ukuran 3:2 (1536x1024), lalu potong pita tengah ke 8:3
+JUDUL       : Peta kota Vanillate — 4 area kanonik
+NAMA BERKAS : map_vanillate_city.webp
+TARGET REPO : story-media/05_Peta_Banner/
+UKURAN AKHIR: 1920x720 px, rasio 8:3, WebP < 300.000 byte
+SUMBER      : Ndyspleasure/Vanillate.ID, main commit eba3a7b
+DATA        : src/game/story/config.js; src/game/story/content/locations.json
+ALUR UI     : src/game/gameHub.js → src/game/story/ui.js (travelSelectView)
+
+Revisi sesuai instruksi pengguna: gunakan pembagian area dan NAMA lokasi dari game.
+Nama/nomor area dan legenda lokasi sengaja HARUS terbaca, sebagai pengecualian
+terhadap larangan teks pada prompt induk. Tidak ada logo/merek/watermark.
+Koordinat geografis tidak ditentukan oleh kode; posisi bangunan adalah ilustrasi.
+Urutan perpindahan area: 1 → 2 → 3 → 4 → 1.
+Gerbang: Rumah (Gudang Tua), Gedung Perkantoran, Lapangan (Area 3),
+Pusat Perbelanjaan, berurutan untuk area 1–4.
 
 ===== TEMPEL KE CHATGPT =====
-Create an image. Pixel art top-down RPG Maker style 16-bit scene of a small Indonesian town, bright saturated colors, clean dark outlines, tiled buildings and props, tropical warm light. Generic buildings only, no logos, no real brand names, no readable text, no watermark. Consistent palette. A full overview map of a small Indonesian town city, wide landscape 3:2 with all key content inside the central horizontal band (it will be cropped to 8:3), bright river crossing the middle, bridges, a mosque, school, clinic, bank, warung street, football field, warehouse area in a corner, terminal, restaurant street, cinema, gym, internet cafe, dense houses, trees. Generic buildings, no readable signs.
+Create a wide 8:3 illustrated pixel-art city map. Crisp 16-bit RPG Maker tile
+art, Indonesian tropical town, orange tiled roofs, clean dark outlines,
+warm daylight. Four equal district panels from left to right: green, blue,
+purple and orange. Title: PETA KOTA VANILLATE. Top travel arrows 1→2→3→4→1.
+Each panel has its exact area header, miniature illustrated district with
+numbered map pins, and a light cream legend below. All names below must be
+spelled exactly and readable; do not omit or duplicate locations. Match pin
+numbers to the corresponding buildings. Storefront signs use pictograms,
+not extra lettering. Every area has one Papan Lowongan Kerja. Keep all panels,
+headers, pins and legends fully inside the frame; no cropping of content.
+Use existing approved location WebPs as architectural/palette references.
+
+AREA 1: Permukiman
+1. Rumah (Gudang Tua)
+2. Sungai
+3. Kuburan
+4. Lapangan
+5. Warung
+6. Laundry
+7. Papan Lowongan Kerja
+8. Rumah Penduduk
+
+AREA 2: Perkantoran & Pusat Kota
+1. Gedung Perkantoran
+2. Bank
+3. SPBU
+4. Klinik
+5. Minimarket
+6. Toko Pakaian
+7. Toko Bangunan
+8. Food Court
+9. Papan Lowongan Kerja (Area 2)
+10. Rumah Penduduk (Area 2)
+11. Saluran Air
+
+AREA 3: Teknologi & Komunitas
+1. Warnet
+2. Toko Serba Ada
+3. Masjid
+4. Lapangan (Area 3)
+5. Arcade
+6. Gym
+7. Toko Furnitur
+8. Kantor Sipil
+9. Apartemen
+10. Spot Memancing
+11. Papan Lowongan Kerja (Area 3)
+
+AREA 4: Komersial & Hiburan
+1. Hotel
+2. Restoran
+3. Bioskop
+4. Terminal
+5. Butik
+6. Dealer Kendaraan
+7. Pusat Perbelanjaan
+8. Kolam Memancing
+9. Papan Lowongan Kerja (Area 4)
+
 ===== SELESAI =====

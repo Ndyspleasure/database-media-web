@@ -2,6 +2,24 @@
 
 Dokumen ini adalah catatan serah terima agar Codex pada sesi baru dapat menemukan, **melihat**, membuat, memeriksa, dan mengunggah gambar dengan alur yang sama. Baca dokumen ini bersama prompt masing-masing gambar. Jangan mengandalkan riwayat percakapan, `store()` sesi lama, atau keberadaan file sementara.
 
+## Pembaruan kelengkapan media
+
+Seluruh **153/153 prompt** sudah memiliki WebP pasangan setelah penambahan
+7 halaman pembuka dan 2 peta/banner. Semua 9 file baru di bawah 300.000 byte;
+halaman 1280×720, peta/banner 1920×720. Banner sudah diperiksa menampilkan
+ketiga tokoh utuh dari kepala sampai sepatu.
+
+Peta kota direvisi atas instruksi pengguna agar mengikuti **4 area dan 39 lokasi**
+di `Ndyspleasure/Vanillate.ID` commit `eba3a7b`, melalui `config.js`,
+`content/locations.json`, dan menu `travelSelectView` pada `src/game/story/`.
+Nama area dan legenda lokasi pada peta sengaja terbaca sesuai permintaan;
+ini pengecualian larangan teks untuk peta tersebut. Susunan geografis bersifat
+ilustratif karena kode hanya menentukan kelompok area dan perpindahan berputar
+1→2→3→4→1. Baca prompt peta yang telah diperbarui sebelum revisi berikutnya.
+
+Catatan jumlah/pekerjaan tersisa di bagian berikut adalah riwayat serah terima
+sebelumnya. Tetap cocokkan tree HEAD terbaru sebelum memulai produksi baru.
+
 ## 1. Repository dan status terakhir
 
 - Repository: **`Ndyspleasure/database-media-web`**.
