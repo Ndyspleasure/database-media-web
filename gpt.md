@@ -1,5 +1,7 @@
 # Panduan Codex: media gambar Vanillate Story
 
+> **Tebak Gambar (game Discord):** untuk membuat gambar game ini baca `tebak-gambar/INSTRUKSI-GPT.md` lebih dulu; alurnya berbeda dari media Vanillate Story di bawah.
+
 Dokumen ini adalah catatan serah terima agar Codex pada sesi baru dapat menemukan, **melihat**, membuat, memeriksa, dan mengunggah gambar dengan alur yang sama. Baca dokumen ini bersama prompt masing-masing gambar. Jangan mengandalkan riwayat percakapan, `store()` sesi lama, atau keberadaan file sementara.
 
 ## Pembaruan kelengkapan media
